@@ -1,0 +1,18 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Our customers'
+      },
+      ua: {
+        title: 'Наші клієнти'
+      },
+    };
+
+  h2 #{texts[lang].title}
+  img.img-fluid.d-block.mx-auto(
+    src='../static/img/glue-customers.svg',
+    alt='Our customers',
+    width='800px',
+    height='800px'
+  )

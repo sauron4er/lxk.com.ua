@@ -1,0 +1,58 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Our benefits',
+        quality: 'Customer’s quality: We adjust quality of our products to each customer',
+        bsci: 'Corporate Social Responsibility (BSCI)',
+        price: 'Reasonable price',
+        years: ''
+      },
+      ua: {
+        title: 'Наші переваги',
+        quality: 'Якість нашої продукції підібрана ідеально для кожного клієнта ',
+        bsci: 'На підприємстві впроваджено систему менеджменту якості ISO 9001:2015 ' +
+              'та корпоративну соціальну відповідальність згідно суворих вимог (BSCI)',
+        price: 'Продукти, здатні конкурувати на ринку',
+        years: 'Більше 125 років досвіду бездоганного виробництва'
+      },
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/our-benefits.jpg",
+    alt="Our benefits"
+  )
+  h2 #{texts[lang].title}
+
+  table.mb-5
+    tbody
+      tr
+        td
+          img.d-block(
+            src="../static/img/quality.svg",
+            alt="Our benefits",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4 #{texts[lang].quality}
+      tr
+        td
+          img.d-block(
+            src="../static/img/bsci.svg",
+            alt="Our benefits",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4 #{texts[lang].bsci}
+      tr
+        td
+          img.d-block(
+            src="../static/img/price.svg",
+            alt="Our benefits",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4 #{texts[lang].price}
+      tr
+        td
+        td.pl-4 #{texts[lang].years}

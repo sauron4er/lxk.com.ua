@@ -1,0 +1,227 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        back_to: 'Back to "Charcoal for grilling"',
+        title: 'CHARCOAL',
+        paragraphs: [
+          'Made of 100% beech.',
+          'From sustainable well managed forestry.',
+          'Fast and easy to ignite.',
+          'Provides longer burning and glow phase.',
+          'Ready for grilling in 20 minutes.',
+          'Origin: Europe.',
+        ],
+        table_title: 'TECHNICAL SPECIFICATION',
+        table_rows: [
+          [
+            'Humidity, %',
+            '3-5'
+          ],
+          [
+            'Ash content, %',
+            '2-8'
+          ],
+          [
+            'Fix carbon content, %',
+            '83-90'
+          ],
+          [
+            'Fraction:',
+            '20-80 mm'
+          ],
+          [
+            'Packaging:',
+            '1,5 – 15kg'
+          ],
+          [
+            'Certificates:',
+            'Din Plus, EN 1860-2'
+          ],
+        ],
+        images_title: 'Images of Charcoal'
+      },
+      de: {
+        back_to: 'Zurück zu "Grillholzkohleproduktion"',
+        title: 'GRILLHOLZKOHLE',
+        paragraphs: [
+        'Hergestellt aus 100% Buchenholz.',
+        'Aus einer gut bewirtschafteten, nachhaltigen Forstwirtschaft mit einem ' +
+        'ständig nachwachsenden Bestand. Schnell und leicht entflammbar.',
+        'Gewährleistet langes Brennen und eine langanhaltende Phase starker Glut.',
+        'Innerhalb von 20 Minuten bereit zum Grillen.',
+        'Ursprungsland: Europa',
+        ],
+        table_title: 'ТЕCHNISCHE SPEZIFIKATION',
+        table_rows: [
+        [
+        'Feuchtigkeit, %',
+        '3-5'
+        ],
+        [
+        'Aschengehalt, %',
+        '2-8'
+        ],
+        [
+        'Cfix, %',
+        '83-90'
+        ],
+        [
+        'Fraktion:',
+        '20-80 mm'
+        ],
+        [
+        'Verpackung:',
+        '1,5 – 15kg'
+        ],
+        [
+        'Zertifikate:',
+        'Din Plus, EN 1860-2'
+        ],
+        ],
+        images_title: ''
+      },
+      fr: {
+        back_to: 'De retour à "Charbon de bois pour la grille"',
+        title: 'CHARBON DE BOIS',
+        paragraphs: [
+        'Produit du hêtre de 100%.',
+        'Qui provient de la sylviculture bien gérée. Le charbon de bois s`allume vite et facilement.',
+        'Assure le brûlage long et la phase de la chaleur forte.',
+        'Prêt pour le grillage pendant 20 minutes.',
+        'Provient de l`Europe.',
+        ],
+        table_title: 'CARACTÉRISTIQUES TECHNIQUES',
+        table_rows: [
+        [
+        'L`humidité, %',
+        '3-5'
+        ],
+        [
+        'La teneur en cendres, %',
+        '2-8'
+        ],
+        [
+        'Le contenu stable du carbone, %',
+        '83-90'
+        ],
+        [
+        'Fraction:',
+        '20-80 mm'
+        ],
+        [
+        'Emballage:',
+        '1,5 – 15kg'
+        ],
+        [
+        'Certificats:',
+        'Din Plus, EN 1860-2'
+        ],
+        ],
+        images_title: 'Image du charbon de bois'
+        },
+      ua: {
+        back_to: 'Повернутися до "Продукція для грилювання"',
+        title: 'ДЕРЕВНЕ ВУГІЛЛЯ',
+        paragraphs: [
+        'Виготовлено з 100% твердих порід дерева.',
+        'Від надійного господарства з високим рівнем організації.',
+        'Швидко і легко спалахує.',
+        'Забезпечує тривале горіння та довгу фазу згорання.',
+        'Готове до грилювання вже через 20 хвилин.',
+        ],
+        table_title: 'ТЕХНІЧНІ ХАРАКТЕРИСТИКИ',
+        table_rows: [
+        [
+        'Вологість, %',
+        '3-5'
+        ],
+        [
+        'Вміст золи, %',
+        '2-8'
+        ],
+        [
+        'Вміст вуглецю С Fix, %',
+        '83-90'
+        ],
+        [
+        'Фракція:',
+        '20-80 мм'
+        ],
+        [
+        'Упаковка:',
+        '1,5 – 15 кг'
+        ],
+        [
+        'Сертифікати:',
+        'Din Plus, EN 1860-2'
+        ],
+        ],
+        images_title: ''
+        },
+      ru: {
+        back_to: 'Вернуться на страницу "Продукция для гриллинга"',
+        title: 'ДРЕВЕСНЫЙ УГОЛЬ',
+        paragraphs: [
+        'Изготовлено из 100% твердых пород дерева.',
+        'От надежного хозяйства с высоким уровнем организации.',
+        'Быстро и легко разгорается.',
+        'Обеспечивает длительное горение и долгую фазу сгорания.',
+        'Готово для барбекю уже через 20 минут.',
+        ],
+        table_title: 'ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ',
+        table_rows: [
+        [
+        'Влажность, %',
+        '3-5'
+        ],
+        [
+        'Зольность, %',
+        '2-8'
+        ],
+        [
+        'Содержание углерода С Fix, %',
+        '83-90'
+        ],
+        [
+        'Фракция:',
+        '20-80 мм'
+        ],
+        [
+        'Упаковка:',
+        '1,5 – 15 кг'
+        ],
+        [
+        'Сертификаты:',
+        'Din Plus, EN 1860-2'
+        ],
+        ],
+        images_title: ''
+      }
+    };
+    
+  a.text-warning(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].back_to}
+  h2 #{texts[lang].title}
+  .row.mt-4
+    .col-6
+      .d-flex.align-content-center.mb-5
+        img.mx-auto(src="../static/img/Coal_2.jpg", alt="")
+    .col-6
+      each p in texts[lang].paragraphs
+        div #{p}
+      br
+      img(src="../static/img/Briquettes_icons_new.jpg", alt="")
+  h5.text-left #{texts[lang].table_title}
+  table.table.table-striped
+    tbody
+      each row in texts[lang].table_rows
+        tr
+          each td in row
+            td #{td}
+  h6 #{texts[lang].images_title}
+  .d-flex.justify-content-center
+    img.img-fluid.mr-5(
+      src="../static/img/Coal_pic_1.jpg",
+      alt="charcoal 1"
+    )
+    img.img-fluid(src="../static/img/Coal_pic_2.jpg", alt="charcoal 2")

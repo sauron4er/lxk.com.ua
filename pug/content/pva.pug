@@ -1,0 +1,59 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'PVAс dispersions',
+        subtitle: 'Polyvinyl acetate dispersion (PVAс).',
+        pva: 'PVA glue is a viscous white homogeneous liquid, which is the product of polymerization of vinyl ' +
+        'acetate in an aquatic environment in the presence of an emulsifier and a polymerization initiator, ' +
+        'mixed with it or without plasticizer. Our company produce PVA glue acoording to modern leading ' +
+        'technology, which guarantees stable and high quality product. PVA glue is moslty used for woodworking, ' +
+        'cardboard and paper, construction and other industries. According to client\'s request glue can be ' +
+        'produced with various parameters. Please feel free to contact us for a commercial offer!',
+        pva_bullets: [
+          'PVAс 51s/ Mainly used in cardboard and paper and in paint and varnish products. ' +
+            '(Woodworking/Cardboard and paper/Paint and varnish)',
+          'PVAс 51/15V/Mainly used in woodworking, construction mixtures, cardboard and paper products. ' +
+            '(Woodworking/Cardboard and paper/Paint and varnish/Construction)',
+          'PVAс D3/Mainly used for producing doors and windows, bathroom furniture, laminate and finger-joint glueing, massive. ' +
+            '(Woodworking/Cardboard and paper/Paint and varnish/Construction)',
+          'PVAс D4/Mainly used for producing doors and windows, laminate and finger-joint glueing, massive. ' +
+            '(Woodworking/Cardboard and paper/Paint and varnish/Construction)',
+        ],
+      },
+      ua: {
+        title: 'ПВА дисперсії',
+        subtitle: '',
+        pva: 'Дисперсія ПВА - це в\'язка, однорідна, білого кольору рідина, яка є продуктом ' +
+        ']полімеризації вінілацетату у водному середовищі в присутності емульгатора та ініціатора полімеризації. ' +
+        'Пластифікована або ні. Наша компанія виготовляє дисперсії ПВА відповідно до сучасних провідних ' +
+        'технологій, що гарантує стабільну та якісну продукцію. Дисперсії ПВА - це адгезив, який ' +
+        'використовується для виробництва товарів з деревини, картону та паперу, будівельної та інших галузей ' +
+        'промисловості. За бажанням клієнта дисперсія може бути виготовлена з різними параметрами. Будь ласка, ' +
+        'не соромтесь звертатися до нас для комерційної пропозиції!',
+        pva_bullets: [
+          'ПВА 51С використовується для склейки картону, паперу, деревини а також у лакофарбових виробах.',
+          'ПВА 51/15В використовується в деревообробці, будівельних сумішах, у виробах з картону та паперу.',
+          'ПВА D3 використовується для виготовлення дверей і вікон, меблів для ванної, ламінату та клеєння ' +
+          'пальців, та інших виробів що потребують підвищеної вологостійкості клейового з’єднання. ' +
+          'Клас вологостійкості D3 згідно DIN EN 204.',
+          'ПВА D4 використовується для виготовлення дверей і вікон, ламінату та клеєного пальця, масивного ' +
+          'брусу що потребують підвищеної вологостійкості клейового з’єднання. Клас вологостійкості D4 згідно ' +
+          'DIN EN 204.',
+        ],
+      },
+    };
+
+  h2 #{texts[lang].title}
+  .row
+    .col-4
+      img.d-block(
+        src="../static/img/pva.jpg",
+        alt="pvoh",
+        height="300px"
+      )
+    .col-8
+      .mb-3 #{texts[lang].pva}
+      ul.fa-ul
+        each b in texts[lang].pva_bullets
+          li #{b}

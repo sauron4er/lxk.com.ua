@@ -1,0 +1,32 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Range of products',
+        list: [
+          'Urea formaldehyde resins',
+          'Melamine formaldehyde resins',
+          'Polyvinyl acetate dispersions',
+          'Polyvinyl alcohol disperions'
+        ]
+      },
+      ua: {
+        title: 'Асортимент продукції',
+        list: [
+          'Карбамідоформальдегідні смоли UF',
+          'Меламінові смоли MUF, UMF, MF',
+          'ПВА дисперсії',
+          'Клеї на основі полівінілового спирту ПВС'
+        ]
+      },
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/range-of-products.jpg",
+    alt="Range of products"
+  )
+  h2 #{texts[lang].title}
+  .d-flex.mb-5
+    ul.fa-ul
+      each p in texts[lang].list
+        li #{p}

@@ -1,0 +1,113 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Industry',
+        woodworking_title: 'Woodworking industry:',
+        woodworking: 'Uf resins and PVA dispersions are widely used in woodworking industry. ' +
+                      'These products are mainly used for producing wooden boards with various waterproof ' +
+                      'properties, plywood and others wooden products. Due to modern technologies at our plant, ' +
+                      'our glues allow to produce final products with high mechanical properties and low ' +
+                      'formaldehyde emission, which meets European standards.',
+        cardboard_title: 'Cardboard and paper industry:',
+        cardboard: 'UF resins, PVA dispersions, and polyvinyl based glues are widely used in this industry. This ' +
+                    'products mainly used for paper impregnation, also for packaging materials production, ' +
+                    'cardboard, corrugated cardboard and wood, tubes, edge protectors, and also for stick labels ' +
+                    'production.',
+        light_title: 'Light industry:',
+        light: 'In light industry are widely used PVA dispersions for production of starching agents for household ' +
+                'chemicals and also as additives in production of various types of cloth and leather.',
+        construction_title: 'Construction industry:',
+        construction: 'In costruction industry are widely used PVA dispersions as a binder in production of ' +
+                      'polymercement, polymerconcrete and other construction mixtures.',
+        paint_title: 'Paint and varnish industry:',
+        paint: 'In paint and varnish industry are widely used PVA dispersion mostly as a binder in production of ' +
+                'matt and gloss water-based paints, putty, plasters and other materials.'
+      },
+      ua: {
+        title: 'Сфери застосування нашої продукції',
+        woodworking_title: 'Деревообробна промисловість:',
+        woodworking: 'Карбамідоформальдегідні смоли та ПВА дисперсії широко застосовуються у деревообробній ' +
+                      'промисловості. Наші смоли широко використовуються для виготовлення ДСП,ДВП, фанери, ' +
+                      'дерев’яного бруса або плити з різними водонепроникними властивостями та інших дерев’яних ' +
+                      'виробів. Завдяки сучасним технологіям на нашому заводі, наші клейові продукти дозволяють ' +
+                      'виробляти кінцеву продукцію з високими механічними властивостями та низьким впливом на ' +
+                      'навколишнє середовище, що відповідає європейським стандартам.',
+        cardboard_title: 'Картонна та паперова промисловість:',
+        cardboard: 'УФ-смоли, ПВА дисперсії та клеї на основі полівінілу широко застосовуються в цій галузі. ' +
+                    'Ця продукція в основному використовується для просочення паперу, також для виготовлення ' +
+                    'пакувальних матеріалів, картону, гофрованого картону, картонних гільз та кутників, паперових ' +
+                    'мішків та багатьох інших виробів.',
+        light_title: 'Легка промисловість:',
+        light: 'У легкій промисловості широко використовують дисперсії ПВА для виробництва крохмальних речовин ' +
+                'для побутової хімії, а також як добавки при виробництві різних видів тканини та шкіри.\n'+
+                'Також розчини ПВС використовують при шліхтуванні ниток.\n',
+        construction_title: 'Будівельна галузь:',
+        construction: 'У будівництві широко застосовуються ПВА-дисперсії, як сполучні речовини при виробництві ' +
+                      'полімерних виробів, полімербетону, шпаклівок, грунтівок та інших будівельних сумішей. ' +
+                      'Карбамідоформальдегідні смоли використовуються в утворені утеплювача піноізол.',
+        paint_title: 'Лакофарбова промисловість:',
+        paint: 'В лакофарбовій промисловості широко використовують дисперсію ПВА, в основному, як сполучну речовину ' +
+                'у виробництві фарб на водній основі, шпаклівки, штукатурки та інших матеріалів.'
+      },
+    };
+
+  h2 #{texts[lang].title}
+
+  table.mb-5
+    tbody
+      tr
+        td.pt-4
+          img.d-block(
+            src="../static/img/Industry-1.svg",
+            alt="Industry",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4.pt-4
+          div.h5 #{texts[lang].woodworking_title}
+          div #{texts[lang].woodworking}
+      tr
+        td.pt-4
+          img.d-block(
+            src="../static/img/Industry-2.svg",
+            alt="Industry",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4.pt-4
+          div.h5 #{texts[lang].cardboard_title}
+          div #{texts[lang].cardboard}
+      tr
+        td.pt-4
+          img.d-block(
+            src="../static/img/Industry-3.svg",
+            alt="Industry",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4.pt-4
+          div.h5 #{texts[lang].light_title}
+          div #{texts[lang].light}
+      tr
+        td.pt-4
+          img.d-block(
+            src="../static/img/Industry-4.svg",
+            alt="Industry",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4.pt-4
+          div.h5 #{texts[lang].construction_title}
+          div #{texts[lang].construction}
+      tr
+        td.pt-4
+          img.d-block(
+            src="../static/img/Industry-5.svg",
+            alt="Industry",
+            height="60px",
+            width="60px"
+          )
+        td.pl-4.pt-4
+          div.h5 #{texts[lang].paint_title}
+          div #{texts[lang].paint}

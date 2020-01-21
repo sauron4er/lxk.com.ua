@@ -1,0 +1,84 @@
+html
+  head
+    meta(charset="UTF-8")
+    link(rel='shortcut icon' type='image/x-icon' href='../static/img/favicon.ico')
+    block title
+      title Perechin timber and chemical plant
+
+    link(rel="stylesheet", href="../static/css/styles.css")
+    link(
+      rel="stylesheet",
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+      crossorigin="anonymous"
+    )
+    link(
+      rel="stylesheet",
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    )
+
+    block links
+
+    script(
+      src="https://code.jquery.com/jquery-3.4.1.min.js",
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=",
+      crossorigin="anonymous"
+    )
+    script(
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl",
+      crossorigin="anonymous"
+    )
+    script(src='https://kit.fontawesome.com/a6abaa0ae7.js')
+
+    block scripts
+    block meta
+
+  body
+    .sticky-top
+      .bg-white.d-flex.pt-3.pb-2.mx-5.justify-content-between
+        img(src="../static/img/logo.png", alt="logo", width="35", height="27")
+        .d-flex.justify-content-between
+          .d-flex
+            a.mr-2.css_flag(href="../en/index.html")
+              img(
+                src="../static/img/united-kingdom.png",
+                alt="english",
+                width="20",
+                height="20"
+              )
+            a.mr-2.css_flag(href="../de/index.html")
+              img(
+                src="../static/img/germany.png",
+                alt="german",
+                width="20",
+                height="20"
+              )
+            a.mr-2.css_flag(href="../fr/index.html")
+              img(
+                src="../static/img/france.png",
+                alt="france",
+                width="20",
+                height="20"
+              )
+            a.mr-2.css_flag(href="../ua/index.html")
+              img(
+                src="../static/img/ukraine.png",
+                alt="ukrainian",
+                width="20",
+                height="20"
+              )
+            a.mr-2.css_flag(href="../ru/index.html")
+              img(
+                src="../static/img/russia.png",
+                alt="russian",
+                width="20",
+                height="20"
+              )
+      block header
+
+    main.container.my-3
+      block content
+
+    block footer
+

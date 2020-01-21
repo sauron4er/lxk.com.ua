@@ -1,0 +1,91 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        back_to: 'Back to "Charcoal for grilling"',
+        title: 'DISPOSABLE GRILLS',
+        paragraphs: [
+          'Intended for single-time use for cooking meat, fish, poultry and\n'+
+          '            vegetables.',
+          'Ready for grilling in 20 minutes.',
+          'Origin: Europe.',
+          'Raw material: 100% Hardwood',
+          'Country of origin: Ukraine',
+        ],
+        images_title: 'Images of Charcoal Briquettes'
+      },
+      de: {
+        back_to: 'Zurück zu "Grillholzkohleproduktion"',
+        title: 'EINWEGGRILLS',
+        paragraphs: [
+          'Geeignet für die einmalige Nutzung zum Grillen von Fleisch, Fisch,\n'+
+          '            Geflügel und Gemüse.',
+          'Innerhalb von 20 Minuten bereit zum Grillen.',
+          'Ursprungsland: Europa.',
+          'Rohstoff: 100% hartes Holz',
+          'Ursprungsland: Ukraine',
+        ],
+
+        images_title: ''
+      },
+      fr: {
+        back_to: 'De retour à "Charbon de bois pour la grille"',
+        title: 'GRILLES A USAGE UNIQUE',
+        paragraphs: [
+          'Destinées à usage unique pour préparer la viande, le poisson, le\n'+
+          '            poulet et les légumes.',
+          'Prêtes pour le grillage pendant 20 minutes.',
+          'Proviennent de l`Europe.',
+          'Les matières brutes: 100% du bois dur',
+          'Proviennent de l`Ukraine.',
+        ],
+        images_title: 'Image du charbon de bois'
+        },
+      ua: {
+        back_to: 'Повернутися до "Продукція для грилювання"',
+        title: 'ОДНОРАЗОВІ ГРИЛІ',
+        paragraphs: [
+          'Призначений для одноразового використання, приготування м’яса, риби, птиці і овочів.',
+          'Готовий до грилювання вже через 20 хвилин.',
+          'Сировина: 100% тверді породи дерева.',
+          'Країна походження: Україна',
+        ],
+        images_title: ''
+        },
+      ru: {
+        back_to: 'Вернуться на страницу "Продукция для гриллинга"',
+        title: 'ОДНОРАЗОВЫЙ ГРИЛЬ',
+        paragraphs: [
+          'Предназначен для одноразового использования, приготовления мяса, рыбы, птицы и овощей.',
+          'Готов для барбекю уже через 20 минут.',
+          'Сырье: 100% твердые породы дерева.',
+          'Страна происхождения: Украина',
+        ],
+        images_title: ''
+      }
+    };
+    
+  a.text-warning(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].back_to}
+  h2 #{texts[lang].title}
+  .row.mt-4
+    .col-6
+      .d-flex.align-content-center.mb-5
+        img.mx-auto(
+          src="../static/img/Disposable_Grills_2_new.jpg",
+          alt=""
+        )
+    .col-6
+      each p in texts[lang].paragraphs
+        div #{p}
+      br
+      img(src="../static/img/Briquettes_icons_new.jpg", alt="")
+  h6 #{texts[lang].images_title}
+  .d-flex.justify-content-center
+    img.img-fluid.mr-5(
+      src="../static/img/Disposable_Grills_pic_1-2.jpg",
+      alt="disposable grills 1"
+    )
+    img.img-fluid(
+      src="../static/img/Disposable_Grills_pic_2.jpg",
+      alt="disposable grills 2"
+    )

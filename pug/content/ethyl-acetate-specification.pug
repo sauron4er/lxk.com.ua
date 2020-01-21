@@ -1,0 +1,138 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Ethyl Acetate specification',
+        table_head: [
+          'Parameter',
+          'Value',
+          'In fact',
+          'Test Method'
+        ],
+        table_rows: [
+          [
+            '1. Appearance',
+            'Clear colorless liquid free from matter in suspension',
+            'Corresponds',
+            'ASTM D2090'
+          ],
+          [
+            '2. Colour, Hazen units',
+            '10 max.',
+            '<5',
+            'ASTM D1209-00'
+          ],
+          [
+            '3. Density at 20°C, g/cm<sup>3</sup>',
+            '0.899 – 0.901',
+            '0.900',
+            'ASTM D4052-96'
+          ],
+          [
+            '4. Ethyl Acetate, % mass',
+            '99.92 min.',
+            '99.96',
+            'By chromatogr. GC method'
+          ],
+          [
+            '5. Acidity (as Acetic Acid), % mass',
+            '0.004 max.',
+            '0.003',
+            'ASTM D1613-96'
+          ],
+          [
+            '6. Residue on evaporation, % mass',
+            '0.001 max.',
+            'Corresponds',
+            'ASTM D1353-96'
+          ],
+          [
+            '7. Water, % mass',
+            '0.03 max.',
+            '0.008',
+            'K.Fisher method'
+          ],
+          [
+            '8. Ethanol, % mass',
+            '0.02 max.',
+            '0.002',
+            'By chromatogr. GC method'
+          ],
+        ],
+      },
+      ua: {
+        title: 'Технічні характеристики',
+        table_head: [
+          'Параметр',
+          'Норма',
+          'Фактичне значення',
+          'Метод тестування'
+        ],
+        table_rows: [
+          [
+            '1. Зовнішній вигляд',
+            'Прозора безбарвна рідина без механічних домішок',
+            'Відповідає',
+            'ASTM D2090'
+          ],
+          [
+            '2. Колір, Одиниці Хазена',
+            '10 макс.',
+            '<5',
+            'ASTM D1209-00'
+          ],
+          [
+            '3. Густина при 20°C, г/см<sup>3</sup>',
+            '0.899 – 0.901',
+            '0.900',
+            'ASTM D4052-96'
+          ],
+          [
+            '4. Етилацетат, % маса',
+            '99.92 мін.',
+            '99.96',
+            'Хроматографіч. GC method'
+          ],
+          [
+            '5. Кислотність (як оцтова кислота), % маса',
+            '0.004 макс.',
+            '0.003',
+            'ASTM D1613-96'
+          ],
+          [
+            '6. Залишки від випаровування, % маса',
+            '0.001 макс.',
+            'Відповідає',
+            'ASTM D1353-96'
+          ],
+          [
+            '7. Вода, % маса',
+            '0.03 макс.',
+            '0.008',
+            'Метод К.Фішера'
+          ],
+          [
+            '8. Ethanol, % mass',
+            '0.02 max.',
+            '0.002',
+            'Хроматографіч. GC method'
+          ],
+        ],
+      }
+    };
+
+  h2 #{texts[lang].title}
+  .row.mt-4
+    .col-3
+      img(src="../static/img/ethyl-acetate-specification.jpg", alt="")
+    .col-9
+      table.table.table-striped
+        thead.thead-light
+          tr
+            each th in texts[lang].table_head
+              th #{th}
+        tbody
+          each row in texts[lang].table_rows
+            tr
+              each td in row
+                td !{td}

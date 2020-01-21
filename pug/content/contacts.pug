@@ -1,0 +1,228 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        contacts_title: 'CONTACTS',
+        contacts: [
+          '25, Uzhans’ka st., Perechin,',
+          'Zakarpatska region,',
+          'Ukraine, 89200',
+          '',
+          'Tel./fax: +38 (03145) 2-31-68,',
+          '+38 (03145) 2-32-77',
+          '',
+          'e-mail: sales@lxk.com.ua',
+        ],
+        title: 'FEEDBACK',
+        name: 'Your Name (required)',
+        email: 'Your Email (required)',
+        message: 'Your Message',
+        send: 'Send'
+      },
+      de: {
+        contacts_title: 'КONTAKT',
+        contacts: [
+        '89200, Ukraine,',
+        'Gebiet Transkarpatien,',
+        'Stadt Peretschyn, Ushanska Str. 25',
+        '',
+        'Tel./fax: +38 (03145) 2-31-68,',
+        '+38 (03145) 2-32-77',
+        '',
+        'e-mail: sales@lxk.com.ua',
+        ],
+        title: 'RÜCKMELDUNG',
+        name: 'Name (erforderlich)',
+        email: 'Email (erforderlich)',
+        message: 'Nachricht',
+        send: 'Senden'
+      },
+      fr: {
+        contacts_title: 'NOS COORDONNEES',
+        contacts: [
+        '25, rue Uzhanska, Peretchyn,',
+        'région de Transcarpatie,',
+        'Ukraine, 89200',
+        '',
+        'Tel./fax: +38 (03145) 2-31-68,',
+        '+38 (03145) 2-32-77',
+        '',
+        'e-mail: sales@lxk.com.ua',
+        ],
+        title: 'COMMENTAIRES',
+        name: 'Votre Nom (obligatoire)',
+        email: 'Votre Email (obligatoire)',
+        message: 'Votre Message',
+        send: 'Envoyer'
+      },
+      ua: {
+        contacts_title: 'КОНТАКТИ',
+        contacts: [
+        '89200, Україна, Закарпатська обл.,',
+        'Перечин, вул.Ужанська, 25',
+        '',
+        'Тел./факс:',
+        '+38 (03145) 2-31-68,',
+        '+38 (03145) 2-32-77',
+        '',
+        'Відділ кадрів: +38 (03145) 2-32-68',
+        '',
+        'Відділ реалізації:',
+        'Етилацетата: +38 (03145) 2-30-67',
+        'КФС: +38 (067) 312-70-13, +38 (03145) 2-32-38',
+        '',
+        'Постачання: +38 (03145) 2-32-76',
+        '',
+        'e-mail: sales@lxk.com.ua',
+        ],
+        title: 'ЗВОРОТНІЙ ЗВ’ЯЗОК',
+        name: 'Ваше ім’я (обов\'язково)',
+        email: 'Ваш Email (обов\'язково)',
+        message: 'Ваше повідомлення',
+        send: 'Відправити'
+      },
+      ru: {
+        contacts_title: 'КОНТАКТЫ',
+        contacts: [
+        '89200, Украина, Закарпатская обл.,',
+        'Перечин, ул.Ужанская, 25',
+        '',
+        'Тел./факс:',
+        '+38 (03145) 2-31-68, +38 (03145) 2-32-77',
+        '',
+        'Отдел кадров: +38 (03145) 2-32-68',
+        '',
+        'Отдел реализации:',
+        'Этилацетата: +38 (03145) 2-30-67',
+        'КФС: +38 (067) 312-70-13, +38 (03145) 2-32-38',
+        '',
+        'Снабжение: +38 (03145) 2-32-76',
+        '',
+        'e-mail: sales@lxk.com.ua',
+        ],
+        title: 'ФОРМА ОБРАТНОЙ СВЯЗИ',
+        name: 'Ваше имя (обязательно)',
+        email: 'Ваш Email (обязательно)',
+        message: 'Ваше сообщение',
+        send: 'Отправить',
+      }
+    };
+
+  script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js')
+
+  script(type='text/javascript').
+    (function () {
+      emailjs.init("user_VtUnf7Z9wiMI4EBTRir0R");
+    })();
+
+  script(type='text/javascript').
+    window.onload = function () {
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          // generate the contact number value
+          this.contact_number.value = (Math.random() * 100000) | 0;
+          if (validateContactForm()) {
+            emailjs
+              .sendForm("default_service", "template_Xs0x8254", this)
+              .then(response => {
+                $("#userName").val("");
+                $("#userEmail").val("");
+                $("#content").val("");
+                $("#sendInfo").html("");
+              });
+          }
+        });
+      };
+
+  script(type='text/javascript').
+    function validateContactForm() {
+      let valid = true;
+      $(".info").html("");
+      $(".input-field").css("border", "#e0dfdf 1px solid");
+      const userName = $("#userName").val();
+      const userEmail = $("#userEmail").val();
+      if (userName == "") {
+        $("#userName-info").html("Required.");
+        $("#userName").css("border", "#e66262 1px solid");
+        valid = false;
+      }
+      if (userEmail == "") {
+        $("#userEmail-info").html("Required.");
+        $("#userEmail").css("border", "#e66262 1px solid");
+        valid = false;
+      }
+      if (!userEmail.match(/^([\\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#userEmail-info").html("Invalid Email Address.");
+        $("#userEmail").css("border", "#e66262 1px solid");
+        valid = false;
+      }
+      return valid;
+    }
+
+  .row.justify-content-center
+    img(src='../static/img/5_Baner_Contacts.jpg' alt='')
+  .row
+    .col-4
+      h2.mt-5.text-left #{texts[lang].contacts_title}
+      each c in texts[lang].contacts
+        if c.length > 0
+          div #{c}
+        else
+          br
+    .col-8
+      h2.mt-5.text-left #{texts[lang].title}
+      .css_form.mb-3
+        .form-container
+          form#contact-form
+            input(type='hidden' name='contact_number')
+            .input-row
+              label(style='padding-top: 20px;') #{texts[lang].name}
+              span#userName-info.info
+              br
+              input#userName.input-field(type='text' name='userName')
+            .input-row
+              label #{texts[lang].email}
+              span#userEmail-info.info
+              br
+              input#userEmail.input-field(type='text' name='userEmail')
+            .input-row.mb-2
+              label #{texts[lang].message}
+              span#userMessage-info.info
+              br
+              textarea#content.input-field(name='content' cols='60' rows='4')
+            .d-flex
+              input.btn-submit(type='submit' name='send' value=texts[lang].send)
+              span#sendInfo.ml-auto
+              #statusMessage
+                p.echo(class='<?php $type; ?>Message')
+  .d-flex.align-content-center.mb-5
+    img.mx-auto(src='../static/img/Map_Ukraine_small.jpg' alt='')
+
+  | <script type="text/javascript">
+  |   function validateContactForm() {
+  |     let valid = true;
+  |     $(".info").html("");
+  |     $(".input-field").css("border", "#e0dfdf 1px solid");
+  |     const userName = $("#userName").val();
+  |     const userEmail = $("#userEmail").val();
+  |     // const content = $("#content").val();
+  |     if (userName == "") {
+  |       $("#userName-info").html("Required.");
+  |       $("#userName").css("border", "#e66262 1px solid");
+  |       valid = false;
+  |     }
+  |     if (userEmail == "") {
+  |       $("#userEmail-info").html("Required.");
+  |       $("#userEmail").css("border", "#e66262 1px solid");
+  |       valid = false;
+  |     }
+  |     if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+  |       $("#userEmail-info").html("Invalid Email Address.");
+  |       $("#userEmail").css("border", "#e66262 1px solid");
+  |       valid = false;
+  |     }
+  |     return valid;
+  |   }
+  | </script>

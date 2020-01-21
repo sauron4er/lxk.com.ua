@@ -1,0 +1,17 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Our certificates',
+      },
+      ua: {
+        title: 'Наші сертифікати',
+      }
+    };
+
+  h2 #{texts[lang].title}
+  .row.mt-4
+    .col-6.text-center
+      img.mx-auto(src="../static/img/our-certificates-1.jpg", alt="")
+    .col-6.text-center
+      img.mx-auto(src="../static/img/our-certificates-2.jpg", alt="")

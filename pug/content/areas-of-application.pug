@@ -1,0 +1,79 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Areas of application',
+        text: [
+          [
+            {style: 'bold', text: 'Printing. '},
+            {style: 'plain', text: 'Ethyl acetate is used as a solvent for typographical paints ' +
+                                    'and varnishes - effective means, actively used in the printing ' +
+                                    'industry, for the production of packaging, self-adhesive labels, ' +
+                                    'tags, stickers, and other types of flexible packaging.'},
+          ],
+          [
+            {style: 'bold', text: 'Paints and varnishes. '},
+            {style: 'plain', text: 'Ethyl acetate is used most widely as a solvent in the manufacture ' +
+                                    'of paints and lacquers, as well as cellulose nitrate, cellulose ' +
+                                    'acetate, fats, waxes.'},
+          ],
+          [
+            {style: 'bold', text: 'Pharmaceutical. '},
+            {style: 'plain', text: 'Ethyl acetate is used in the production of anti-inflammatory drugs ' +
+                                    'and pain medication number, drug allergies and intestinal disorders. ' +
+                                    'In the laboratory using ethyl acetate for column and thin layer ' +
+                                    'chromatography.'},
+          ],
+          [
+            {style: 'plain', text: 'Other industries are '},
+            {style: 'bold', text: 'Food, Electronics, Cosmetics, Footwear.'},
+          ],
+        ]
+      },
+      ua: {
+        title: 'Сфери застосування',
+        text: [
+          [
+            {style: 'bold', text: 'Друк. '},
+            {style: 'plain', text: 'Етилацетат використовується як розчинник для типографічних фарб та ' +
+                                    'лаків - ефективних засобів, що активно застосовуються у ' +
+                                    'поліграфічній промисловості, для виготовлення упаковки, ' +
+                                    'самоклеючих етикеток, бирок, наклейок та інших видів гнучкої упаковки.'
+            },
+          ],
+          [
+            {style: 'bold', text: 'Фарби та лаки. '},
+            {style: 'plain', text: 'Етилацетат найбільш широко використовується як розчинник при ' +
+                                    'виробництві фарб та лаків, а також нітрату целюлози, ' +
+                                    'ацетату целюлози, жирів, воску.'
+            },
+          ],
+          [
+            {style: 'bold', text: 'Фармацевтична. '},
+            {style: 'plain', text: 'Етилацетат застосовують у виробництві протизапальних препаратів, ' +
+                                    'знеболюючих та протиалергійних ліків, препаратів для усунення ' +
+                                    'кишкових розладів. У лабораторії використовують етилацетат для ' +
+                                    'колонкової та тонкошарової хроматографії.'
+            },
+          ],
+          [
+            {style: 'plain', text: 'Інші галузі промисловості - це '},
+            {style: 'bold', text: 'харчова промисловість, електроніка, косметична, виготовлення взуття.'},
+          ],
+        ]
+      }
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/areas-of-application.jpg",
+    alt="Ethyl acetate"
+  )
+  h2 #{texts[lang].title}
+  .mb-5
+    each p in texts[lang].text
+      p
+        each span in p
+          if (span.style === 'bold')
+            span.font-weight-bold #{span.text}
+          else
+            span #{span.text}

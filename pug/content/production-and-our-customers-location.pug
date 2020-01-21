@@ -1,0 +1,14 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Production and our customer’s location\n',
+      },
+      ua: {
+        title: 'Місцезнаходження та геграфія поставки продукції\n',
+      }
+    };
+
+  h2 #{texts[lang].title}
+  .row.mt-4
+    img.mx-auto(src="../static/img/production-and-our-customers-location.jpg", alt="")

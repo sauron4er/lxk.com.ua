@@ -1,0 +1,133 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'LOGISTICS',
+        text: [
+          'Geographically our plant is located in Perechin, a town sat in the\n'+
+          '              heart of the Carpathian Mountains, Ukraine.',
+          'Strategically, Perechin has a very favourable location; it is only\n'+
+          '              20 km away from the Slovakian border, 50 km from the Hungarian\n'+
+          '              border and 150 km from the Polish border. Such proximity enables\n'+
+          '              us to meet the demand of our European customers in the fastest and\n'+
+          '              best possible way. This advantage, in fact, is easily implemented\n'+
+          '              by using our new warehouses in Europe.'
+        ],
+        warehouses_title: 'Warehouses:',
+        warehouses: [
+          'Budapest',
+          'Bratislava',
+          'Slawkow',
+          'Saarbrucken',
+          'Vaxjo',
+          'Padborg',
+        ]
+      },
+      de: {
+        title: 'LOGISTIK',
+        text: [
+          'Geographisch befindet sich unser Kombinat in Peretschyn, einer\n'+
+          '              Stadt im Zentrum der Karpaten, in der Ukraine.',
+          'Strategisch hat Peretschyn eine sehr bequeme Lage; sie befindet\n'+
+          '              sich nur 20 kм von der slowakischen Grenze, 50 kм von der\n'+
+          '              ungarischen Grenze und nur 150 km von der polnischen Grenze\n'+
+          '              entfernt. Eine solche Nähe ermöglicht uns die Bedürfnisse unserer\n'+
+          '              europäischen Partner am schnellsten und am besten zu befriedigen.\n'+
+          '              Dieser Vorteil ist real leicht realisierbar mit Hilfe von unseren\n'+
+          '              neuen Lagerräumlichkeiten in Europa.'
+        ],
+        warehouses_title: 'Lagerräumlichkeiten:',
+        warehouses: [
+        'Budapest',
+        'Bratislawa',
+        'Sławków',
+        'Saarbrücken',
+        'Växjö',
+        'Padborg',
+        ]
+      },
+      fr: {
+        title: 'LOGISTIQUE',
+        text: [
+        'Notre combinat est situé géographiquement à Peretchyn, dans la\n'+
+        '              ville qui se trouve au cœur des Carpates, en Ukraine.',
+        'Peretchyn est très bien située stratégiquement à 20 km de la\n'+
+        '              frontière slovaque, à 50 km de la frontière hongroise et à 150 km\n'+
+        '              de la frontière polonaise. La proximité pareille nous permet de\n'+
+        '              satisfaire aux besoins de nos clients européens le mieux et le\n'+
+        '              plus vite possible. Cet avantage, à vrai dire, est réalisé\n'+
+        '              facilement à l`aide de nos nouveaux entrepôts en Europe.'
+        ],
+        warehouses_title: 'ENTREPOTS:',
+        warehouses: [
+        'Budapest',
+        'Bratislava',
+        'Sławkow',
+        'Sarrebruck',
+        'Växjö',
+        'Padborg',
+        ]
+      },
+      ua: {
+        title: 'ЛОГІСТИКА',
+        text: [
+        'Географічно наш завод розташований в Перечині, місто розташоване в\n'+
+        '              самому серці Карпатських гір, Україна.',
+        'Стратегічно, Перечин має дуже вигідне розташування, він\n'+
+        '              знаходиться всього за 20 км від словацького кордону, 50 км від\n'+
+        '              угорського кордону і за 150 км від польського кордону. Таке\n'+
+        '              географічне розташування дозволяє нам задовольнити потреби наших\n'+
+        '              європейських клієнтів найшвидшим і найкращим чином, це легко\n'+
+        '              реалізовується за допомогою складів наших клієнтів в Європі.'
+        ],
+        warehouses_title: 'Склади:',
+        warehouses: [
+        'Будапешт',
+        'Братислава',
+        'Славкув',
+        'Саарбрюкен',
+        'Векше',
+        'Падборг',
+        ]
+      },
+      ru: {
+        title: 'ЛОГИСТИКА',
+        text: [
+        'Географически наш завод расположен в Перечине, город расположен в\n'+
+        '              самом сердце Карпатских гор, Украина.',
+        'Стратегически, Перечин имеет очень выгодное расположение, он\n'+
+        '              находится всего в 20 км от словацкой границы, 50 км от венгерской\n'+
+        '              границы и в 150 км от польской границы. Такое географическое\n'+
+        '              положение позволяет нам удовлетворить потребности наших\n'+
+        '              европейских клиентов быстрым и лучшим образом, это легко\n'+
+        '              реализуется с помощью складов наших клиентов в Европе.'
+        ],
+        warehouses_title: 'Склады:',
+        warehouses: [
+        'Будапешт',
+        'Братислава',
+        'Славков',
+        'Саарбрюкен',
+        'Векше',
+        'Падборг',
+        ]
+      }
+    };
+    
+  .row.justify-content-center.mb-4
+    img(src='../static/img/3_Baner_Logistics.jpg' alt='')
+  h2.mt-5 #{texts[lang].title}
+  .container
+    .row
+      .col-3
+        .d-flex.align-content-center.mb-5
+          img.mx-auto(src='../static/img/Icon_Logistics.png' alt='')
+        h5 #{texts[lang].warehouses_title}
+        ul.fa-ul
+          each warehouse in texts[lang].warehouses
+            li #{warehouse}
+      .col-9
+        each p in texts[lang].text
+          p #{p}
+        img.mb-5(src='../static/img/Map_small.jpg' alt='')
+

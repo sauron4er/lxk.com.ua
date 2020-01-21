@@ -1,0 +1,355 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        history: 'HISTORY',
+        first_sentence: 'Perechin Timber-Chemical Plant – Evolution over time',
+        slide_1_title: '1914',
+        slide_1_text_bold: 'The Perechin Timber and Chemical Plant OJSV was founded.',
+        slide_1_text: 'It was owned by an Austrian-Hungarian joint-stock company\n'+
+        ' BANTLIN, which produced mainly charcoal, acetic acid and other\n'+
+        ' products from beech wood.',
+        slide_2_title: '1920s-30s',
+        slide_2_text_bold: 'Several reconstruction projects were carried out during 1922\n'+
+        '                  and 1923.',
+        slide_2_text: 'For example, the conversion of all equipment into electricity\n'+
+        '                  powered. This has greatly expanded the plant’s capacities and\n'+
+        '                  brought it to a golden age. However, world economic crisis in\n'+
+        '                  1929 had hit PTCP badly – forcing it to lay off workers and\n'+
+        '                  even leading to temporary lockout.',
+        slide_3_title: 'Post WWII',
+        slide_3_text_bold: 'Installation of new equipment and production reorganization had brought PTCP to a fast recovery after the war.',
+        slide_3_text: 'In 1957 the production of urea-formaldehyde resins began. In 1962, a permanent working retort, the second in the USSR, began to operate.',
+        slide_4_title: '1970s and 80s',
+        slide_4_text_bold: 'A new retort and a steam boiler-house were installed and started operating.',
+        slide_4_text: 'Some important developments in this period include: the\n'+
+        '                  conversion of all equipment into gas powered, introduction of carbamide resin and building of a new ethyl\n'+
+        '                    acetate workshop which was equipped with advanced\n'+
+        '                    technology.',
+        slide_5_title: '1990s',
+        slide_5_text_bold: '1993-97 marks the most difficult period in the plant’s history.',
+        slide_5_text: 'Unstable situation in former USSR has drastically hit\n'+
+        '                    Ukrainian economy which in a fortnight has brought it to a steep dive. No\n'+
+        '                  business can escape economic slowdown, neither can PTCP. While\n'+
+        '                  production of ethyl acetate and charcoal fell sharply,\n'+
+        '                  urea-formaldehyde resins production came to a haul.',
+        slide_6_title: '1998',
+        slide_6_text_bold: 'This year marks the entrance of PTCP’s present holder, the POLYPROM GROUP Ltd, into the scene.',
+        slide_6_text: 'During the privatization process, The Polyprom Group Ltd.\n'+
+        '                  purchased controlling shares of the plant and became its\n'+
+        '                  dominant holder. New ideas and directions were introduced and\n'+
+        '                  brought PTCP to the state we can observe today.',
+        slide_7_title: '2004',
+        slide_7_text: 'A second vertical retort came into operation. It has increased our charcoal production capacity to 25 000 tons a year.',
+        slide_8_title: '2008',
+        slide_8_text: 'The plant was certified with ISO 9001:2000.',
+      },
+      de: {
+        history: 'GESCHICHTE',
+        first_sentence: 'Peretschyn Forstchemisches Kombinat – Chronolgie der Entwicklung',
+        slide_1_title: '1914',
+        slide_1_text_bold: 'VAT “Peretschyn Forstchemisches Kombinat“ wurde gegründet',
+        slide_1_text: 'Das Kombinat war im Besitz der österreich-ungarischen Firma\n'+
+        '                  BANTLIN, welche hauptsächlich Holzkohle, Essigsäure und andere\n'+
+        '                  Produkte aus Buche hergestellt hat.',
+        slide_2_title: 'Die Jahre1920 bis 1939',
+        slide_2_text_bold: 'Zwischen 1922 und 1923 wurden einige Modernisierungs-Projekte durchgeführt',
+        slide_2_text: 'Zum Beispiel, Umstellung der kompletten Anlagen auf\n'+
+        '                  elektrischen Betrieb. Dadurch konnte die Kapazität des\n'+
+        '                  gesamten Kombinats wesentlich erhöht werden und markierte den\n'+
+        '                  Beginn einer goldenen Ära. Die Weltwirtschaftskrise 1929 hat\n'+
+        '                  allerdings dem Peretschyn Forstchemisches Kombinat einen\n'+
+        '                  großen Schaden zugefügt und zwang das Unternehmen dazu,\n'+
+        '                  Mitarbeiter zu entlassen. Temporär musste das Kombinat sogar\n'+
+        '                  komplett stillgelegt werden.',
+        slide_3_title: 'Nach dem zweiten Weltkrieg',
+        slide_3_text_bold: 'Die Montage neuer Anlagen und die Reorganisation der\n'+
+        '                  Produktionsabläufe haben nach Kriegsende zu einer schnellen\n'+
+        '                  Erneuerung des Peretschyn Forstchemisches Kombinats geführt.',
+        slide_3_text: '1957 begann man mit der Herstellung von\n'+
+        '                  Harnstoff-Formaldehydharz. 1962 wurde mit dem Betrieb zur\n'+
+        '                  kontinuierlichen Gaserzeugung aus Kohle begonnen, als zweiter\n'+
+        '                  Standort in der UdSSR.',
+        slide_4_title: 'Die Jahre 1970 bis 1989',
+        slide_4_text_bold: 'Die Anlagen zur Gaserzeugung aus Kohle sowie der Dampfheizraum\n'+
+        '                  wurden installiert und in Betrieb genommen.',
+        slide_4_text: 'Die wichtigsten Ereignisse in diesem Zeitraum waren:\n'+
+        '                  Umstellung der gesamten Anlagen auf Gas, Einführung des Harnstoffharzes und der Bau einer neuen\n'+
+        '                    Produktionsabteilung von Ethylacetat, welche mit modernsten\n'+
+        '                    Technologien ausgerüstet wurde.',
+        slide_5_title: 'Die Jahre 1990 bis 1997',
+        slide_5_text_bold: 'Die Jahre 1993 bis 1997 stellen die schwerste Periode in der Geschichte des Kombinats dar.',
+        slide_5_text: 'Die instabile Situation in der ehemaligen UdSSR hat die\n'+
+        '                    ukrainische Wirtschaft stark beinflusst, welche innerhalb von zwei Wochen zu einer tiefen Rezession\n'+
+        '                  geführt hat. Kein einziges Unternehmen konnte sich der\n'+
+        '                  Verzögerung des Wirtschaftswachstums entziehen, auch nicht das\n'+
+        '                  Peretschyn Forstchemisches Kombinat. Zu der Zeit, als die\n'+
+        '                  Produktion des Ethylacetats und der Holzkohle stark gefallen\n'+
+        '                  ist, ist die Produktion von Harnstoff-Formaldehydharz total\n'+
+        '                  zurückgegangen.',
+        slide_6_title: '1998',
+        slide_6_text_bold: 'Dieses Jahr zeichnet sich durch das Auftreten des jetzigen\n'+
+        '                  Eigentümers des Peretschyn Forstchemisches Kombinats, der\n'+
+        '                  “POLYPROM Gruppe” GmbH, aus.',
+        slide_6_text: 'Im Verlauf der Privatisierung hat die “Polyprom Gruppe” GmbH\n'+
+        '                  ein Aktienkontrollpaket des Unternehmens erworben und wurde\n'+
+        '                  damit sein Haupteigentümer. Es wurden neue Ideen und\n'+
+        '                  Geschäftsfelder entwickelt, welche das Peretschyn\n'+
+        '                  Forstchemisches Kombinat auf das Niveau gebracht haben,\n'+
+        '                  welches wir heute beobachten können.',
+        slide_7_title: '2004',
+        slide_7_text: 'Es wurde eine zweite vertikale Retorte in Betrieb genommen.\n'+
+        '                  Diese hat unsere Kapazitäten in der Herstellung von Holzkohle\n'+
+        '                  auf bis zu 25 000 Tonnen pro Jahr erhöht.',
+        slide_8_title: '2008',
+        slide_8_text: 'Das Werk wurde gemäß ISO 9001: 2000 zertifiziert.',
+      },
+      fr: {
+        history: 'HISTOIRE',
+        first_sentence: 'Combinat chimique de transformation du bois Peretchyn – Evolution au fil du temps',
+        slide_1_title: '1914',
+        slide_1_text_bold: 'Fondation de la société anonyme ouverte «Combinat chimique de transformation du bois Peretchyn»',
+        slide_1_text: 'Il appartenait à la société anonyme autrichienne – hongroise\n'+
+        '                  BANTLIN, qui produisait en général le charbon de bois, l’acide\n'+
+        '                  acétique et d`autres produits du bois de hêtre.',
+        slide_2_title: 'Les années 1920-30',
+        slide_2_text_bold: 'Pendant les années 1922 et 1923 quelques projets de reconstruction ont été réalisés.',
+        slide_2_text: 'Par exemple le transfert de tout l`équipement à l`alimentation\n'+
+        '                  électrique ce qui a beaucoup élargi la puissance du combinat,\n'+
+        '                  c`était son âge d`or. Mais la crise économique mondiale de\n'+
+        '                  1929 a causé les désavantages au combinat qui était obligé de\n'+
+        '                  licencier les ouvriers et même de suspendre la fabrication.',
+        slide_3_title: 'APRES LA DEUXIEME GUERRE MONDIALE',
+        slide_3_text_bold: 'Le montage du nouvel équipement et la réorganisation de la\n'+
+        '                  fabrication ont contribué au rétablissement rapide de\n'+
+        '                  l`entreprise après la guerre.',
+        slide_3_text: 'En 1957 on a lancé la production des résines Urée-Formol. En\n'+
+        '                  1962 on a commencé l`exploitation de la cornue permanente, la\n'+
+        '                  deuxième en URSS.',
+        slide_4_title: 'Les années 1970-80',
+        slide_4_text_bold: 'Les nouvelles cornue et chaudière à vapeur ont été installées et elles ont commencé à fonctionner.',
+        slide_4_text: 'Quelques événements importants de cette période sont: le\n'+
+        '                  transfert de tout l`équipement à l`alimentation du gaz, la\n'+
+        '                  mise en fabrication de la résine urée et la construction d`un\n'+
+        '                  nouvel atelier de l`acétate d’éthyle qui était équipé d`une\n'+
+        '                  technologie de pointe.',
+        slide_5_title: 'Les années 1990',
+        slide_5_text_bold: 'Les années 1993-97 constituent la période la plus dure dans\n'+
+        '                  l`histoire du combinat. La situation instable en ex-URSS a\n'+
+        '                  frappé brusquement l`industrie ukrainienne.',
+        slide_5_text: 'Pendant deux semaines le combinat a subi la chute\n'+
+        '                    profonde. Aucune entreprise ne peut éviter le ralentissement économique\n'+
+        '                  et le combinat aussi. Tandis que la production de l`acétate\n'+
+        '                  d’éthyle a baissé, la production des résines Urée-Formol a\n'+
+        '                  connu la croissance.',
+        slide_6_title: '1998',
+        slide_6_text_bold: 'Cette année est marquée par l`apparition sur scène du\n'+
+        '                  propriétaire actuel du Combinat chimique de transformation du\n'+
+        '                  bois Peretchyn représenté par LTD «GROUPE POLYPROM»',
+        slide_6_text: 'Au cours de la privatisation LTD «Groupe Polyprom» a acheté la\n'+
+        '                  participation majoritaire de la société et est devenue son\n'+
+        '                  propriétaire principal. De nouvelles idées et directions ont\n'+
+        '                  monté le Combinat chimique de transformation du bois Peretchyn\n'+
+        '                  représenté par au niveau actuel.',
+        slide_7_title: '2004',
+        slide_7_text: 'La mise en exploitation de la deuxième cornue verticale, ce\n'+
+        '                  qui a augmenté notre puissance dans la production du charbon\n'+
+        '                  de bois jusqu`à 25 000 tonnes par an.',
+        slide_8_title: '2008',
+        slide_8_text: 'L`usine était certifiée selon ISO 9001:2000.',
+      },
+      ua: {
+        history: 'ІСТОРІЯ ПІДПРИЄМСТВА',
+        first_sentence: 'Перечинський лісохімічний комбінат – розвиток з плином часу',
+        slide_1_title: '1914',
+        slide_1_text_bold: 'Перечинський лісохімічний комбінат ТДВ був заснований',
+        slide_1_text: 'Він належав до австро-угорської акціонерної компанії BANTLIN,\n'+
+        '                  яка виробляла вугілля, оцтову кислоту та інші продукти з\n'+
+        '                  букової деревини.',
+        slide_2_title: '1920-30 роки',
+        slide_2_text_bold: 'Кілька проектів по реконструкції були проведені протягом 1922 і 1923 рр.',
+        slide_2_text: 'Наприклад, переведення всього обладнання на\n'+
+        '                  електрозабезпечення. Це значно розширило можливості заводу і\n'+
+        '                  привело його до золотого віку. Проте, світова економічна криза\n'+
+        '                  в 1929 році сильно вдарила по ПЛХК – змусила звільняти\n'+
+        '                  робітників і навіть призвела до тимчасового простою\n'+
+        '                  виробництва.',
+        slide_3_title: 'Після Другої світової війни',
+        slide_3_text_bold: 'Встановлення нового обладнання та реорганізація виробництва\n'+
+        '                  привели ПЛХК до швидкого відновлення після війни.',
+        slide_3_text: 'У 1957 році виробництво карбамідо-формальдегідних смол було\n'+
+        '                  розпочато. У 1962 році реторти для виробництва деревного\n'+
+        '                  вугілля, другі у всьому СРСР, почали працювати.',
+        slide_4_title: '1970-ті та 80-ті роки',
+        slide_4_text_bold: 'Встановлено та запущено в роботу нову реторту і парову котельню.',
+        slide_4_text: 'Важливі події в цей період: переведення всього обладнання на\n'+
+        '                  газопостачання, введення карбамідних смол і будівництво нового\n'+
+        '                  етилацетатного цеху, оснащеного передовими технологіями.',
+        slide_5_title: '1990-ті роки',
+        slide_5_text_bold: '1993-97 найскладніший період в історії заводу.',
+        slide_5_text: 'Нестабільна ситуація в колишньому СРСР різко вдарила по\n'+
+        '                    українській економіці і на два тижні привела до простою. Жодне підприємство не\n'+
+        '                  змогло уникнути уповільнення економічного зростання, так само\n'+
+        '                  і ПЛХК. У той час як виробництво етилацетату і деревного\n'+
+        '                  вугілля різко впало, виробництво карбамідо-формальдегідних\n'+
+        '                  смол повністю зупинилося.',
+        slide_6_title: '1998',
+        slide_6_text_bold: 'Цей рік відзначається виходом на арену нинішнього власника\n'+
+        '                  ПЛХК, холдингу “Поліпром”.',
+        slide_6_text: 'В процесі приватизації Холдинг “Поліпром” придбав контрольний\n'+
+        '                  пакет акцій заводу і став його домінуючим власником. Нові ідеї\n'+
+        '                  і напрямки були введені і привели ПЛХК до стану, в якому ми\n'+
+        '                  можемо його бачити сьогодні.',
+        slide_7_title: '2004',
+        slide_7_text: 'Друга реторта була приведена в дію, що збільшило потужність\n'+
+        '                  виробництва деревного вугілля до 25 000 тонн на рік.',
+        slide_8_title: '2008',
+        slide_8_text: 'Завод було сертифіковано згідно ISO 9001: 2000.',
+      },
+      ru: {
+        history: 'ИСТОРИЯ',
+        first_sentence: 'Перечинский лесохимический комбинат – развитие с течением времени',
+        slide_1_title: '1914',
+        slide_1_text_bold: 'Перечинский лесохимический комбинат ОАО был основан',
+        slide_1_text: 'Он принадлежал к австро-венгерской акционерной компании\n'+
+        '                  BANTLIN, которая производила уголь, уксусную кислоту и другие\n'+
+        '                  продукты из буковой древесины.',
+        slide_2_title: '1920-30 годы',
+        slide_2_text_bold: 'Несколько проектов по реконструкции были проведены в течение\n'+
+        '                  1922 и 1923 годов.',
+        slide_2_text: 'Например, перевод всего оборудования на электроснабжение. Это\n'+
+        '                  значительно расширило возможности завода и привело его к\n'+
+        '                  золотому веку. Однако, мировой экономический кризис в 1929\n'+
+        '                  году сильно ударил по ПЛХК – заставил увольнять рабочих и даже\n'+
+        '                  привел к временному простою производства.',
+        slide_3_title: 'После Второй мировой войны',
+        slide_3_text_bold: 'Установка нового оборудования и реорганизация производства\n'+
+        '                  привели ПЛХК к быстрому восстановлению после войны.',
+        slide_3_text: 'В 1957 году было начато производство карбамидо-формальдегидных\n'+
+        '                  смол. В 1962 году начали работать реторты для производства\n'+
+        '                  древесного угля, вторые во всем СССР.',
+        slide_4_title: '1970е и 80е годы',
+        slide_4_text_bold: 'Установлено и запущено в работу новую реторту и паровую котельную.',
+        slide_4_text: 'Важные события в этот период: перевод всего оборудования на\n'+
+        '                  газоснабжение, введение карбамидных смол и строительство\n'+
+        '                  нового этилацетатного цеха, оснащенного передовыми\n'+
+        '                  технологиями.',
+        slide_5_title: '1990е годы',
+        slide_5_text_bold: '1993-97 годы сложный период в истории завода.',
+        slide_5_text: 'Нестабильная ситуация в бывшем СССР резко ударила по\n'+
+        '                    украинской экономике и на две недели привела к простою. Ни одно предприятие не\n'+
+        '                  смогло избежать замедления экономического роста, так же и\n'+
+        '                  ПЛХК. В то время, как производство этилацетата и древесного\n'+
+        '                  угля резко упало, производство карбамидо-формальдегидных смол\n'+
+        '                  полностью остановилось.',
+        slide_6_title: '1998',
+        slide_6_text_bold: 'Этот год отмечается выходом на арену нынешнего владельца ПЛХК,\n'+
+        '                  холдинга “Полипром”.',
+        slide_6_text: 'В процессе приватизации Холдинг “Полипром” приобрел\n'+
+        '                  контрольный пакет акций завода и стал его доминирующим\n'+
+        '                  собственником. Новые идеи и направления были введены и привели\n'+
+        '                  ПЛХК в то состояние, в котором мы можем его видеть сегодня.',
+        slide_7_title: '2004',
+        slide_7_text: 'Вторая реторта была проведена в действие, что увеличило\n'+
+        '                  мощность производства древесного угля до 25000 тонн в год.',
+        slide_8_title: '2008',
+        slide_8_text: 'Завод был сертифицирован согласно ISO 9001: 2000.',
+      },
+    };
+    
+  h2.mt-4 #{texts[lang].history}
+  p #{texts[lang].first_sentence}
+  #carousel_controls.carousel.slide(data-ride="carousel")
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(
+          src="../static/img/History_1.jpg",
+          alt="First slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_1_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_1_text_bold}
+            div #{texts[lang].slide_1_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_2.jpg",
+          alt="Second slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_2_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_2_text_bold}
+            div #{texts[lang].slide_2_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_3.jpg",
+          alt="Third slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_3_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_3_text_bold}
+            div #{texts[lang].slide_3_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_4.jpg",
+          alt="Fourth slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_4_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_4_text_bold}
+            div #{texts[lang].slide_4_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_5.jpg",
+          alt="Five slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_5_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_5_text_bold}
+            div #{texts[lang].slide_5_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_6.jpg",
+          alt="Sixth slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_6_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_6_text_bold}
+            div #{texts[lang].slide_6_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_7.jpg",
+          alt="Seventh slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_7_title}
+          .col-10
+            div #{texts[lang].slide_7_text}
+      .carousel-item
+        img.d-block.w-100(
+          src="../static/img/History_8.jpg",
+          alt="Eight slide"
+        )
+        .row.pt-2.css_slideshow_text
+          h4.col-2.text-center #{texts[lang].slide_8_title}
+          .col-10
+            div #{texts[lang].slide_8_text}
+    a.carousel-control-prev.pb-5(
+      href="#carousel_controls",
+      role="button",
+      data-slide="prev"
+    )
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Previous
+    a.carousel-control-next.pb-5(
+      href="#carousel_controls",
+      role="button",
+      data-slide="next"
+    )
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Next

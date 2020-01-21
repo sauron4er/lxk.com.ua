@@ -1,0 +1,176 @@
+mixin header(lang)
+  -
+    let texts = {
+      en: {
+        home: 'Home',
+        factory: 'Factory',
+        charcoal: 'Charcoal',
+        history: 'History',
+        production_process: 'Production process',
+        energy_efficiency: 'Energy efficiency',
+        charcoal_for_industry: 'Charcoal for industry',
+        charcoal_for_grilling: 'Charcoal for grilling',
+        private_label: 'Private label',
+        customers: 'Our customers',
+        ethyl: 'Ethyl Acetate',
+        who_we_are: 'Who we are',
+        areas_of_application: 'Areas of application',
+        ethyl_acetate_specification: 'Ethyl Acetate specification',
+        our_certificates: 'Our certificates',
+        production_and_our_customers_location: 'Production and our customer\'s location',
+        glue: 'Solutions for gluing',
+        range_of_products: 'Range of products',
+        our_benefits: 'Our benefits',
+        industry: 'Industry',
+        products: 'Products',
+        logistics: 'Logistics',
+        purchasing: 'Purchasing',
+        contacts: 'Contacts',
+      },
+      de: {
+        home: 'Hauptseite',
+        factory: 'Unser werk',
+        charcoal: 'Holzkohle',
+        history: 'Geschichte',
+        production_process: 'Produktionsablauf',
+        energy_efficiency: 'Еnergieeffizienz',
+        charcoal_for_industry: 'Holzkohle für industrielle anwendungen',
+        charcoal_for_grilling: 'Grillholzkohleproduktion',
+        private_label: 'Private handelsmarke',
+        customers: 'Auftraggeber',
+        ethyl: '',
+        who_we_are: '',
+        areas_of_application: '',
+        ethyl_acetate_specification: '',
+        our_certificates: '',
+        production_and_our_customers_location: '',
+        glue: '',
+        range_of_products: '',
+        our_benefits: '',
+        industry: '',
+        products: '',
+        logistics: 'Logistik',
+        purchasing: 'Einkauf/Umwelt',
+        contacts: 'Kontakt'
+      },
+      fr: {
+        home: 'La première',
+        factory: 'Combinat',
+        charcoal: 'Charbon',
+        history: 'Histoire',
+        production_process: 'Fabrication',
+        energy_efficiency: 'Efficacité énergétique',
+        charcoal_for_industry: 'Charbon de bois pour l`industrie',
+        charcoal_for_grilling: 'Charbon de bois pour la grille',
+        private_label: 'Marque privée',
+        customers: 'Clientèle',
+        ethyl: '',
+        who_we_are: '',
+        areas_of_application: '',
+        ethyl_acetate_specification: '',
+        our_certificates: '',
+        production_and_our_customers_location: '',
+        glue: '',
+        range_of_products: '',
+        our_benefits: '',
+        industry: '',
+        products: '',
+        logistics: 'Logistique',
+        purchasing: 'Environnement',
+        contacts: 'Coordonnees'
+      },
+      ua: {
+        home: 'Головна',
+        factory: 'Підприємство',
+        charcoal: 'Деревне вугілля',
+        history: 'Історія',
+        production_process: 'Виробничий процес',
+        energy_efficiency: 'Ефективне використання енергії',
+        charcoal_for_industry: 'Вугілля для промисловості',
+        charcoal_for_grilling: 'Продукція для грилювання',
+        private_label: 'Власна торгова марка',
+        customers: 'Клієнти',
+        ethyl: 'Етилацетат',
+        who_we_are: 'Про нас',
+        areas_of_application: 'Сфери застосування',
+        ethyl_acetate_specification: 'Технічні характеристики',
+        our_certificates: 'Наші сертифікати',
+        production_and_our_customers_location: 'Місцезнаходження та географія поставки продукції\n',
+        glue: 'Рішення для склеювання',
+        range_of_products: 'Асортимент продукції',
+        our_benefits: 'Наші переваги',
+        industry: 'Сфери застосування нашої продукції',
+        products: 'Продукти',
+        logistics: 'Логістика',
+        purchasing: 'Сировина',
+        contacts: 'Контакти',
+        news: 'Новини'
+      },
+      ru: {
+        home: 'Главная',
+        factory: 'Предприятие',
+        charcoal: 'Древесный уголь',
+        history: 'История',
+        production_process: 'Процесс производства',
+        energy_efficiency: 'Эффективное использование энергии',
+        charcoal_for_industry: 'Уголь для промышленности',
+        charcoal_for_grilling: 'Продукция для гриллинга',
+        private_label: 'Собственная торговая марка',
+        customers: 'Клиенты',
+        ethyl: '',
+        who_we_are: '',
+        areas_of_application: '',
+        ethyl_acetate_specification: '',
+        our_certificates: '',
+        production_and_our_customers_location: '',
+        glue: '',
+        range_of_products: '',
+        our_benefits: '',
+        industry: '',
+        products: '',
+        logistics: 'Логистика',
+        purchasing: 'Сырье',
+        contacts: 'Контакты'
+      }
+    }
+
+  nav.navbar.navbar-light.bg-light.mb2
+    .container
+      a.navbar-link(href="../" + lang + "/index.html") #{texts[lang].home}
+      if (lang === 'ua')
+        a.navbar-link(href="../" + lang + "/news.html") #{texts[lang].news}
+      .css_dropdown
+        a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
+        .css_dropdown-content
+          a(href="../" + lang + "/history.html") #{texts[lang].history}
+          a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
+      .css_dropdown
+        a.navbar-link.dropdown-toggle(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+        .css_dropdown-content
+          a(href="../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
+          a(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].charcoal_for_grilling}
+          a(href="../" + lang + "/private-label.html") #{texts[lang].private_label}
+          a(href="../" + lang + "/production-process.html") #{texts[lang].production_process}
+          a(href="../" + lang + "/customers.html") #{texts[lang].customers}
+          a(href="../" + lang + "/purchasing.html") #{texts[lang].purchasing}
+      if (lang === 'en' || lang === 'ua')
+        .css_dropdown
+          a.navbar-link.dropdown-toggle(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
+          .css_dropdown-content
+            a(href="../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
+            a(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
+            a(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
+            a(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
+            a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
+            a(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
+        .css_dropdown
+          a.navbar-link.dropdown-toggle(href="../" + lang + "/glue.html") #{texts[lang].glue}
+          .css_dropdown-content
+            a(href="../" + lang + "/glue-who-we-are.html") #{texts[lang].who_we_are}
+            a(href="../" + lang + "/range-of-products.html") #{texts[lang].range_of_products}
+            a(href="../" + lang + "/our-benefits.html") #{texts[lang].our_benefits}
+            a(href="../" + lang + "/industry.html") #{texts[lang].industry}
+            a(href="../" + lang + "/products.html") #{texts[lang].products}
+            a(href="../" + lang + "/glue-customers.html") #{texts[lang].customers}
+      a.navbar-link(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
+      a.navbar-link(href="../" + lang + "/contacts.html") #{texts[lang].contacts}

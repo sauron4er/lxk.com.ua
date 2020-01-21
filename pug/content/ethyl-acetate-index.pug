@@ -1,0 +1,42 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Ethyl Acetate',
+        who_we_are: 'Who we are',
+        ethyl: 'Ethyl Acetate',
+        areas_of_application: 'Areas of application',
+        ethyl_acetate_specification: 'Ethyl Acetate specification',
+        our_certificates: 'Our certificates',
+        production_and_our_customers_location: 'Production and our customer\'s location'
+      },
+      ua: {
+        title: 'Етилацетат',
+        ethyl: 'Етилацетат',
+        who_we_are: 'Про нас',
+        areas_of_application: 'Сфери застосування',
+        ethyl_acetate_specification: 'Технічні характеристики',
+        our_certificates: 'Наші сертифікати',
+        production_and_our_customers_location: 'Місцезнаходження та географія поставки продукції\n'
+      }
+    };
+
+  img.d-block.w-100.mb-4(
+    src="../static/img/index-ethyl.jpg",
+    alt="First slide"
+  )
+  h2.mt-2 #{texts[lang].title}
+  .d-flex.mb-5
+    ul.fa-ul
+      li
+        a(href="../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
+      li
+        a(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
+      li
+        a(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
+      li
+        a(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
+      li
+        a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
+      li
+        a(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}

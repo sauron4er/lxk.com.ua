@@ -1,0 +1,82 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        energy_efficiency: 'ENERGY EFFICIENCY',
+        bullets: [
+          'Our production process for charcoal has a closed cycle.',
+          'All organic substances containing in the pyrolysis gases (including\n'+
+          '          acetic acid, formaldehyde, etc… more than 180 of gas substances) are\n'+
+          '          burnt completely, forming a considerable amount of heat, which is\n'+
+          '          utilized in the utilizing boilers, producing technological steam.',
+          'Thus, retorts provide vapor for the whole plant (drying of\n'+
+          '          briquettes,production of ethyl acetate). It has a significant economic\n'+
+          '          effect, because the plant does not use natural gas.'
+        ]
+      },
+      de: {
+        energy_efficiency: 'ЕNERGIEEFFIZIENZ',
+        bullets: [
+          'Unser Produktionsablauf für Holzkohle hat einen geschlossenen Zyklus.',
+          'Alle organischen Stoffe, welche in den Pyrolysegasen enthalten sind\n'+
+          '          (einschließlich der Essigsäure, Formaldehyd usw. …mehr als 180\n'+
+          '          Gasstoffe) verbrennen komplett. Dabei entsteht ein große Menge an\n'+
+          '          Wärmeenergie,welche in den Utilisationskesseln, bei der Herstellung\n'+
+          '          des technologischen Dampfs wieder verwendet wird.',
+          'Somit gewährleisten die Retorten den Dampf für das gesamte Kombinat\n'+
+          '          (Brikett-Trocknen, Herstellung des Ethylacetats). Dies hat einen\n'+
+          '          beachtlichen wirtschaftlichen Effekt, da das Kombinat kein Naturgas\n'+
+          '          verwenden muss.'
+        ]
+      },
+      fr: {
+        energy_efficiency: 'EFFICACITÉ ÉNERGÉTIQUE',
+        bullets: [
+          'Notre fabrication du charbon de bois a le cycle fermé.',
+          'Toutes les substances organiques présentes dans les gaz de pyrolyse (y\n'+
+          '          compris l’acide acétique, le formaldéhyde etc. …plus de 180 substances\n'+
+          '          de gaz) sont brûlées complètement en formant beaucoup de chaleur, qui\n'+
+          '          est utilisée dans les chaudières et pour la fabrication de la vapeur\n'+
+          '          technologique.',
+          'Ainsi, les cornues fournissent la vapeur pour tout le combinat (le\n'+
+          '          séchage des briquets, la fabrication de l`acétate d`éthyle). Ce qui a\n'+
+          '          l`effet économique considérable, parce que la société n`utilise pas le\n'+
+          '          gaz naturel.'
+        ]
+      },
+      ua: {
+        energy_efficiency: 'ЕФЕКТИВНЕ ВИКОРИСТАННЯ ЕНЕРГІЇ',
+        bullets: [
+          'Виробничий процес деревного вугілля має замкнутий цикл.',
+          'Всі органічні речовини, що утворюються в процесі піролізу (в тому\n'+
+          '          числі оцтова кислота, формальдегід, і т.д. … більше 180 газоподібних\n'+
+          '          речовин) згоряють повністю, утворюючи значну кількість тепла, яке\n'+
+          '          використовується в утилізаційних котлах, при виробництві технологічної\n'+
+          '          пари.',
+          'Отже, реторти забезпечують парою цілий завод (сушку брикетів,\n'+
+          '          виробництво етилацетату). Це має значний економічний ефект, так як\n'+
+          '          завод не використовує природний газ.'
+        ]
+      },
+      ru: {
+        energy_efficiency: 'ЭФФЕКТИВНОЕ ИСПОЛЬЗОВАНИЕ ЭНЕРГИИ',
+        bullets: [
+          'Процесс производства древесного угля имеет замкнутый цикл.',
+          'Все органические вещества, образующиеся в процессе пиролиза (в том\n'+
+          '          числе уксусная кислота, формальдегид и т.д. … более 180 газообразных\n'+
+          '          веществ) сгорают полностью, образуя значительное количество тепла,\n'+
+          '          которое используется в утилизационных котлах, при производстве\n'+
+          '          технологического пара.',
+          'Итак, реторты обеспечивают паром целый завод (сушку брикетов,\n'+
+          '          производство этилацетата). Это имеет значительный экономический\n'+
+          '          эффект, так как завод не использует природный газ.'
+        ]
+      }
+    };
+    
+  .row.justify-content-center.mb-4
+    img(src='../static/img/1-3_Baner_Energy_efficiency.jpg' alt='')
+  h2 #{texts[lang].energy_efficiency}
+  ul.fa-ul
+    each bullet in texts[lang].bullets
+      li #{bullet}

@@ -1,0 +1,37 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'PVOH dispersions',
+        pvoh: 'PVA glue is a lower viscous water-based synthetic adhesive based on polyvinyl alcohol, ' +
+        'including various additives and modificators. It mainly used as general-purpose adhesive for the ' +
+        'tube/core/cone-winding and edge protectors industry.',
+        pvoh_bullets: [
+          'PVA glue KP-PVA mainly used as general-purpose adhesive for the tube/core/cone-winding, edge protectors ' +
+            'industry and binding cardboard. (Cardboard and paper)'
+        ]
+      },
+      ua: {
+        title: 'Дисперсії PVOH',
+        pvoh: 'Клей ПВС - це синтетичний клей на водній основі, вироблений з полімеру полівінілового спирту ' +
+        '(ПВС), включає різні добавки та модифікатори. В основному використовується як загальноприйнятий ' +
+        'клей для виробів з картону.',
+        pvoh_bullets: ['Клей КП-ПВС в основному використовується як клей загального призначення для ' +
+        'картонно навивної тари, картонних опалубок, втулок, конуса, картонного захисного кутника, ' +
+        'виробництво палітурного картону, у кашируванні гофрокартону тощо.']
+      },
+    };
+
+  h2 #{texts[lang].title}
+  .row
+    .col-3
+      img.d-block(
+        src="../static/img/pvoh.jpg",
+        alt="pvoh",
+        height="300px"
+      )
+    .col-9
+      .mb-3 #{texts[lang].pvoh}
+      ul.fa-ul
+        each b in texts[lang].pvoh_bullets
+          li #{b}

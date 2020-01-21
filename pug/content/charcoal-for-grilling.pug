@@ -1,0 +1,140 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'CHARCOAL FOR GRILLING',
+        text: 'The product line of charcoal production is the following:',
+        bullets: [
+          'Charcoal for grilling',
+          'Charcoal briquettes for grilling',
+          'Disposable Grills',
+        ],
+        charcoal_bag_title: 'Charcoal',
+        charcoal_bag: 'Made of 100% beech. From sustainable well managed forestry. Fast and easy to ignite..',
+        briquettes_title: 'Charcoal briquettes for grilling',
+        briquettes: 'Made of 100% beech. From sustainable well managed forestry. Fast and easy to ignite..',
+        disposable_title: 'Disposable Grills',
+        disposable: 'Intended for single-time use for cooking meat, fish,poultry and vegetables..',
+        read_more: 'Read more'
+      },
+      de: {
+        title: 'GRILLHOLZKOHLEPRODUKTION',
+        text: 'Wir können die folgende Produkte anbieten:',
+        bullets: [
+          'Grillholzkohle',
+          'Grillholzkohlebriketts',
+          'Einweggrill',
+        ],
+        charcoal_bag_title: 'Grillholzkohle',
+        charcoal_bag: 'Hergestellt aus 100% Buchenholz. Aus einer gut bewirtschafteten,\n'+
+        '            nachhaltigen Forstwirtschaft mit einem ständig nachwachsenden\n'+
+        '            Bestand. Schnell und leicht entflammbar…',
+        briquettes_title: 'Grillholzkohlebriketts',
+        briquettes: 'Hergestellt aus 100% Buchenholz. Aus einer gut bewirtschafteten,\n'+
+        '            nachhaltigen Forstwirtschaft mit einem ständig nachwachsenden\n'+
+        '            Bestand. Schnell und leicht entflammbar…',
+        disposable_title: 'Einweggrills',
+        disposable: 'Geeignet für die einmalige Nutzung zum Grillen von Fleisch, Fisch,\n'+
+        '            Geflügel und Gemüse…',
+        read_more: 'Mehr'
+      },
+      fr: {
+        title: 'CHARBON DE BOIS POUR LA GRILLE',
+        text: 'La ligne des produits est suivante:',
+        bullets: [
+          'Le charbon de bois pour la grille',
+          'Les briquettes de charbon de bois pour la grille',
+          'Les grilles à usage unique',
+        ],
+        charcoal_bag_title: 'Charbon de bois',
+        charcoal_bag: 'Produit du hêtre de 100% . Qui provient de la sylviculture bien\n'+
+        '            gérée au développement stable. Le charbon s`allume vite et\n'+
+        '            facilement..',
+        briquettes_title: 'Les briquettes de charbon de bois pour la grille',
+        briquettes: 'Produites du hêtre de 100%. Qui provient de la sylviculture bien\n'+
+        '            gérée au développement stable. Les briquettes de charbon de bois\n'+
+        '            s`allument vite et facilement..',
+        disposable_title: 'Les grilles à usage unique',
+        disposable: 'Destinées à usage unique pour préparer la viande, le poisson, le\n'+
+        '            poulet et les légumes..',
+        read_more: 'Lire plus'
+      },
+      ua: {
+        title: 'ПРОДУКЦІЯ ДЛЯ ГРИЛЮВАННЯ',
+        text: 'Ми можемо запропонувати Вам:',
+        bullets: [
+          'Деревне вугілля для грилю',
+          'Деревновугільні брикети для грилю',
+          'Одноразові грилі',
+        ],
+        charcoal_bag_title: 'Деревне вугілля',
+        charcoal_bag: 'Виготовлено з 100% твердих порід дерева. Від надійного лісового\n'+
+        '            господарства з високим рівнем організації господарювання. Швидко і\n'+
+        '            легко розгоряються…',
+        briquettes_title: 'Деревновугільні брикети',
+        briquettes: 'Виготовлено з 100% твердих порід дерева. Від надійного лісового\n'+
+        '            господарства з високим рівнем організації господарювання. Швидко і\n'+
+        '            легко розгоряються…',
+        disposable_title: 'Одноразові грилі',
+        disposable: 'Призначені для разового використання для приготування м’яса, риби, птиці і овочів…',
+        read_more: 'Детальніше'
+      },
+      ru: {
+        title: 'ПРОДУКЦИЯ ДЛЯ ГРИЛЛИНГА',
+        text: 'Мы можем предложить Вам:',
+        bullets: [
+          'Древесный уголь для гриля',
+          'Древесноугольные брикеты для гриля',
+          'Одноразовые грили',
+        ],
+        charcoal_bag_title: 'Древесный уголь',
+        charcoal_bag: 'Изготовлено из 100% твердых пород дерева. От надежного лесного\n'+
+        '            хозяйства с высоким уровнем организации хозяйствования. Быстро и\n'+
+        '            легко разгораются…',
+        briquettes_title: 'Древесноугольные брикеты',
+        briquettes: 'Изготовлено из 100% твердых пород дерева. От надежного лесного\n'+
+        '            хозяйства с высоким уровнем организации хозяйствования. Быстро и\n'+
+        '            легко разгораются…',
+        disposable_title: 'Одноразовые грили',
+        disposable: 'Предназначены для одноразового использования для приготовления мяса, рыбы, птицы и овощей…',
+        read_more: 'Подробнее'
+      }
+    };
+
+  .row.justify-content-center.mb-4
+    img(src='../static/img/2-2_Baner_Charcoal_for_grilling.jpg' alt='')
+  h2 #{texts[lang].title}
+  p #{texts[lang].text}
+  ul
+    each bullet in texts[lang].bullets
+      li #{bullet}
+  hr
+  .row
+    .col-4.px-5
+      .d-flex.align-content-center
+        a(href='../' + lang + '/charcoal-bag.html')
+          img.mx-auto.img-fluid(src='../static/img/Coal_1.jpg' alt='')
+      h4.text-left #{texts[lang].charcoal_bag_title}
+      p #{texts[lang].charcoal_bag}
+    .col-4.px-5
+      .d-flex.align-content-center
+        a(href='../' + lang + '/briquettes.html')
+          img.mx-auto.img-fluid(src='../static/img/Briquettes_1.jpg' alt='')
+      h4.text-left #{texts[lang].briquettes_title}
+      p #{texts[lang].briquettes}
+    .col-4.px-5
+      .d-flex.align-content-center
+        a(href='../' + lang + '/disposable-grills.html')
+          img.mx-auto.img-fluid(src='../static/img/Disposable_Grills_1_new.jpg' alt='')
+      h4.text-left #{texts[lang].disposable_title}
+      p #{texts[lang].disposable}
+  .row
+    .col-4.mb-3
+      a(href='../' + lang + '/charcoal-bag.html')
+        button.btn.btn-warning.float-right #{texts[lang].read_more}
+    .col-4
+      a(href='../' + lang + '/briquettes.html')
+        button.btn.btn-warning.float-right #{texts[lang].read_more}
+    .col-4
+      a(href='../' + lang + '/disposable-grills.html')
+        button.btn.btn-warning.float-right #{texts[lang].read_more}

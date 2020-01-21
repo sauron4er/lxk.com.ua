@@ -1,0 +1,38 @@
+extends ../../../components/news/base
+include ../../../components/news/header
+include ../../../components/news/footer
+include ../../../components/title
+
+block title
+  +title('ua')
+
+block header
+  +header('ua')
+
+block content
+  -
+    let texts = {
+        text_5: 'Для перевірки якості води існує проект “Чиста вода” (<a href="http://texty.org.ua/water/" target="_blank">http://texty.org.ua/water/</a>), ' +
+          'який реалізується та фінансується за підтримки незалежного агентства федерального уряду США (<a href="https://www.usaid.gov/" target="_blank">https://www.usaid.gov/</a>), ' +
+          'неприбуткової організації “Eurasia Foundation” (<a href="https://www.eurasia.org/" target="_blank">https://www.eurasia.org/</a>).',
+        text_6: 'Для моніторингу та аналізу стану повітря можна використовувати відкрите джерело інформації SaveEcoBot (це безкоштовний сервіс для громадськості, розроблений групою активістів Save Dnipro) ' +
+          '(<a href="https://www.saveecobot.com/" target="_blank">https://www.saveecobot.com/</a>).',
+        proof: 'Джерело: <a href="https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym" target="_blank">' +
+          'https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym</a>'
+    }
+
+  h3.text-center Екологи спростовують забруднення стічних вод та повітря ТДВ “Перечинським лісохімічним комбінатом”
+  img.d-block.mb-1.mx-auto(
+    src="../../static/img/article.png",
+    alt="Article"
+  )
+  p На численні прохання Перечинської громади, 6 грудня 2019 року в місто була запрошена незалежна лабораторія ПНВП “Екологія”. Нею було проведено відбори проб повітря для визначення концентрації забруднюючих речовин в приземному шарі атмосферного повітря у 5-ти точках м. Перечин по санітарно-захисній зоні лісохімічного комбінату.
+  p Також для більш детального дослідження проби були взяті у школі та на площі Народній. Лабораторією була перевірена наявність в атмосфері наступних речовин: діоксин азоту, оксид вуглецю, кислота оцтова, фенол, формальдегід тощо.
+  p.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
+  p Екологи наголошують, що існує можливість самостійної перевірки стану повітря та закликають усіх свідомих громадян проводити контроль рівня викидів шкідливих речовин у річку з відкритих офіційних незалежних джерел і перевіряти інформацію від Державного агенства водних ресурсів України (http://monitoring.davr.gov.ua/).
+  p !{texts.text_5}
+  p !{texts.text_6}
+  p !{texts.proof}
+
+block footer
+  +footer('ua')

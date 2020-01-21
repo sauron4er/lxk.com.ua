@@ -1,0 +1,75 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'PERECHIN TIMBER AND CHEMICAL PLANT',
+        subtitle: 'About us:',
+        bullets: [
+          'One of the largest producers and suppliers of charcoal and charcoal briquettes in Europe;',
+          'With an experience of more than 100 years in industrial production of charcoal and briquettes;',
+          'Raw materials used for production – 100% hardwood from the Ukrainian forests;',
+          'Socially responsible business partner – BSCI certified;',
+          'Quality certified and approved by DIN Plus.'
+        ]
+      },
+      de: {
+        title: 'PERETSCHYN FORSTCHEMISCHES KOMBINAT',
+        subtitle: 'Über uns:',
+        bullets: [
+          'Einer der größten Hersteller und Lieferanten von Holzkohle und Holzkohlebriketts in Europa;',
+          'Mehr als 100 Jahre Erfahrung in der industriellen Verarbeitung von Holzkohle und Holzkohlebriketts;',
+          'Rohstoffe für die Produktion – 100% Hartholz aus den ukrainischen Wäldern;',
+          'Der sozial verantwortliche Geschäftspartner wurde von BSCI zertifiziert;',
+          'Die Qualität ist zertifiziert und freigegeben nach DIN Plus'
+        ]
+      },
+      fr: {
+        title: 'COMBINAT CHIMIQUE DE TRANSFORMATION DU BOIS PERETCHYN',
+        subtitle: 'Qui sommes-nous:',
+        bullets: [
+          'Un des plus grands fabricants et fournisseurs du charbon de bois et\n'+
+          '          des briquettes de charbon de bois en Europe;',
+          'Possédant une expérience de plus de 100 ans dans la fabrication\n'+
+          '          industrielle du charbon de bois et des briquettes de charbon de bois;',
+          'Matières premières utilisées pour la production – 100% feuillus des\n'+
+          '          forêts ukrainiennes;',
+          'Partenaire socialement responsable – certifié par BSCI;',
+          'Qualité certifiée et approuvée par DIN Plus'
+        ]
+      },
+      ua: {
+        title: 'ПЕРЕЧИНСЬКИЙ ЛІСОХІМІЧНИЙ КОМБІНАТ',
+        subtitle: 'Про нас:',
+        bullets: [
+          'Один з найбільших виробників і постачальників вугілля і\n'+
+          '          деревновугільних брикетів у Європі;',
+          'Досвід роботи більше ніж 100 років у промисловому виробництві\n'+
+          '          деревного вугілля і брикетів;',
+          'Сировина, що використовується для виробництва – 100% тверді породи\n'+
+          '          дерева з українських лісів;',
+          'Соціально відповідальний бізнес-партнер – BSCI сертифікація;',
+          'Якість сертифікована і схвалена DIN Plus.'
+        ]
+      },
+      ru: {
+        title: 'ПЕРЕЧИНСКИЙ ЛЕСОХИМИЧЕСКИЙ КОМБИНАТ',
+        subtitle: 'О нас:',
+        bullets: [
+          'Один из крупнейших производителей и поставщиков древесного угля и\n'+
+          '          угольных брикетов в Европе;',
+          'Опыт работы более 100 лет в промышленном производстве древесного угля\n'+
+          '          и брикетов;',
+          'Сырье, используемое для производства – 100% твердые породы дерева из\n'+
+          '          Украинских лесов;',
+          'Социально ответственный бизнес-партнер – BSCI сертификация;',
+          'Качество сертифицировано и одобрено DIN Plus.'
+        ]
+      }
+    };
+
+  img.d-block.w-100.mb-3(src='../static/img/FACTORY.jpg' alt='Factory')
+  h2 #{texts[lang].title}
+  h5 #{texts[lang].subtitle}
+  ul.fa-ul
+    each bullet in texts[lang].bullets
+      li #{bullet}

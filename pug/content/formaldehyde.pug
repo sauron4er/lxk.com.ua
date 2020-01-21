@@ -1,0 +1,70 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Formaldehyde resins',
+        uf_title: 'UF resins: Urea-formaldehyde resins.',
+        uf: 'Urea-formaldehyde resins (UF resins) are widely used in woodworking industry. ' +
+        'Main targets of their usage are for chipboards, MDF, plywood, furniture, musical instruments, paper, ' +
+        'etc. Resins produced at our plant have minimal level of formaldehyde emission. Plywood, chipboards and ' +
+        'other products produced with our resins, correspond to formaldehyde emission class E-1, E-0,5, E-0. ' +
+        'Product can be loaded in road tanks, railway cistens, and also in buyer\'s containers. We offer you the ' +
+        'following main types of UF resins:',
+        uf_bullets: [
+          'KFS-P/Mainly used in chipboard and MDF production. (Woodworking)',
+          'KFS-F/Mainly used in plywood, moulded elements and insulation production. (Woodworking)',
+          'KF-SP/Mainly used in paper impregnation, which improves it\'s mechanical and waterproof ' +
+            'properties in lamination process. (Woodworking/Cardboard and paper)',
+        ],
+        muf_title: 'MUF resins: Urea-melamine-formaldehyde resins.',
+        muf: 'This is a product of polycondensation of urea, melamine and formaldehyde. It is a water suspension, non-flammable and explosion-proof. Ready product contains 1% - 24% of melanime.',
+        muf_2: 'MUF resins are mainly used in OSB production, plywood and other types of boards which should have higher mechanical and waterproof properties.',
+        muf_bullets: [
+          'MKFS/MUF resin mainly used in OSB production, plywood and other types of boards which should have higher mechanical and waterproof properties. (Woodworking)'
+        ],
+      },
+      ua: {
+        title: 'Формальдегідні смоли',
+        uf_title: 'Карбамідноформальдегідні смоли (UF смоли)',
+        uf: 'Карбамідноформальдегідні смоли (UF смоли) широко застосовуються у деревообробній ' +
+        'промисловості. Основними споживачами смоли є виробники  ДСП, МДФ, фанера, меблі, паперу тощо. ' +
+        'Смоли, що виробляються на нашому заводі, мають мінімальний рівень викидів формальдегіду. Фанера, ' +
+        'ДСП та інші вироби, виготовлені з нашими смолами, відповідають нормам викидів формальдегіду Е-1, ' +
+        'Е-0,5, Е-0. Продукт можна завантажувати в дорожні цистерни, залізничні цистерни, а також у контейнери ' +
+        'покупця. \n'+
+        'Ми пропонуємо вам наступні основні типи УФ-смол:\n',
+        uf_bullets: [
+        'КФС-П використовується у виробництві ДСП,МДФ а також у виробництві опорної шашки для піддонів по стандарту EPAL.',
+        'КФС-Ф використовується у фанері, литих елементах, гнутоклеїних виробах(наприклад ламелі) та виробництві утеплювачів.',
+        'КФ-СП використовується для просочення паперу, що покращує його механічні та водонепроникні властивості в процесі ламінування.',
+        ],
+        muf_title: 'Формальдегідні смоли: смоли MUF: сечовини-меламіно-формальдегідні смоли.',
+        muf: 'Це продукт поліконденсації сечовини, меламіну та формальдегіду. Це водна суспензія, негорюча і вибухобезпечна. Готовий продукт містить 1% - 24% меланіму. ',
+        muf_2: 'Смола МКФС / MUF використовується в основному для виробництва OSB, фанери та інших типів плит, які повинні мати більш високі механічні та водостійкі властивості. ',
+        muf_bullets: [],
+      }
+    };
+
+  h2.mb-3 #{texts[lang].title}
+  .row
+    .col-4
+      img.d-block(
+        src="../static/img/formaldehyde.jpg",
+        alt="pvoh",
+        height="200px"
+      )
+    .col-8
+      .h5 #{texts[lang].uf_title}
+      .mb-3 #{texts[lang].uf}
+      ul.fa-ul
+        each ufb in texts[lang].uf_bullets
+          li #{ufb}
+  .row.mt-4
+    .col-4
+    .col-8
+      .h5 #{texts[lang].muf_title}
+      .mb-1 #{texts[lang].muf}
+      .mb-3 #{texts[lang].muf_2}
+      ul.fa-ul
+        each mufb in texts[lang].muf_bullets
+          li #{mufb}

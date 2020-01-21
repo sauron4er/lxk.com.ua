@@ -1,0 +1,32 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Who we are',
+        list: [
+          'One of the largest producers and suppliers of Ethyl Acetate to Central and East Europe and on domestic market;',
+          'Reliable partner with high quality product, flexible logistics and with diversified raw material suppliers;',
+          'Producer with annual capacity up to 40 000 MT;',
+          'Closely located on the border with Slovakia, Hungary, Poland and Romania with easy reach to our buyers',
+        ]
+      },
+      ua: {
+        title: 'Про нас',
+        list: [
+        'Один з найбільших виробників та постачальників етилацетату на ринках Центрально-Східної Європи;',
+        'Надійний партнер з високоякісним продуктом, гнучкою логістикою та надійними джерелами забезпечення сировиною;',
+        'Виробник з потужністю виробництва обсягом 40 000 т в рік;',
+        'Зручне місцезнаходження біля кордонів Словаччини, Угорщини та Румунії для вчасної поставки продукції клієнтам',
+        ]
+      },
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/ethyl-who-we-are.jpg",
+    alt="Who we are"
+  )
+  h2 #{texts[lang].title}
+  .d-flex.mb-5
+    ul.fa-ul
+      each p in texts[lang].list
+        li #{p}

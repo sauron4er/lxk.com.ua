@@ -1,0 +1,42 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Solutions for gluing',
+        who_we_are: 'Who we are',
+        range_of_products: 'Range of products',
+        our_benefits: 'Our benefits',
+        industry: 'Indusrty',
+        products: 'Products',
+        customers: 'Our customers',
+      },
+      ua: {
+        title: 'Рішення для склеювання',
+        who_we_are: 'Про нас',
+        range_of_products: 'Асортимент продукції',
+        our_benefits: 'Наші переваги',
+        industry: 'Сфери застосування нашої продукції',
+        products: 'Продукти',
+        customers: 'Клієнти',
+      }
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/index-glue.jpg",
+    alt="First slide"
+  )
+  h2.mt-2 #{texts[lang].title}
+  .d-flex.mb-5
+    ul.fa-ul
+      li
+        a(href="../" + lang + "/glue-who-we-are.html") #{texts[lang].who_we_are}
+      li
+        a(href="../" + lang + "/range-of-products.html") #{texts[lang].range_of_products}
+      li
+        a(href="../" + lang + "/our-benefits.html") #{texts[lang].our_benefits}
+      li
+        a(href="../" + lang + "/industry.html") #{texts[lang].industry}
+      li
+        a(href="../" + lang + "/products.html") #{texts[lang].products}
+      li
+        a(href="../" + lang + "/glue-customers.html") Our customers #{texts[lang].customers}

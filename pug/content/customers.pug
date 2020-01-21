@@ -1,0 +1,40 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Customers:',
+      },
+      de: {
+        title: 'Auftraggeber:',
+      },
+      fr: {
+        title: 'Clientèle:',
+      },
+      ua: {
+        title: 'Клієнти:',
+      },
+      ru: {
+        title: 'Клиенты:',
+      }
+    };
+    
+  .row.justify-content-center.mb-4
+    img(src='../static/img/1-4_Baner_Customers.jpg' alt='Customers')
+  .row
+    .col-2
+      h2 #{texts[lang].title}
+      ul.fa-ul.mt-4
+        li Intermarche
+        li Tesco
+        li Biltema
+        li Lidl
+        li Migros
+        li Carrefour
+        li Kaufland
+        li Coop
+        li E.Leclerc
+        li Albert Heijn
+        li Metro
+    .col-10
+      .d-flex.align-content-center.my-5
+        img.mx-auto(src='../static/img/Logos-1.jpg' alt='Customers logos')

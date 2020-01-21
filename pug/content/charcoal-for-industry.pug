@@ -1,0 +1,92 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'CHARCOAL FOR INDUSTRY',
+        text: [
+          'If you use or plan to use charcoal for your production process we\n'+
+          '            are able to offer you the best hard wood charcoal produced in\n'+
+          '            vertical retorts.',
+          'We will meet all your requirements because our state of art process\n'+
+          '            gives us an opportunity to produce charcoal with various chemical\n'+
+          '            content.',
+          'C fix up to 93%',
+          'Humidity from 3 to 8%',
+          'Ash content from 2 to 15%',
+          'Fraction 0-80 mm'
+        ]
+      },
+      de: {
+        title: 'HOLZKOHLE FÜR INDUSTRIELLE ANWENDUNGEN',
+        text: [
+          'Falls Sie Holzkohle in Ihrem Produktionsablauf verwenden oder eine\n'+
+          '            Verwendung in der Zukunft planen, können wir Ihnen die beste\n'+
+          '            Buchenholzkohle anbieten, welche in vertikalen Retorten hergestellt\n'+
+          '            wird.',
+          'Wir werden alle Ihre Anforderungen erfüllen, weil unsere modernsten\n'+
+          '            Produktionsprozesse uns die Möglichkeit geben, Holzkohle mit\n'+
+          '            unterschiedlichsten chemischen Zusammensetzungen herzustellen.',
+          'Kohlenstoffgehalt bis zu 93%',
+          'Feuchtigkeit von 3 bis 8%',
+          'Aschegehalt von 2 bis 15%',
+          'Fraktion 0-80 mm',
+        ]
+      },
+      fr: {
+        title: 'CHARBON DE BOIS POUR L`INDUSTRIE',
+        text: [
+          'Si vous utilisez ou bien avez l’intention d`utiliser le charbon de\n'+
+          '            bois pour votre production, nous pourrons vous proposer le meilleur\n'+
+          '            charbon dur, produit dans les cornues verticales.',
+          'Nous répondrons à toutes vos exigences, parce que notre fabrication\n'+
+          '            la plus moderne nous donne la possibilité de produire le charbon de\n'+
+          '            bois avec de différentes compositions chimiques.',
+          'Le contenu du carbone jusqu`à 93%',
+          'L`humidité de 3 à 8%',
+          'La teneur en cendres de 2 à 15%',
+          'Fraction 0-80 mm',
+        ]
+      },
+      ua: {
+        title: 'ВУГІЛЛЯ ДЛЯ ПРОМИСЛОВОСТІ',
+        text: [
+          'Якщо Ви використовуєте або плануєте використання деревного вугілля\n'+
+          '            для Вашого виробничого процесу ми можемо запропонувати Вам найкраще\n'+
+          '            деревне вугілля з твердих порід, що виробляється у вертикальних\n'+
+          '            ретортах.',
+          'Ми розглянемо всі Ваші побажання, тому що наш виробничий процес дає нам можливість виробляти деревне вугілля з різним хімічним складом та з різною фракцією.',
+          'Вміст вуглецю до 93%',
+          'Вологість від 3 до 8%',
+          'Зольність від 2 до 15%',
+          'Фракція 0-80 мм',
+        ]
+      },
+      ru: {
+        title: 'УГОЛЬ ДЛЯ ПРОМЫШЛЕННОСТИ',
+        text: [
+          'Если Вы используете или планируете использование древесного угля для\n'+
+          '            Вашего производственного процесса мы можем предложить Вам лучший\n'+
+          '            древесный уголь из твердых пород, который производится в\n'+
+          '            вертикальных ретортах.',
+          'Мы рассмотрим все Ваши пожелания, потому что наш производственный\n'+
+          '            процесс дает нам возможность производить древесный уголь с различным\n'+
+          '            химическим составом и с разной фракцией.',
+          'Содержание углерода до 93%',
+          'Влажность от 3 до 8%',
+          'Зольность от 2 до 15%',
+          'Фракция 0-80 мм',
+        ]
+      }
+    };
+
+  .row.justify-content-center.mb-4
+    img(src='../static/img/2-1_Baner_Charcoal_for_industry.jpg' alt='')
+  h2 #{texts[lang].title}
+  .row
+    .col-3
+      img(src='../static/img/Charcoal_for_industry_1.jpg' alt='')
+    .col-9.pl-5
+      each paragraph in texts[lang].text
+        p #{paragraph}
+      .d-flex.align-content-center.my-5
+        img.mx-auto(src='../static/img/Charcoal_for_industry_2.jpg' alt='')

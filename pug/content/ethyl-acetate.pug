@@ -1,0 +1,36 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Ethyl Acetate',
+        text_bold: 'Ethyl Acetate',
+        text: ' - an ester of acetic acid and ethyl alcohol, ' +
+              'is a colorless volatile liquid with a pleasant fruity odor. ' +
+              'Wide range of use of ethyl acetate related to its specific properties - ' +
+              'high solubility and volatility. It has little toxicity compared to other solvents. ' +
+              'For the technical level of production of ethyl acetate by esterification it meets modern ' +
+              'world level. All process steps are carried out by continuous scheme, and the mass ' +
+              'fraction of a substance reaches 99.9%.'
+      },
+      ua: {
+        title: 'Етилацетат',
+        text_bold: 'Етилацетат',
+        text: ' - складний ефір оцтової кислоти та етилового спирту, що являє собою безбарвну летючу ' +
+              'рідину з приємним фруктовим запахом. Широкий спектр використання етилацетату пов’язаний' +
+              ' з його специфічними властивостями - високою розчинністю і летючістю. Він має незначну ' +
+              'токсичність порівняно з іншими розчинниками. Виготовлення етилацетату шляхом етерифікації ' +
+              'являється найбільш розповсюджений способом виробництва даного продукту в світі. Всі етапи ' +
+              'процеси виробництва є неперервними і в готовому продукті масова частка основної речовини ' +
+              'досягає 99,9%.'
+      },
+    };
+    
+  img.d-block.w-100.mb-4(
+    src="../static/img/ethyl-acetate.jpg",
+    alt="Ethyl acetate"
+  )
+  h2 #{texts[lang].title}
+  .d-flex.mb-5
+    div
+      span.font-weight-bold #{texts[lang].text_bold}
+      span #{texts[lang].text}

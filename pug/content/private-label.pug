@@ -1,0 +1,55 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'PRIVATE LABEL',
+        text: 'Our plant has enormous practical experience in private label\n'+
+        '            throughout German, French, Czech, Hungarian, Slovakian, Sweden,\n'+
+        '            Switzerland markets. For retailers we are designating a product\n'+
+        '            manufactured or packaged for sale under the name of the retailer.'
+      },
+      de: {
+        title: 'PRIVATE HANDELSMARKE',
+        text: 'Unser Kombinat verfügt über eine große praktische Erfahrung mit den\n'+
+        '            privaten Handelsmarken auf den Märkten Deutschlands, Frankreichs,\n'+
+        '            Tschechiens, Ungarns, der Slowakei, Schwedens und der Schweiz. Für\n'+
+        '            den Retail kennzeichnen wir das Produkt, hergestellt oder verpackt\n'+
+        '            für den Verkauf unter dem Namen der Retail.'
+      },
+      fr: {
+        title: 'MARQUE PRIVÉE',
+        text: 'Notre entreprise a une grande expérience pratique de coopération\n'+
+        '            avec des marques privées sur les marchés de l`Allemagne, la France,\n'+
+        '            la République tchèque, la Hongrie, la Slovaquie, la Suède, la\n'+
+        '            Suisse. Pour la vente au détail nous marquons le produit fabriqué ou\n'+
+        '            bien emballé pour la vente sous le nom de la société de vente au\n'+
+        '            détail'
+      },
+      ua: {
+        title: 'ВЛАСНА ТОРГОВА МАРКА',
+        text: 'Наш завод має величезний практичний досвід роботи з власною торговою\n'+
+        '            маркою на німецькому, французькому, чеському, угорському,\n'+
+        '            словацькому, шведському, швейцарському ринках. Для роздрібної\n'+
+        '            торгівлі ми виготовляємо продукт та упаковуємо його для продажу під\n'+
+        '            назвою продавця який його реалізовує.'
+      },
+      ru: {
+        title: 'СОБСТВЕННАЯ ТОРГОВАЯ МАРКА',
+        text: 'Наш завод имеет огромный практический опыт работы с собственной\n'+
+        '            торговой маркой на немецком, французском, чешском, венгерском,\n'+
+        '            словацком, шведском, швейцарском рынках. Для розничной торговли мы\n'+
+        '            производим продукт и упаковываем его для продажи под именем продавца\n'+
+        '            который его реализует.'
+      }
+    };
+    
+  .row.justify-content-center.mb-4
+    img(src='../static/img/2-3_Baner_Private_label.jpg' alt='')
+  h2 #{texts[lang].title}
+  .row
+    .col-6
+      .d-flex.align-content-center.my-5
+        img.mx-auto(src='../static/img/Private_label_1.jpg' alt='')
+    .col-6
+      p #{texts[lang].text}
+      img.float-right(src='../static/img/Icon_Private.jpg' alt='')

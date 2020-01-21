@@ -1,0 +1,63 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        charcoal: 'Charcoal',
+        charcoal_for_industry: 'Charcoal for industry',
+        charcoal_for_grilling: 'Charcoal for grilling',
+        private_label: 'Private label',
+        our_customers: 'Our customers'
+      },
+      de: {
+        charcoal: 'Holzkohle',
+        charcoal_for_industry: 'Holzkohle für industrielle Anwendungen',
+        charcoal_for_grilling: 'Grillholzkohleproduktion',
+        private_label: 'Private Handelsmarke',
+        our_customers: 'Auftraggeber'
+      },
+      fr: {
+        charcoal: 'Charbon',
+        charcoal_for_industry: 'Charbon de bois pour l`industrie',
+        charcoal_for_grilling: 'Charbon de bois pour la grille',
+        private_label: 'Marque privée',
+        our_customers: 'Clientèle'
+      },
+      ua: {
+        charcoal: 'Деревне вугілля',
+        charcoal_for_industry: 'Вугілля для промисловості',
+        charcoal_for_grilling: 'Продукція для грилювання',
+        private_label: 'Власна торгова марка',
+        our_customers: 'Клієнти'
+      },
+      ru: {
+        charcoal: 'Древесный уголь',
+        charcoal_for_industry: 'Уголь для промышленности',
+        charcoal_for_grilling: 'Продукция для гриллинга',
+        private_label: 'Собственная торговая марка',
+        our_customers: 'Клиенты'
+      }
+    };
+
+  -
+    const coal_on_hover = '../static/img/Pic_Coal_on_' + lang + '\.jpg'
+  -
+    const grilly_on_hover = '../static/img/Pic_Grilly_on_' + lang + '\.jpg'
+    
+  img.img-fluid.mx-auto.d-block.w-100(src='../static/img/PRODUCTS.jpg' alt='Factory')
+  h2.mt-3 #{texts[lang].charcoal}
+  .d-flex.justify-content-center.mb-5
+    a
+      img.img-fluid(src='../static/img/Logos.jpg' alt='')
+    a(href='../' + lang + '/charcoal-for-industry.html')
+      img.img-fluid(src='../static/img/Pic_Coal.jpg'
+        onmouseover="this.src='" + coal_on_hover + "';"
+        onmouseout="this.src='../static/img/Pic_Coal.jpg';" alt='')
+    a(href='../' + lang + '/charcoal-for-grilling.html')
+      img.img-fluid(src='../static/img/Pic_Grilly.jpg'
+        onmouseover="this.src='" + grilly_on_hover + "';"
+        onmouseout="this.src='../static/img/Pic_Grilly.jpg';" alt='')
+  //ul.fa-ul
+  //  li
+  //    a(href='../' + lang + '/private-label.html') #{texts[lang].private_label}
+  //  li
+  //    a(href='../' + lang + '/customers.html') #{texts[lang].our_customers}

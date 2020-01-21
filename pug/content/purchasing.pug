@@ -1,0 +1,71 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'PURCHASING',
+        text: [
+          'Our plant is situated in the heart of the biggest beech forest in\n'+
+          '        Europe. We use only hard wood wastes, no tropical or soft wood, from\n'+
+          '        well managed forests.',
+          'Country of origin of 100% our raw material: Ukraine'
+        ],
+        images_title: 'Images of purchase'
+      },
+      de: {
+        title: 'EINKAUF/UMWELT',
+        text: [
+        'Unser Kombinat befindet sich im Herzen des größten Buchenwaldes in\n'+
+        '        Europa. Wir liefern Holz komplett aus der lokalen Holzwirtschaft. Wir\n'+
+        '        verwenden nur harte Holzabfälle aus Wäldern, die ordnungsgemäß\n'+
+        '        bewirtschaftet werden und nicht tropisches oder weiches Holz.',
+        '100% Ursprungsland unserer Rohstoffe: Ukraine'
+        ],
+        images_title: ''
+      },
+      fr: {
+        title: 'ACHAT/ENVIRONNEMENT',
+        text: [
+        'Notre combinat est situé au cœur de la plus grande forêt de hêtre en\n'+
+        '        Europe. Nous fournissons le bois uniquement de la sylviculture locale.\n'+
+        '        Nous utilisons seulement les déchets durs de bois qui proviennent des\n'+
+        '        massifs bien gérés et nous n`utilisons pas le bois tendre ou tropical.',
+        'Le pays d`origine de 100% de nos matières brutes est l`Ukraine.'
+        ],
+        images_title: 'Images des achats'
+      },
+      ua: {
+        title: 'ПОХОДЖЕННЯ СИРОВИНИ',
+        text: [
+        'Перечинський лісохімічний комбінат знаходиться у серці найбільшого\n'+
+        '        букового лісу Європи. Ми закуповуємо сировину від українських лісгоспів.',
+        'При виробництві застосовуються виключно тверді породи дерева із лісів з\n'+
+        '        розумною організацією господарювання, тропічні та м’які породи дерева не\n'+
+        '        використовуються.',
+        'Країна походження 100% усієї сировини: Україна'
+        ],
+        images_title: ''
+      },
+      ru: {
+        title: 'ПРОИСХОЖДЕНИЕ СЫРЬЯ',
+        text: [
+        'Перечинский лесохимический комбинат находится в сердце самого большого\n'+
+        '        букового леса Европы. Мы закупаем сырье от украинских лесхозов.',
+        'При производстве используются только твердые породы дерева с лесов с\n'+
+        '        разумной организацией хозяйствования, тропические и мягкие породы дерева\n'+
+        '        не используются.',
+        'Страна происхождения 100% всего сырья: Украина'
+        ],
+        images_title: ''
+      }
+    };
+    
+  .row.justify-content-center.mb-4
+    img(src='../static/img/4_Baner_Purchasing_1_new.jpg' alt='Purchasing')
+  h2.mt-5 #{texts[lang].title}
+  each p in texts[lang].text
+    p #{p}
+  hr
+  p #{texts[lang].images_title}
+  .d-flex.justify-content-center
+    img.mr-5(src='../static/img/Purchasing_pic_1.jpg' alt='')
+    img(src='../static/img/Purchasing_pic_2.jpg' alt='')
