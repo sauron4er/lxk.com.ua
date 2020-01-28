@@ -10,7 +10,7 @@ mixin footer(lang)
         logistics: 'Logistics',
         purchasing: 'Purchasing',
         contacts: 'Contacts',
-        address: "25,Uzhans'ka st., Perechin, Zakarpatska region, 89200, Ukraine",
+        address: "25, Uzhans'ka st., Perechin, Zakarpatska region, 89200, Ukraine",
       },
       de: {
         home: 'Hauptseite',
@@ -60,18 +60,7 @@ mixin footer(lang)
     }
 
   footer
-    nav.navbar
-      .container
-        a.navbar-link.text-white(href="../" + lang + "/index.html") #{texts[lang].home}
-        if (lang === 'ua')
-          a.navbar-link.text-white(href="../" + lang + "/news.html") #{texts[lang].news}
-        a.navbar-link.text-white(href="../" + lang + "/factory.html") #{texts[lang].factory}
-        a.navbar-link.text-white(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
-        if (lang === 'en' || lang === 'ua')
-          a.navbar-link.text-white(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
-          a.navbar-link.text-white(href="../" + lang + "/glue.html") #{texts[lang].glue}
-        a.navbar-link.text-white(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
-        a.navbar-link.text-white(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
+    // hr.border.border-success.m-1
     table.css_footer_table
       thead
         tr
@@ -86,7 +75,5 @@ mixin footer(lang)
           td.text-center
             i.fas.fa-phone
             span &#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77
-        tr
-          td.text-center
-            i.fas.fa-envelope
+            i.fas.fa-envelope.ml-3
             span &#160;sales@lxk.com.ua

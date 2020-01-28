@@ -4,6 +4,19 @@ include ../../components/header
 include ../../components/footer
 include ../../components/title
 
+block links
+  meta(name='description' content='Combinat Chimique De Transformation Du Bois Peretchyn - producteur de charbon de bois pour la grille, Ukraine')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157169906-1')
+  script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-157169906-1');
+
+
 block title
   +title('fr')
 

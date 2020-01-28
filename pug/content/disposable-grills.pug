@@ -12,7 +12,7 @@ mixin content(lang)
           'Raw material: 100% Hardwood',
           'Country of origin: Ukraine',
         ],
-        images_title: 'Images of Charcoal Briquettes'
+        images_title: 'Images of Disposable Grills'
       },
       de: {
         back_to: 'Zurück zu "Grillholzkohleproduktion"',
@@ -39,7 +39,7 @@ mixin content(lang)
           'Les matières brutes: 100% du bois dur',
           'Proviennent de l`Ukraine.',
         ],
-        images_title: 'Image du charbon de bois'
+        images_title: 'Image du Grilles a usage unique'
         },
       ua: {
         back_to: 'Повернутися до "Продукція для грилювання"',
@@ -79,6 +79,11 @@ mixin content(lang)
         div #{p}
       br
       img(src="../static/img/Briquettes_icons_new.jpg", alt="")
+  if (lang === 'ua' || lang === 'ru')
+    br
+    .text-center
+      iframe(width='500' height='300' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    br
   h6 #{texts[lang].images_title}
   .d-flex.justify-content-center
     img.img-fluid.mr-5(

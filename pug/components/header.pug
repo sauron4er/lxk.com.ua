@@ -3,9 +3,11 @@ mixin header(lang)
     let texts = {
       en: {
         home: 'Home',
+        products: 'Products',
         factory: 'Factory',
         charcoal: 'Charcoal',
         history: 'History',
+        politics: 'Company politics',
         production_process: 'Production process',
         energy_efficiency: 'Energy efficiency',
         charcoal_for_industry: 'Charcoal for industry',
@@ -22,13 +24,14 @@ mixin header(lang)
         range_of_products: 'Range of products',
         our_benefits: 'Our benefits',
         industry: 'Industry',
-        products: 'Products',
+        glue_products: 'Products',
         logistics: 'Logistics',
         purchasing: 'Purchasing',
         contacts: 'Contacts',
       },
       de: {
         home: 'Hauptseite',
+        products: 'Produkte',
         factory: 'Unser werk',
         charcoal: 'Holzkohle',
         history: 'Geschichte',
@@ -42,19 +45,20 @@ mixin header(lang)
         who_we_are: '',
         areas_of_application: '',
         ethyl_acetate_specification: '',
-        our_certificates: '',
+        our_certificates: 'Unsere Zertifikate',
         production_and_our_customers_location: '',
         glue: '',
         range_of_products: '',
         our_benefits: '',
         industry: '',
-        products: '',
+        glue_products: '',
         logistics: 'Logistik',
         purchasing: 'Einkauf/Umwelt',
         contacts: 'Kontakt'
       },
       fr: {
         home: 'La première',
+        products: 'Des produits',
         factory: 'Combinat',
         charcoal: 'Charbon',
         history: 'Histoire',
@@ -68,22 +72,24 @@ mixin header(lang)
         who_we_are: '',
         areas_of_application: '',
         ethyl_acetate_specification: '',
-        our_certificates: '',
+        our_certificates: 'Nos certificats',
         production_and_our_customers_location: '',
         glue: '',
         range_of_products: '',
         our_benefits: '',
         industry: '',
-        products: '',
+        glue_products: '',
         logistics: 'Logistique',
         purchasing: 'Environnement',
         contacts: 'Coordonnees'
       },
       ua: {
         home: 'Головна',
+        products: 'Продукція',
         factory: 'Підприємство',
         charcoal: 'Деревне вугілля',
         history: 'Історія',
+        politics: 'Політики компанії',
         production_process: 'Виробничий процес',
         energy_efficiency: 'Ефективне використання енергії',
         charcoal_for_industry: 'Вугілля для промисловості',
@@ -100,7 +106,7 @@ mixin header(lang)
         range_of_products: 'Асортимент продукції',
         our_benefits: 'Наші переваги',
         industry: 'Сфери застосування нашої продукції',
-        products: 'Продукти',
+        glue_products: 'Продукти',
         logistics: 'Логістика',
         purchasing: 'Сировина',
         contacts: 'Контакти',
@@ -108,7 +114,9 @@ mixin header(lang)
       },
       ru: {
         home: 'Главная',
+        products: 'Продукция',
         factory: 'Предприятие',
+        news: 'Новости',
         charcoal: 'Древесный уголь',
         history: 'История',
         production_process: 'Процесс производства',
@@ -121,56 +129,92 @@ mixin header(lang)
         who_we_are: '',
         areas_of_application: '',
         ethyl_acetate_specification: '',
-        our_certificates: '',
+        our_certificates: 'Наши сертификаты',
         production_and_our_customers_location: '',
         glue: '',
         range_of_products: '',
         our_benefits: '',
         industry: '',
-        products: '',
+        glue_products: '',
         logistics: 'Логистика',
         purchasing: 'Сырье',
         contacts: 'Контакты'
       }
     }
-
-  nav.navbar.navbar-light.bg-light.mb2
-    .container
-      a.navbar-link(href="../" + lang + "/index.html") #{texts[lang].home}
-      if (lang === 'ua')
-        a.navbar-link(href="../" + lang + "/news.html") #{texts[lang].news}
-      .css_dropdown
-        a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
-        .css_dropdown-content
-          a(href="../" + lang + "/history.html") #{texts[lang].history}
-          a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
-      .css_dropdown
-        a.navbar-link.dropdown-toggle(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
-        .css_dropdown-content
-          a(href="../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
-          a(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].charcoal_for_grilling}
-          a(href="../" + lang + "/private-label.html") #{texts[lang].private_label}
-          a(href="../" + lang + "/production-process.html") #{texts[lang].production_process}
-          a(href="../" + lang + "/customers.html") #{texts[lang].customers}
-          a(href="../" + lang + "/purchasing.html") #{texts[lang].purchasing}
-      if (lang === 'en' || lang === 'ua')
-        .css_dropdown
-          a.navbar-link.dropdown-toggle(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
+  .row.mt-3.px-3.pt-3
+    .col-2.align-self-end
+      a(href="../" + lang + "/index.html")
+        img.w-100(src="../static/img/logo.png", alt="logo")
+    .col-7.align-self-end
+      nav.navbar.navbar-light.navbar-expand-lg.align-items-end
+        .css_dropdown.mr-5
+          a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
           .css_dropdown-content
-            a(href="../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
-            a(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
-            a(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
-            a(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
+            if (lang === 'ua' || lang === 'ru')
+              a.navbar-link.mr-5(href="../" + lang + "/news.html") #{texts[lang].news}
+            a(href="../" + lang + "/history.html") #{texts[lang].history}
+            a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
             a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
-            a(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
-        .css_dropdown
-          a.navbar-link.dropdown-toggle(href="../" + lang + "/glue.html") #{texts[lang].glue}
-          .css_dropdown-content
-            a(href="../" + lang + "/glue-who-we-are.html") #{texts[lang].who_we_are}
-            a(href="../" + lang + "/range-of-products.html") #{texts[lang].range_of_products}
-            a(href="../" + lang + "/our-benefits.html") #{texts[lang].our_benefits}
-            a(href="../" + lang + "/industry.html") #{texts[lang].industry}
-            a(href="../" + lang + "/products.html") #{texts[lang].products}
-            a(href="../" + lang + "/glue-customers.html") #{texts[lang].customers}
-      a.navbar-link(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
-      a.navbar-link(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
+            if (lang === 'ua' || lang === 'en')
+              a(href="../" + lang + "/politics.html") #{texts[lang].politics}
+            a(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
+        if (lang === 'en' || lang === 'ua')
+          .css_dropdown.mr-5
+            a.navbar-link.dropdown-toggle(href="") #{texts[lang].products}
+            .css_dropdown-content
+              a(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+              a(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
+              a(href="../" + lang + "/glue.html") #{texts[lang].glue}
+        else
+          a.navbar-link.mr-5(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+        a.navbar-link.mr-5(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
+    .col-3
+      .row.mb-3
+        .ml-auto
+          a.mr-2.css_flag(href="../en/index.html")
+            img(
+              src="../static/img/united-kingdom.png",
+              alt="english",
+              width="20"
+            )
+          a.mr-2.css_flag(href="../de/index.html")
+            img(
+              src="../static/img/germany.png",
+              alt="german",
+              width="20"
+            )
+          a.mr-2.css_flag(href="../fr/index.html")
+            img(
+              src="../static/img/france.png",
+              alt="france",
+              width="20"
+            )
+          a.mr-2.css_flag(href="../ua/index.html")
+            img(
+              src="../static/img/ukraine.png",
+              alt="ukrainian",
+              width="20"
+            )
+          a.mr-2.css_flag(href="../ru/index.html")
+            img(
+              src="../static/img/russia.png",
+              alt="russian",
+              width="20"
+            )
+      .row
+        .ml-auto.text-right
+          img.mr-2(
+            src="../static/img/bsci.svg",
+            alt="BSCI",
+            height="40"
+          )
+          img.mr-2(
+            src="../static/img/ISO.jpg",
+            alt="ISO",
+            height="60"
+          )
+          img.mr-2(
+            src="../static/img/REACH.jpg",
+            alt="Reach",
+            height="60"
+          )

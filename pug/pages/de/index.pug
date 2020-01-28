@@ -4,6 +4,19 @@ include ../../components/header
 include ../../components/footer
 include ../../components/title
 
+block meta
+  meta(name='description' content='Peretschyn Forstchemisches Kombinat - Produzent von Holzkohle für industrielle Anwendungen, Grillholzkohleproduktion, Ukraine')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157169906-1')
+  script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-157169906-1');
+
+
 block title
   +title('de')
 
@@ -15,3 +28,4 @@ block content
 
 block footer
   +footer('de')
+

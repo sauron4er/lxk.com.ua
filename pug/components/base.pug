@@ -6,6 +6,7 @@ html
       title Perechin timber and chemical plant
 
     link(rel="stylesheet", href="../static/css/styles.css")
+    link(rel="stylesheet", href="../static/css/links.css")
     link(
       rel="stylesheet",
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
@@ -34,51 +35,13 @@ html
     block scripts
     block meta
 
-  body
-    .sticky-top
-      .bg-white.d-flex.pt-3.pb-2.mx-5.justify-content-between
-        img(src="../static/img/logo.png", alt="logo", width="35", height="27")
-        .d-flex.justify-content-between
-          .d-flex
-            a.mr-2.css_flag(href="../en/index.html")
-              img(
-                src="../static/img/united-kingdom.png",
-                alt="english",
-                width="20",
-                height="20"
-              )
-            a.mr-2.css_flag(href="../de/index.html")
-              img(
-                src="../static/img/germany.png",
-                alt="german",
-                width="20",
-                height="20"
-              )
-            a.mr-2.css_flag(href="../fr/index.html")
-              img(
-                src="../static/img/france.png",
-                alt="france",
-                width="20",
-                height="20"
-              )
-            a.mr-2.css_flag(href="../ua/index.html")
-              img(
-                src="../static/img/ukraine.png",
-                alt="ukrainian",
-                width="20",
-                height="20"
-              )
-            a.mr-2.css_flag(href="../ru/index.html")
-              img(
-                src="../static/img/russia.png",
-                alt="russian",
-                width="20",
-                height="20"
-              )
+  body.css_body
+    .container
       block header
+      hr.border.border-success.m-1
 
-    main.container.my-3
-      block content
+      main.mt-3
+        block content
 
-    block footer
+      block footer
 

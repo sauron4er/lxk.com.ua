@@ -1,4 +1,5 @@
 mixin content(lang)
+  script(async='' defer='' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2')
   -
     let texts = {
       en: {
@@ -77,7 +78,7 @@ mixin content(lang)
         [
         'Zertifikate:',
         'Din Plus, EN 1860-2'
-        ],
+        ]
         ],
         images_title: ''
       },
@@ -89,7 +90,7 @@ mixin content(lang)
         'Qui provient de la sylviculture bien gérée. Le charbon de bois s`allume vite et facilement.',
         'Assure le brûlage long et la phase de la chaleur forte.',
         'Prêt pour le grillage pendant 20 minutes.',
-        'Provient de l`Europe.',
+        'Provient de l`Europe.'
         ],
         table_title: 'CARACTÉRISTIQUES TECHNIQUES',
         table_rows: [
@@ -218,6 +219,11 @@ mixin content(lang)
         tr
           each td in row
             td #{td}
+  if (lang === 'ua' || lang === 'ru')
+    br
+    .text-center
+      .fb-video(data-href='https://www.facebook.com/grillyua/videos/2161185987523122/?story_fbid=2267572930210528&id=1609460466021781' data-width='500' data-show-text='false')
+    br
   h6 #{texts[lang].images_title}
   .d-flex.justify-content-center
     img.img-fluid.mr-5(

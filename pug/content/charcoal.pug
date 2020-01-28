@@ -6,35 +6,50 @@ mixin content(lang)
         charcoal_for_industry: 'Charcoal for industry',
         charcoal_for_grilling: 'Charcoal for grilling',
         private_label: 'Private label',
-        our_customers: 'Our customers'
+        energy_efficiency: 'Energy efficiency',
+        production_process: 'Production process',
+        customers: 'Our customers',
+        purchasing: 'Purchasing'
       },
       de: {
         charcoal: 'Holzkohle',
         charcoal_for_industry: 'Holzkohle für industrielle Anwendungen',
         charcoal_for_grilling: 'Grillholzkohleproduktion',
         private_label: 'Private Handelsmarke',
-        our_customers: 'Auftraggeber'
+        energy_efficiency: 'Еnergieeffizienz',
+        production_process: 'Produktionsablauf',
+        customers: 'Auftraggeber',
+        purchasing: 'Einkauf/Umwelt'
       },
       fr: {
         charcoal: 'Charbon',
         charcoal_for_industry: 'Charbon de bois pour l`industrie',
         charcoal_for_grilling: 'Charbon de bois pour la grille',
         private_label: 'Marque privée',
-        our_customers: 'Clientèle'
+        energy_efficiency: 'Efficacité énergétique',
+        production_process: 'Fabrication',
+        customers: 'Clientèle',
+        purchasing: 'Environnement'
       },
       ua: {
         charcoal: 'Деревне вугілля',
         charcoal_for_industry: 'Вугілля для промисловості',
         charcoal_for_grilling: 'Продукція для грилювання',
         private_label: 'Власна торгова марка',
-        our_customers: 'Клієнти'
+        energy_efficiency: 'Ефективне використання енергії',
+        production_process: 'Виробничий процес',
+        customers: 'Клієнти',
+        purchasing: 'Сировина'
       },
       ru: {
         charcoal: 'Древесный уголь',
+        production_process: 'Процесс производства',
+        energy_efficiency: 'Эффективное использование энергии',
         charcoal_for_industry: 'Уголь для промышленности',
         charcoal_for_grilling: 'Продукция для гриллинга',
         private_label: 'Собственная торговая марка',
-        our_customers: 'Клиенты'
+        customers: 'Клиенты',
+        purchasing: 'Сырье'
       }
     };
 
@@ -43,21 +58,35 @@ mixin content(lang)
   -
     const grilly_on_hover = '../static/img/Pic_Grilly_on_' + lang + '\.jpg'
     
-  img.img-fluid.mx-auto.d-block.w-100(src='../static/img/PRODUCTS.jpg' alt='Factory')
+
   h2.mt-3 #{texts[lang].charcoal}
-  .d-flex.justify-content-center.mb-5
-    a
-      img.img-fluid(src='../static/img/Logos.jpg' alt='')
-    a(href='../' + lang + '/charcoal-for-industry.html')
-      img.img-fluid(src='../static/img/Pic_Coal.jpg'
-        onmouseover="this.src='" + coal_on_hover + "';"
-        onmouseout="this.src='../static/img/Pic_Coal.jpg';" alt='')
-    a(href='../' + lang + '/charcoal-for-grilling.html')
-      img.img-fluid(src='../static/img/Pic_Grilly.jpg'
-        onmouseover="this.src='" + grilly_on_hover + "';"
-        onmouseout="this.src='../static/img/Pic_Grilly.jpg';" alt='')
-  //ul.fa-ul
-  //  li
-  //    a(href='../' + lang + '/private-label.html') #{texts[lang].private_label}
-  //  li
-  //    a(href='../' + lang + '/customers.html') #{texts[lang].our_customers}
+  .row
+    .col-4
+      ul
+        p.css_p
+          a.css_link(href="../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
+        p.css_p
+          a.css_link(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].charcoal_for_grilling}
+        p.css_p
+          a.css_link(href="../" + lang + "/private-label.html") #{texts[lang].private_label}
+        p.css_p
+          a.css_link(href="../" + lang + "/production-process.html") #{texts[lang].production_process}
+        p.css_p
+          a.css_link(href="../" + lang + "/customers.html") #{texts[lang].customers}
+        p.css_p
+          a.css_link(href="../" + lang + "/purchasing.html") #{texts[lang].purchasing}
+    .col-8
+      img.img-fluid.mx-auto.d-block.w-100.mb-4(src='../static/img/PRODUCTS.jpg' alt='Factory')
+      .d-flex.justify-content-center.mb-5
+        a
+          img.img-fluid(src='../static/img/Logos.jpg' alt='')
+        a(href='../' + lang + '/charcoal-for-industry.html')
+          img.img-fluid(src='../static/img/Pic_Coal.jpg'
+            onmouseover="this.src='" + coal_on_hover + "';"
+            onmouseout="this.src='../static/img/Pic_Coal.jpg';" alt='')
+        a(href='../' + lang + '/charcoal-for-grilling.html')
+          img.img-fluid(src='../static/img/Pic_Grilly.jpg'
+            onmouseover="this.src='" + grilly_on_hover + "';"
+            onmouseout="this.src='../static/img/Pic_Grilly.jpg';" alt='')
+
+

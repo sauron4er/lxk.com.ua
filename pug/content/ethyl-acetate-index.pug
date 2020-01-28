@@ -21,22 +21,22 @@ mixin content(lang)
       }
     };
 
-  img.d-block.w-100.mb-4(
-    src="../static/img/index-ethyl.jpg",
-    alt="First slide"
-  )
+
   h2.mt-2 #{texts[lang].title}
-  .d-flex.mb-5
-    ul.fa-ul
-      li
-        a(href="../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
-      li
-        a(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
-      li
-        a(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
-      li
-        a(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
-      li
-        a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
-      li
-        a(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
+  .row
+    .col-4
+      ul
+        p.css_p
+          a.css_link(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
+        p.css_p
+          a.css_link(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
+        p.css_p
+          a.css_link(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
+        p.css_p
+          a.css_link(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
+    .col-8
+      img.d-block.w-100.mb-4(
+        src="../static/img/index-ethyl.jpg",
+        alt="First slide"
+      )
+

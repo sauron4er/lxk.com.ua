@@ -4,6 +4,19 @@ include ../../components/footer
 include ../../content/index
 include ../../components/title
 
+block links
+  meta(name='description' content='Перечинський лісохімічний комбінат (лісохімкомбінат, ПЛХК) - виробник вугілля, брикетів для грилю, етилацетату, клеєвих сумішів, Україна')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157169906-1')
+  script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-157169906-1');
+
+
 block title
   +title('ua')
 

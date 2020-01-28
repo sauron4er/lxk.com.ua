@@ -1,0 +1,55 @@
+.css_br {
+  margin-bottom: 3em;
+}
+
+.css_link, .css_link:visited, .css_link:hover, .css_link:active{
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:black;
+  font-size:1.2em;
+}
+.css_link:hover{
+  /*color:#d73444;*/
+  color:#5cb85c;
+}
+.css_link:before, .css_link:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+}
+.css_link:before{
+  /*content: "\f105"; !* FontAwesome Unicode *!*/
+  /*font-family: FontAwesome, serif;*/
+  /*display: inline-block;*/
+  /*width: 1em; !* same as padding-left set on li *!*/
+  top:-0.1em;
+}
+.css_link:after{
+  bottom:-0.25em;
+
+}
+.css_link:before, .css_link:after{
+  /*height:2px;*/
+  /*margin-left: -1em;*/
+  height:0.1rem;
+  width:0;
+  background:#5cb85c;
+  left:0;
+}
+
+.css_link:hover:before, .css_link:hover:after{
+  width:100%;
+}
+
+.css_p:before {
+  content: "\f105"; /* FontAwesome Unicode */
+  font-family: FontAwesome, serif;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}

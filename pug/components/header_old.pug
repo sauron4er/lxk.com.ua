@@ -51,7 +51,7 @@ mixin header(lang)
         products: '',
         logistics: 'Logistik',
         purchasing: 'Einkauf/Umwelt',
-        contacts: 'Kontakt',
+        contacts: 'Kontakt'
       },
       fr: {
         home: 'La première',
@@ -77,11 +77,10 @@ mixin header(lang)
         products: '',
         logistics: 'Logistique',
         purchasing: 'Environnement',
-        contacts: 'Coordonnees',
+        contacts: 'Coordonnees'
       },
       ua: {
         home: 'Головна',
-        news: 'Новини',
         factory: 'Підприємство',
         charcoal: 'Деревне вугілля',
         history: 'Історія',
@@ -104,7 +103,8 @@ mixin header(lang)
         products: 'Продукти',
         logistics: 'Логістика',
         purchasing: 'Сировина',
-        contacts: 'Контакти'
+        contacts: 'Контакти',
+        news: 'Новини'
       },
       ru: {
         home: 'Главная',
@@ -136,40 +136,41 @@ mixin header(lang)
 
   nav.navbar.navbar-light.bg-light.mb2
     .container
-      a.navbar-link(href="../../" + lang + "/index.html") #{texts[lang].home}
-      a.navbar-link(href="../../" + lang + "/news.html") #{texts[lang].news}
+      a.navbar-link(href="../" + lang + "/index.html") #{texts[lang].home}
+      if (lang === 'ua')
+        a.navbar-link(href="../" + lang + "/news.html") #{texts[lang].news}
       .css_dropdown
-        a.navbar-link.dropdown-toggle(href="../../" + lang + "/factory.html") #{texts[lang].factory}
+        a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
         .css_dropdown-content
-          a(href="../../" + lang + "/history.html") #{texts[lang].history}
-          a(href="../../" + lang + "/production-process.html") #{texts[lang].production_process}
-          a(href="../../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
+          a(href="../" + lang + "/history.html") #{texts[lang].history}
+          a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
       .css_dropdown
-        a.navbar-link.dropdown-toggle(href="../../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+        a.navbar-link.dropdown-toggle(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
         .css_dropdown-content
-          a(href="../../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
-          a(href="../../" + lang + "/charcoal-for-grilling.html") #{texts[lang].charcoal_for_grilling}
-          a(href="../../" + lang + "/private-label.html") #{texts[lang].private_label}
-          a(href="../../" + lang + "/customers.html") #{texts[lang].customers}
+          a(href="../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
+          a(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].charcoal_for_grilling}
+          a(href="../" + lang + "/private-label.html") #{texts[lang].private_label}
+          a(href="../" + lang + "/production-process.html") #{texts[lang].production_process}
+          a(href="../" + lang + "/customers.html") #{texts[lang].customers}
+          a(href="../" + lang + "/purchasing.html") #{texts[lang].purchasing}
       if (lang === 'en' || lang === 'ua')
         .css_dropdown
-          a.navbar-link.dropdown-toggle(href="../../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
+          a.navbar-link.dropdown-toggle(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
           .css_dropdown-content
-            a(href="../../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
-            a(href="../../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
-            a(href="../../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
-            a(href="../../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
-            a(href="../../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
-            a(href="../../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
+            a(href="../" + lang + "/ethyl-who-we-are.html") #{texts[lang].who_we_are}
+            a(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
+            a(href="../" + lang + "/areas-of-application.html") #{texts[lang].areas_of_application}
+            a(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
+            a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
+            a(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
         .css_dropdown
-          a.navbar-link.dropdown-toggle(href="../../" + lang + "/glue.html") #{texts[lang].glue}
+          a.navbar-link.dropdown-toggle(href="../" + lang + "/glue.html") #{texts[lang].glue}
           .css_dropdown-content
-            a(href="../../" + lang + "/glue-who-we-are.html") #{texts[lang].who_we_are}
-            a(href="../../" + lang + "/range-of-products.html") #{texts[lang].range_of_products}
-            a(href="../../" + lang + "/our-benefits.html") #{texts[lang].our_benefits}
-            a(href="../../" + lang + "/industry.html") #{texts[lang].industry}
-            a(href="../../" + lang + "/products.html") #{texts[lang].products}
-            a(href="../../" + lang + "/glue-customers.html") #{texts[lang].customers}
-      a.navbar-link(href="../../" + lang + "/logistics.html") #{texts[lang].logistics}
-      a.navbar-link(href="../../" + lang + "/purchasing.html") #{texts[lang].purchasing}
-      a.navbar-link(href="../../" + lang + "/contacts.html") #{texts[lang].contacts}
+            a(href="../" + lang + "/glue-who-we-are.html") #{texts[lang].who_we_are}
+            a(href="../" + lang + "/range-of-products.html") #{texts[lang].range_of_products}
+            a(href="../" + lang + "/our-benefits.html") #{texts[lang].our_benefits}
+            a(href="../" + lang + "/industry.html") #{texts[lang].industry}
+            a(href="../" + lang + "/products.html") #{texts[lang].products}
+            a(href="../" + lang + "/glue-customers.html") #{texts[lang].customers}
+      a.navbar-link(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
+      a.navbar-link(href="../" + lang + "/contacts.html") #{texts[lang].contacts}

@@ -1,13 +1,17 @@
 extends ../../components/base
-include ../../content/glue-who-we-are
+include ../../content/news
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('ru')
 
 block header
-  +header('en')
+  +header('ru')
 
 block content
-  +content('en')
+  +content('ru')
 
 block footer
-  +footer('en')
+  +footer('ru')

@@ -1,15 +1,22 @@
-mixin content
+mixin content(lang)
+  script(async='' defer='' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2')
+  if (lang === 'ua')
+    hr
+    div.row
+      div.col-4
+        img.w-100(
+          src="../static/img/article.png",
+          alt="Article"
+        )
+      div.col-8
+        h5 Екологи спростовують забруднення стічних вод та повітря ТДВ “Перечинським лісохімічним комбінатом”
+        div На численні прохання Перечинської громади, 6 грудня 2019 року в місто була запрошена незалежна лабораторія ПНВП “Екологія”. Нею було проведено відбори проб повітря для визначення концентрації забруднюючих речовин в приземному шарі атмосферного повітря у 5-ти точках м. Перечин по санітарно-захисній зоні лісохімічного комбінату.
+        div.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
+        div.text-right
+          a.font-italic(href="./news/news_20122019.html") Читати далі...
   hr
-  div.row
-    div.col-4
-      img.w-100(
-        src="../static/img/article.png",
-        alt="Article"
-      )
-    div.col-8
-      h5 Екологи спростовують забруднення стічних вод та повітря ТДВ “Перечинським лісохімічним комбінатом”
-      div На численні прохання Перечинської громади, 6 грудня 2019 року в місто була запрошена незалежна лабораторія ПНВП “Екологія”. Нею було проведено відбори проб повітря для визначення концентрації забруднюючих речовин в приземному шарі атмосферного повітря у 5-ти точках м. Перечин по санітарно-захисній зоні лісохімічного комбінату.
-      div.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
-      div.text-right
-        a.font-italic(href="./news/news_20122019.html") Читати далі...
+  .text-center
+    iframe(width='500' height='300' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
   hr
+  .text-center
+    .fb-video(data-href='https://www.facebook.com/grillyua/videos/2161185987523122/?story_fbid=2267572930210528&id=1609460466021781' data-width='500' data-show-text='false')

@@ -6,12 +6,23 @@ mixin content(lang)
       },
       ua: {
         title: 'Наші сертифікати',
+      },
+      de: {
+        title: 'Unsere Zertifikate',
+      },
+      fr: {
+        title: 'Nos certificats',
+      },
+      ru: {
+        title: 'Наши сертификаты',
       }
     };
 
   h2 #{texts[lang].title}
-  .row.mt-4
-    .col-6.text-center
-      img.mx-auto(src="../static/img/our-certificates-1.jpg", alt="")
-    .col-6.text-center
-      img.mx-auto(src="../static/img/our-certificates-2.jpg", alt="")
+  .text-center
+    img(src="../static/img/ISO-certificate.jpg", alt="")
+  //.row.mt-4
+    //.col-6.text-center
+      //img.mx-auto(src="../static/img/our-certificates-1.jpg", alt="")
+    //.col-6.text-center
+    //  img.mx-auto(src="../static/img/our-certificates-2.jpg", alt="")

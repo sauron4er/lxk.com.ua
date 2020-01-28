@@ -5,6 +5,17 @@ include ../components/footer
 
 block meta
   meta(name='google-site-verification' content='z-sAa7U8oepdKBNS2GMem3Lv3Fsrrw2basFthIj_bGc')
+  meta(name='description' content='Perechin (Ukraine) timber, charcoal for grill, ethyl acetate, glue plant')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157169906-1')
+  script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-157169906-1');
+
 
 block header
   +header('en')

@@ -12,35 +12,22 @@ mixin content(lang)
         formaldehyde: 'Формальдегідні смоли',
         pva: 'ПВА дисперсії',
         pvoh: 'Дисперсії PVOH',
-      },
+      }
     };
-
+    
   h2 #{texts[lang].title}
-
   table.mb-5
     tbody
       tr
         td
-          a.css_hover_zoom(href="../" + lang +"/formaldehyde.html")
-            img.d-block(
-              src="../static/img/formaldehyde.jpg",
-              alt="formaldehyde",
-              height="300px"
-            )
+          a.css_hover_zoom(href="../" + lang + "/formaldehyde.html")
+            img.d-block(src='../static/img/formaldehyde.jpg' alt='formaldehyde' height='300px')
             .text-center #{texts[lang].formaldehyde}
         td
           a.css_hover_zoom(href="../" + lang + "/pva.html")
-            img.d-block(
-              src="../static/img/pva.jpg",
-              alt="pva",
-              height="300px"
-            )
+            img.d-block(src='../static/img/pva.jpg' alt='pva' height='300px')
             .text-center #{texts[lang].pva}
         td
           a.css_hover_zoom(href="../" + lang + "/pvoh.html")
-            img.d-block(
-              src="../static/img/pvoh.jpg",
-              alt="pvoh",
-              height="300px"
-            )
+            img.d-block(src='../static/img/pvoh.jpg' alt='pvoh' height='300px')
             .text-center #{texts[lang].pvoh}

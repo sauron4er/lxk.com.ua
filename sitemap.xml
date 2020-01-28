@@ -26,30 +26,30 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml
           rel="alternate"
           hreflang="uk"
           href="http://lxk.com.ua/ua/index.html"/>
-  <lastmod>2020-01-03T13:31:26+00:00</lastmod>
+  <lastmod>2020-01-27T13:31:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>http://lxk.com.ua/en/index.html</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="de"
-          href="http://lxk.com.ua/de/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="http://lxk.com.ua/fr/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="ru"
-          href="http://lxk.com.ua/ru/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="uk"
-          href="http://lxk.com.ua/ua/index.html"/>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+<!--<url>-->
+<!--  <loc>http://lxk.com.ua/en/index.html</loc>-->
+<!--  <xhtml:link-->
+<!--          rel="alternate"-->
+<!--          hreflang="de"-->
+<!--          href="http://lxk.com.ua/de/index.html"/>-->
+<!--  <xhtml:link-->
+<!--          rel="alternate"-->
+<!--          hreflang="fr"-->
+<!--          href="http://lxk.com.ua/fr/index.html"/>-->
+<!--  <xhtml:link-->
+<!--          rel="alternate"-->
+<!--          hreflang="ru"-->
+<!--          href="http://lxk.com.ua/ru/index.html"/>-->
+<!--  <xhtml:link-->
+<!--          rel="alternate"-->
+<!--          hreflang="uk"-->
+<!--          href="http://lxk.com.ua/ua/index.html"/>-->
+<!--  <lastmod>2019-12-20T09:30:31+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
 <url>
   <loc>http://lxk.com.ua/de/index.html</loc>
   <xhtml:link

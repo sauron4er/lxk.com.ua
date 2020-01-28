@@ -1,31 +1,19 @@
-.css_hover_zoom:hover {
-  transform: scale(1.1);
-}
-
-/*Header*/
-.css_flag[href] img {
-  -webkit-filter: opacity(75%); /* Safari 6.0 - 9.0 */
-  filter: opacity(75%);
-}
-
-.css_flag[href] img:hover {
-  -webkit-filter: none; /* Safari 6.0 - 9.0 */
-  filter: none;
-}
-
-li a, nav div a {
-  color: black;
-}
-
-li a:hover, nav div a:hover {
-  text-decoration: none;
-  color: orange;
-}
-
 /*Page*/
 html {
   height: 99.6%;
   box-sizing: border-box;
+}
+
+.css_body {
+  background: #edebe6;
+}
+
+.container {
+  background: white;
+  padding-bottom: 1em;
+  -webkit-box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
+  -moz-box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
+  box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
 }
 
 *,
@@ -37,24 +25,13 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 180px;
-  min-height: 100%;
+  background: #0b2e13;
+  padding-bottom: 100px;
+  /*min-height: 100%;*/
 }
 
 main {
   margin: 0 auto;
-}
-
-footer {
-  height: 180px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-image: url("../img/charcoal-disposal-header.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 h2 {
@@ -65,6 +42,47 @@ h5 {
   text-align: center;
 }
 
+.css_index_href {
+  text-align: center;
+  border: #5cb85c solid 2px;
+  padding: 2px;
+  margin-bottom: 3px;
+}
+
+.css_index_href:hover {
+  background: #dde1e5;
+}
+
+.css_href:hover {
+  text-decoration: none;
+}
+
+/*Header*/
+.css_header {
+    top : 0;
+    position: sticky;
+}
+
+.css_flag[href] img {
+  -webkit-filter: opacity(75%); /* Safari 6.0 - 9.0 */
+  filter: opacity(75%);
+}
+
+.css_flag[href] img:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+}
+
+nav a, button.btn-link {
+  color: black;
+}
+
+nav a:hover, button.btn-link:hover {
+  text-decoration: none;
+  color: #5cb85c;
+}
+
+/*Lists*/
 ul {
   list-style: none;
 }
@@ -78,10 +96,31 @@ li:before {
   color: #fd7e14;
 }
 
+li a {
+  color: black;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #5cb85c;
+}
+
 /*Footer*/
+footer {
+  /*height: auto;*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*padding: 1rem;*/
+  /*background-image: url("../img/charcoal-disposal-header.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+}
+
 .css_footer_contacts {
   font-size: 1.3em;
-  color: white;
+  /*color: white;*/
   text-align: center;
 }
 
@@ -96,7 +135,7 @@ li:before {
 }
 
 .css_footer_table tr td {
-  color: white;
+  /*color: white;*/
 }
 
 .css_footer_table_icon {
@@ -146,7 +185,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #5cb85c;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -156,7 +195,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #5cb85c;
 }
 
 /* Add a background color and some padding around the form */
@@ -168,7 +207,6 @@ input[type=submit]:hover {
 
 
 /*Slideshow*/
-
 .css_slideshow_text {
   min-height: 130px;
 }
