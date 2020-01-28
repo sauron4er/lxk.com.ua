@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/pva
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'pva')
 
 block header
   +header('en')

@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/contacts
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'contacts')
 
 block header
   +header('en')

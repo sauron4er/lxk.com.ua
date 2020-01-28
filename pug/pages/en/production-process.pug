@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/production-process
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'production_process')
 
 block header
   +header('en')

@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/pvoh
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'pvoh')
 
 block header
   +header('en')

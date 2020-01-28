@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/production-and-our-customers-location
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'production_and_our_customers_location')
 
 block header
   +header('en')

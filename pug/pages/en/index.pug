@@ -2,6 +2,7 @@ extends ../../components/base
 include ../../content/index
 include ../../components/header
 include ../../components/footer
+include ../../components/title
 
 block links
   link(rel='canonical' href='http://lxk.com.ua/')
@@ -15,6 +16,9 @@ block links
       gtag('js', new Date());
       gtag('config', 'UA-157169906-1');
 
+
+block title
+  +title('en', 'index')
 
 block header
   +header('en')

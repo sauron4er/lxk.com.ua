@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/charcoal-for-grilling
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'charcoal_for_grilling')
 
 block header
   +header('en')

@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/glue-products
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'glue_products')
 
 block header
   +header('en')

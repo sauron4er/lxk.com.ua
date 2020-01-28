@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/disposable-grills
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'disposable_grills')
 
 block header
   +header('en')

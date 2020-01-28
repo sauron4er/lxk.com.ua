@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/areas-of-application
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'areas_of_application')
 
 block header
   +header('en')

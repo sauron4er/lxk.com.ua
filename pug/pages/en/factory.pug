@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/factory
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'factory')
 
 block header
   +header('en')

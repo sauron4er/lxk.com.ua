@@ -2,6 +2,7 @@ extends ../components/base
 include ../content/first-index
 include ../components/header
 include ../components/footer
+include ../components/title
 
 block meta
   meta(name='google-site-verification' content='z-sAa7U8oepdKBNS2GMem3Lv3Fsrrw2basFthIj_bGc')
@@ -16,6 +17,8 @@ block meta
       gtag('js', new Date());
       gtag('config', 'UA-157169906-1');
 
+block title
+  +title('en', 'index')
 
 block header
   +header('en')

@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/range-of-products
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'range_of_products')
 
 block header
   +header('en')

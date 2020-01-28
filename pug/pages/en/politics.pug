@@ -2,6 +2,10 @@ extends ../../components/base
 include ../../content/politics
 include ../../components/header
 include ../../components/footer
+include ../../components/title
+
+block title
+  +title('en', 'politics')
 
 block header
   +header('en')
