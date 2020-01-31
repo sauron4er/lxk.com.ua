@@ -8,677 +8,2511 @@
 
 xmlns:xhtml="http://www.w3.org/1999/xhtml
 
-<url>
-  <loc>http://lxk.com.ua/</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="de"
-          href="http://lxk.com.ua/de/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="http://lxk.com.ua/fr/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="ru"
-          href="http://lxk.com.ua/ru/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="uk"
-          href="http://lxk.com.ua/ua/index.html"/>
-  <lastmod>2020-01-27T13:31:26+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<!--<url>-->
-<!--  <loc>http://lxk.com.ua/en/index.html</loc>-->
-<!--  <xhtml:link-->
-<!--          rel="alternate"-->
-<!--          hreflang="de"-->
-<!--          href="http://lxk.com.ua/de/index.html"/>-->
-<!--  <xhtml:link-->
-<!--          rel="alternate"-->
-<!--          hreflang="fr"-->
-<!--          href="http://lxk.com.ua/fr/index.html"/>-->
-<!--  <xhtml:link-->
-<!--          rel="alternate"-->
-<!--          hreflang="ru"-->
-<!--          href="http://lxk.com.ua/ru/index.html"/>-->
-<!--  <xhtml:link-->
-<!--          rel="alternate"-->
-<!--          hreflang="uk"-->
-<!--          href="http://lxk.com.ua/ua/index.html"/>-->
-<!--  <lastmod>2019-12-20T09:30:31+00:00</lastmod>-->
-<!--  <priority>0.80</priority>-->
-<!--</url>-->
-<url>
-  <loc>http://lxk.com.ua/de/index.html</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="http://lxk.com.ua/en/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="http://lxk.com.ua/fr/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="ru"
-          href="http://lxk.com.ua/ru/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="uk"
-          href="http://lxk.com.ua/ua/index.html"/>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/index.html</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="de"
-          href="http://lxk.com.ua/de/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="http://lxk.com.ua/en/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="ru"
-          href="http://lxk.com.ua/ru/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="uk"
-          href="http://lxk.com.ua/ua/index.html"/>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/index.html</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="de"
-          href="http://lxk.com.ua/de/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="http://lxk.com.ua/fr/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="ru"
-          href="http://lxk.com.ua/ru/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="http://lxk.com.ua/en/index.html"/>
-  <lastmod>2019-12-20T09:45:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/index.html</loc>
-  <xhtml:link
-          rel="alternate"
-          hreflang="de"
-          href="http://lxk.com.ua/de/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="http://lxk.com.ua/fr/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="uk"
-          href="http://lxk.com.ua/ua/index.html"/>
-  <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="http://lxk.com.ua/en/index.html"/>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/factory.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/history.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/production-process.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/energy-efficiency.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/charcoal.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/charcoal-for-industry.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/charcoal-for-grilling.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/private-label.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/customers.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/ethyl-acetate-index.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/ethyl-who-we-are.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/ethyl-acetate.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/areas-of-application.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/ethyl-acetate-specification.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/our-certificates.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/production-and-our-customers-location.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/glue.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/glue-who-we-are.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/range-of-products.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/our-benefits.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/industry.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/products.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/glue-customers.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/logistics.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/purchasing.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/contacts.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/factory.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/history.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/production-process.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/energy-efficiency.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/charcoal.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/charcoal-for-industry.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/charcoal-for-grilling.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/private-label.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/customers.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/logistics.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/purchasing.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/contacts.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/factory.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/history.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/production-process.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/energy-efficiency.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/charcoal.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/charcoal-for-industry.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/charcoal-for-grilling.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/private-label.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/customers.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/logistics.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/purchasing.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/contacts.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/factory.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/history.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/production-process.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/energy-efficiency.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/charcoal.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/charcoal-for-industry.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/charcoal-for-grilling.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/private-label.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/customers.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/ethyl-acetate-index.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/ethyl-who-we-are.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/ethyl-acetate.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/areas-of-application.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/ethyl-acetate-specification.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/our-certificates.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/production-and-our-customers-location.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/glue.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/glue-who-we-are.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/range-of-products.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/our-benefits.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/industry.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/products.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/glue-customers.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/logistics.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/purchasing.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/contacts.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/factory.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/history.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/production-process.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/energy-efficiency.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/charcoal.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/charcoal-for-industry.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/charcoal-for-grilling.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/private-label.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/customers.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/logistics.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/purchasing.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/contacts.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/charcoal-bag.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/briquettes.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/disposable-grills.html</loc>
-  <lastmod>2019-12-20T09:30:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/formaldehyde.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/pva.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/en/pvoh.html</loc>
-  <lastmod>2019-12-20T09:30:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/charcoal-bag.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/briquettes.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/de/disposable-grills.html</loc>
-  <lastmod>2019-12-20T09:30:29+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/charcoal-bag.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/briquettes.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/fr/disposable-grills.html</loc>
-  <lastmod>2019-12-20T09:30:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/charcoal-bag.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/briquettes.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/disposable-grills.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/formaldehyde.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/pva.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ua/pvoh.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/charcoal-bag.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/briquettes.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://lxk.com.ua/ru/disposable-grills.html</loc>
-  <lastmod>2019-12-20T09:30:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
 
+  <!--                                                            Index -->
+  <url>
+    <loc>http://lxk.com.ua/</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/index.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/index.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/index.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/index.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/index.html"/>
+  </url>
+
+  <!--                                                            Factory -->
+  <url>
+    <loc>http://lxk.com.ua/en/factory.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/factory.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/factory.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/factory.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/factory.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/factory.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/factory.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/factory.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/factory.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/factory.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/factory.html"/>
+  </url>
+
+  <!--                                                            History -->
+  <url>
+    <loc>http://lxk.com.ua/en/history.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/history.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/history.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/history.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/history.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/history.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/history.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/history.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/history.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/history.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/history.html"/>
+  </url>
+
+
+  <!--                                                            Energy efficiency -->
+  <url>
+    <loc>http://lxk.com.ua/en/energy-efficiency.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/energy-efficiency.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/energy-efficiency.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/energy-efficiency.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/energy-efficiency.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/energy-efficiency.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/energy-efficiency.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/energy-efficiency.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/energy-efficiency.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/energy-efficiency.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/energy-efficiency.html"/>
+  </url>
+
+
+  <!--                                                            Our certificates -->
+  <url>
+    <loc>http://lxk.com.ua/en/our-certificates.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-certificates.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/our-certificates.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-certificates.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/our-certificates.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-certificates.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/our-certificates.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-certificates.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/our-certificates.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/our-certificates.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-certificates.html"/>
+  </url>
+
+
+  <!--                                                            Politics -->
+  <url>
+    <loc>http://lxk.com.ua/en/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+
+
+  <!--                                                            Logistics -->
+  <url>
+    <loc>http://lxk.com.ua/en/logistics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/logistics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/logistics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/logistics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/logistics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/logistics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/logistics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/logistics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/logistics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/logistics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/logistics.html"/>
+  </url>
+
+
+  <!--                                                            Charcoal -->
+  <url>
+    <loc>http://lxk.com.ua/en/charcoal.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/charcoal.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/charcoal.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/charcoal.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/charcoal.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal.html"/>
+  </url>
+
+
+  <!--                                                            Contacts -->
+  <url>
+    <loc>http://lxk.com.ua/en/contacts.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/contacts.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/contacts.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/contacts.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/contacts.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/contacts.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/contacts.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/contacts.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/contacts.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/contacts.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/contacts.html"/>
+  </url>
+  
+  
+  <!--                                                            charcoal-for-industry -->
+  <url>
+    <loc>http://lxk.com.ua/en/charcoal-for-industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-industry.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/charcoal-for-industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-industry.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/charcoal-for-industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-industry.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/charcoal-for-industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-industry.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/charcoal-for-industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-industry.html"/>
+  </url>
+
+
+  <!--                                                            charcoal-for-grilling -->
+  <url>
+    <loc>http://lxk.com.ua/en/charcoal-for-grilling.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-grilling.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/charcoal-for-grilling.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-grilling.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/charcoal-for-grilling.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-grilling.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/charcoal-for-grilling.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-grilling.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/charcoal-for-grilling.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-for-grilling.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-for-grilling.html"/>
+  </url>
+
+
+  <!--                                                            private-label -->
+  <url>
+    <loc>http://lxk.com.ua/en/private-label.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/private-label.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/private-label.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/private-label.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/private-label.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/private-label.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/private-label.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/private-label.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/private-label.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/private-label.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/private-label.html"/>
+  </url>
+
+
+  <!--                                                            production-process -->
+  <url>
+    <loc>http://lxk.com.ua/en/production-process.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-process.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/production-process.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-process.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/production-process.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-process.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/production-process.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-process.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/production-process.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/production-process.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-process.html"/>
+  </url>
+
+
+  <!--                                                            customers -->
+  <url>
+    <loc>http://lxk.com.ua/en/customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/customers.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/customers.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/customers.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/customers.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/customers.html"/>
+  </url>
+
+
+  <!--                                                            purchasing -->
+  <url>
+    <loc>http://lxk.com.ua/en/purchasing.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/purchasing.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/purchasing.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/purchasing.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/purchasing.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/purchasing.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/purchasing.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/purchasing.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/purchasing.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/purchasing.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/purchasing.html"/>
+  </url>
+
+
+  <!--                                                            charcoal-bag -->
+  <url>
+    <loc>http://lxk.com.ua/en/charcoal-bag.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-bag.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/charcoal-bag.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-bag.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/charcoal-bag.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-bag.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/charcoal-bag.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-bag.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/charcoal-bag.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/charcoal-bag.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/charcoal-bag.html"/>
+  </url>
+
+
+  <!--                                                            briquettes -->
+  <url>
+    <loc>http://lxk.com.ua/en/briquettes.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/briquettes.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/briquettes.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/briquettes.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/briquettes.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/briquettes.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/briquettes.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/briquettes.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/briquettes.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/briquettes.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/briquettes.html"/>
+  </url>
+
+
+  <!--                                                            disposable-grills -->
+  <url>
+    <loc>http://lxk.com.ua/en/disposable-grills.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/disposable-grills.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/de/disposable-grills.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/disposable-grills.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/fr/disposable-grills.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/disposable-grills.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/disposable-grills.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/disposable-grills.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/disposable-grills.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="de"
+            href="http://lxk.com.ua/de/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="fr"
+            href="http://lxk.com.ua/fr/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/disposable-grills.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/disposable-grills.html"/>
+  </url>
+  
+  <!--                                                            2 languages-->
+  
+  <!--                                                            ethyl-acetate-index -->
+  <url>
+    <loc>http://lxk.com.ua/en/ethyl-acetate-index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate-index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate-index.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/ethyl-acetate-index.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate-index.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate-index.html"/>
+  </url>
+
+
+  <!--                                                            glue -->
+  <url>
+    <loc>http://lxk.com.ua/en/glue.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/glue.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/glue.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/glue.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/glue.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/glue.html"/>
+  </url>
+
+
+  <!--                                                            ethyl-acetate -->
+  <url>
+    <loc>http://lxk.com.ua/en/ethyl-acetate.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/ethyl-acetate.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate.html"/>
+  </url>
+
+
+  <!--                                                            areas-of-application -->
+  <url>
+    <loc>http://lxk.com.ua/en/areas-of-application.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/areas-of-application.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/areas-of-application.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/areas-of-application.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/areas-of-application.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/areas-of-application.html"/>
+  </url>
+
+
+  <!--                                                            ethyl-acetate-specification -->
+  <url>
+    <loc>http://lxk.com.ua/en/ethyl-acetate-specification.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate-specification.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate-specification.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/ethyl-acetate-specification.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/ethyl-acetate-specification.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/ethyl-acetate-specification.html"/>
+  </url>
+
+
+  <!--                                                            production-and-our-customers-location -->
+  <url>
+    <loc>http://lxk.com.ua/en/production-and-our-customers-location.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-and-our-customers-location.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-and-our-customers-location.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/production-and-our-customers-location.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/production-and-our-customers-location.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/production-and-our-customers-location.html"/>
+  </url>
+
+
+  <!--                                                            range-of-products -->
+  <url>
+    <loc>http://lxk.com.ua/en/range-of-products.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/range-of-products.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/range-of-products.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/range-of-products.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/range-of-products.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/range-of-products.html"/>
+  </url>
+
+
+  <!--                                                            our-benefits -->
+  <url>
+    <loc>http://lxk.com.ua/en/our-benefits.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-benefits.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-benefits.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/our-benefits.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/our-benefits.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/our-benefits.html"/>
+  </url>
+
+
+  <!--                                                            industry -->
+  <url>
+    <loc>http://lxk.com.ua/en/industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/industry.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/industry.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/industry.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/industry.html"/>
+  </url>
+
+
+  <!--                                                            products -->
+  <url>
+    <loc>http://lxk.com.ua/en/products.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/products.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/products.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/products.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/products.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/products.html"/>
+  </url>
+
+
+  <!--                                                            glue-customers -->
+  <url>
+    <loc>http://lxk.com.ua/en/glue-customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/glue-customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/glue-customers.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/glue-customers.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/glue-customers.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/glue-customers.html"/>
+  </url>
+
+
+  <!--                                                            formaldehyde -->
+  <url>
+    <loc>http://lxk.com.ua/en/formaldehyde.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/formaldehyde.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/formaldehyde.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/formaldehyde.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/formaldehyde.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/formaldehyde.html"/>
+  </url>
+
+
+  <!--                                                            pva -->
+  <url>
+    <loc>http://lxk.com.ua/en/pva.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/pva.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/pva.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/pva.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/pva.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/pva.html"/>
+  </url>
+
+
+  <!--                                                            pvoh -->
+  <url>
+    <loc>http://lxk.com.ua/en/pvoh.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/pvoh.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/pvoh.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/pvoh.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/pvoh.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/pvoh.html"/>
+  </url>
+
+
+  <!--                                                            news -->
+  <url>
+    <loc>http://lxk.com.ua/ua/news.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/news.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/news.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ru/news.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="http://lxk.com.ua/ru/news.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/news.html"/>
+  </url>
+
+  <!--                                                            ua news -->
+  <url>
+    <loc>http://lxk.com.ua/ua/news/news_20122019.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/news/news_20122019.html"/>
+  </url>
 
 </urlset>
