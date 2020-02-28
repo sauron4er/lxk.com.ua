@@ -79,14 +79,13 @@ mixin content(lang)
       }
     };
 
-  .row.justify-content-center.mb-4
-    img(src='../static/img/2-1_Baner_Charcoal_for_industry.jpg' alt='')
+  img.w-100.mb-3(src='../static/img/2-1_Baner_Charcoal_for_industry.jpg' alt='')
   h2 #{texts[lang].title}
   .row
-    .col-3
-      img(src='../static/img/Charcoal_for_industry_1.jpg' alt='')
-    .col-9.pl-5
+    .col-sm-8.pl-5
       each paragraph in texts[lang].text
         p #{paragraph}
-      .d-flex.align-content-center.my-5
-        img.mx-auto(src='../static/img/Charcoal_for_industry_2.jpg' alt='')
+      .col-sm-5
+        img.w-100(src='../static/img/Charcoal_for_industry_2.jpg' alt='')
+    .col-sm-4
+      img(src='../static/img/Charcoal_for_industry_1.jpg' alt='')

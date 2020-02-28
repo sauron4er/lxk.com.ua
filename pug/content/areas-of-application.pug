@@ -64,16 +64,15 @@ mixin content(lang)
       }
     };
     
-  img.d-block.w-100.mb-4(
+  img.w-100.mb-3(
     src="../static/img/areas-of-application.jpg",
     alt="Ethyl acetate"
   )
   h2 #{texts[lang].title}
-  .mb-5
-    each p in texts[lang].text
-      p
-        each span in p
-          if (span.style === 'bold')
-            span.font-weight-bold #{span.text}
-          else
-            span #{span.text}
+  each p in texts[lang].text
+    p
+      each span in p
+        if (span.style === 'bold')
+          span.font-weight-bold #{span.text}
+        else
+          span #{span.text}

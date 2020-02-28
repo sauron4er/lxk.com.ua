@@ -21,12 +21,12 @@ mixin content(lang)
       },
     };
     
-  img.d-block.w-100.mb-4(
+  img.w-100.mb-3(
     src="../static/img/range-of-products.jpg",
     alt="Range of products"
   )
   h2 #{texts[lang].title}
-  .d-flex.mb-5
+  .d-flex
     ul.fa-ul
       each p in texts[lang].list
-        li #{p}
+        li.check #{p}

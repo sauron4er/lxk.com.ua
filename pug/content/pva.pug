@@ -39,21 +39,20 @@ mixin content(lang)
           'Клас вологостійкості D3 згідно DIN EN 204.',
           'ПВА D4 використовується для виготовлення дверей і вікон, ламінату та клеєного пальця, масивного ' +
           'брусу що потребують підвищеної вологостійкості клейового з’єднання. Клас вологостійкості D4 згідно ' +
-          'DIN EN 204.',
-        ],
-      },
+          'DIN EN 204.'
+        ]
+      }
     };
 
   h2 #{texts[lang].title}
   .row
-    .col-4
-      img.d-block(
+    .col-sm-4.text-center
+      img.w-100(
         src="../static/img/pva.jpg",
-        alt="pvoh",
-        height="300px"
+        alt="pvoh"
       )
-    .col-8
+    .col-sm-8
       .mb-3 #{texts[lang].pva}
       ul.fa-ul
         each b in texts[lang].pva_bullets
-          li #{b}
+          li.check #{b}

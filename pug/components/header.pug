@@ -141,34 +141,68 @@ mixin header(lang)
         contacts: 'Контакты'
       }
     }
+
   .row.mt-3.px-3.pt-3
-    .col-2.align-self-end
+    .col-3.col-md-2.align-self-end
       a(href="../" + lang + "/index.html")
         img.w-100(src="../static/img/logo.png", alt="logo")
-    .col-7.align-self-end
-      nav.navbar.navbar-light.navbar-expand-lg.align-items-end
-        .css_dropdown.mr-5
-          a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
-          .css_dropdown-content
-            if (lang === 'ua' || lang === 'ru')
-              a.navbar-link.mr-5(href="../" + lang + "/news.html") #{texts[lang].news}
-            a(href="../" + lang + "/history.html") #{texts[lang].history}
-            a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
-            a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
-            if (lang === 'ua' || lang === 'en')
-              a(href="../" + lang + "/politics.html") #{texts[lang].politics}
-            a(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
-        if (lang === 'en' || lang === 'ua')
-          .css_dropdown.mr-5
-            a.navbar-link.dropdown-toggle(href="") #{texts[lang].products}
-            .css_dropdown-content
-              a(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
-              a(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
-              a(href="../" + lang + "/glue.html") #{texts[lang].glue}
-        else
-          a.navbar-link.mr-5(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
-        a.navbar-link.mr-5(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
-    .col-3
+    .col-3.col-md-6.align-self-end.px-0
+      nav.navbar.navbar-light.navbar-expand-md
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.css_dropdown.mr-4
+              a.navbar-link.dropdown-toggle(href="../" + lang + "/factory.html") #{texts[lang].factory}
+              .css_dropdown-content
+                if (lang === 'ua' || lang === 'ru')
+                  a.navbar-link.mr-5(href="../" + lang + "/news.html") #{texts[lang].news}
+                a(href="../" + lang + "/history.html") #{texts[lang].history}
+                a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
+                a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
+                if (lang === 'ua' || lang === 'en')
+                  a(href="../" + lang + "/politics.html") #{texts[lang].politics}
+                a(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
+            if (lang === 'en' || lang === 'ua')
+              li.nav-item.css_dropdown.mr-4
+                a.navbar-link.dropdown-toggle(href="") #{texts[lang].products}
+                .css_dropdown-content
+                  a(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+                  a(href="../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
+                  a(href="../" + lang + "/glue.html") #{texts[lang].glue}
+            else
+              li.nav-item.css_dropdown
+                a.navbar-link.mr-4(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
+            li.nav-item.css_dropdown
+              a.navbar-link.mr-4(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
+      //nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      //  a(href="../" + lang + "/index.html")
+      //    img.w-100(src="../static/img/logo.png", alt="logo")
+      //  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      //    span.navbar-toggler-icon
+      //  #navbarSupportedContent.collapse.navbar-collapse
+      //    ul.navbar-nav.mr-auto
+      //      li.nav-item.active
+      //        a.nav-link(href='#')
+      //          | Home
+      //          span.sr-only (current)
+      //      li.nav-item
+      //        a.nav-link(href='#') Link
+      //      li.nav-item.dropdown
+      //        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+      //          | Dropdown
+      //        .dropdown-menu(aria-labelledby='navbarDropdown')
+      //          a.dropdown-item(href='#') Action
+      //          a.dropdown-item(href='#') Another action
+      //          .dropdown-divider
+      //          a.dropdown-item(href='#') Something else here
+      //      li.nav-item
+      //        a.nav-link.disabled(href='#') Disabled
+      //    form.form-inline.my-2.my-lg-0
+      //      input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+      //      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+    .col-6.col-md-4
       .row.mb-3
         .ml-auto
           a.mr-2.css_flag(href="../en/index.html")
@@ -202,19 +236,16 @@ mixin header(lang)
               width="20"
             )
       .row
-        .ml-auto.text-right
-          img.mr-2(
+        .w-25.mr-2.ml-auto.text-right.align-self-end
+          img.w-100.mb-1(
             src="../static/img/bsci.svg",
-            alt="BSCI",
-            height="40"
+            alt="BSCI"
           )
-          img.mr-2(
+          img.w-100(
             src="../static/img/ISO.jpg",
-            alt="ISO",
-            height="60"
+            alt="ISO"
           )
-          img.mr-2(
-            src="../static/img/REACH.jpg",
-            alt="Reach",
-            height="60"
-          )
+        img.w-25.align-self-end(
+          src="../static/img/REACH.jpg",
+          alt="Reach"
+        )

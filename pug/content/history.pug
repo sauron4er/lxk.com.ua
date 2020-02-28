@@ -258,98 +258,107 @@ mixin content(lang)
     };
     
   h2.mt-4 #{texts[lang].history}
-  p #{texts[lang].first_sentence}
+  h5 #{texts[lang].first_sentence}
   #carousel_controls.carousel.slide(data-ride="carousel")
-    .carousel-inner
-      .carousel-item.active
-        img.d-block.w-100(
-          src="../static/img/History_1.jpg",
-          alt="First slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_1_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_1_text_bold}
-            div #{texts[lang].slide_1_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_2.jpg",
-          alt="Second slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_2_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_2_text_bold}
-            div #{texts[lang].slide_2_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_3.jpg",
-          alt="Third slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_3_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_3_text_bold}
-            div #{texts[lang].slide_3_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_4.jpg",
-          alt="Fourth slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_4_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_4_text_bold}
-            div #{texts[lang].slide_4_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_5.jpg",
-          alt="Five slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_5_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_5_text_bold}
-            div #{texts[lang].slide_5_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_6.jpg",
-          alt="Sixth slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_6_title}
-          .col-10
-            .font-weight-bold #{texts[lang].slide_6_text_bold}
-            div #{texts[lang].slide_6_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_7.jpg",
-          alt="Seventh slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_7_title}
-          .col-10
-            div #{texts[lang].slide_7_text}
-      .carousel-item
-        img.d-block.w-100(
-          src="../static/img/History_8.jpg",
-          alt="Eight slide"
-        )
-        .row.pt-2.css_slideshow_text
-          h4.col-2.text-center #{texts[lang].slide_8_title}
-          .col-10
-            div #{texts[lang].slide_8_text}
-    a.carousel-control-prev.pb-5(
+    a.css_carousel_control.carousel-control-prev(
       href="#carousel_controls",
       role="button",
       data-slide="prev"
     )
       span.carousel-control-prev-icon(aria-hidden="true")
       span.sr-only Previous
-    a.carousel-control-next.pb-5(
+    a.css_carousel_control.carousel-control-next(
       href="#carousel_controls",
       role="button",
       data-slide="next"
     )
       span.carousel-control-next-icon(aria-hidden="true")
       span.sr-only Next
+
+    .carousel-inner
+      .carousel-item.active
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_1.jpg",
+            alt="First slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_1_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_1_text_bold}
+            div #{texts[lang].slide_1_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_2.jpg",
+            alt="Second slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_2_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_2_text_bold}
+            div #{texts[lang].slide_2_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_3.jpg",
+            alt="Third slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_3_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_3_text_bold}
+            div #{texts[lang].slide_3_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_4.jpg",
+            alt="Fourth slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_4_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_4_text_bold}
+            div #{texts[lang].slide_4_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_5.jpg",
+            alt="Five slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_5_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_5_text_bold}
+            div #{texts[lang].slide_5_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_6.jpg",
+            alt="Sixth slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_6_title}
+          .col-10
+            .font-weight-bold #{texts[lang].slide_6_text_bold}
+            div #{texts[lang].slide_6_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_7.jpg",
+            alt="Seventh slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_7_title}
+          .col-10
+            div #{texts[lang].slide_7_text}
+      .carousel-item
+        .css_carousel.mb-3.d-flex.bg-dark.align-items-center
+          img.d-block.w-100(
+            src="../static/img/History_8.jpg",
+            alt="Eight slide"
+          )
+        .row.pt-2.css_slideshow_text
+          h5.col-2.text-center #{texts[lang].slide_8_title}
+          .col-10
+            div #{texts[lang].slide_8_text}

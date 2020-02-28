@@ -30,25 +30,45 @@ mixin content(lang)
       }
     };
 
-  .row
-    .col-9
-      img.d-block.w-100.mb-4(
-        src="../static/img/Baner_" + lang +"_1.jpg",
-        alt="Title photo"
-      )
-      +index_text(lang)
+  //.row
+  //  .col.css_index_href.h-100
+  //    a.css_href(href="../" + lang + "/charcoal.html")
+  //      img.img-fluid(src="../static/img/index-charcoal.jpg")
+  //      small.text-success #{texts[lang].charcoal}
+  //  if (lang === 'en' || lang === 'ua')
+  //    .col.css_index_href.h-100.ml-1
+  //      a.css_href(href="../" + lang + "/ethyl-acetate-index.html")
+  //        img.img-fluid(src="../static/img/index-ethyl.jpg")
+  //        small.text-success #{texts[lang].ethyl}
+  //    .col.css_index_href.h-100.ml-1
+  //      a.css_href(href="../" + lang + "/glue.html")
+  //        img.img-fluid(src="../static/img/index-glue.jpg")
+  //        small.text-success #{texts[lang].glue}
+  img.d-block.w-100.mb-2(
+    src="../static/img/Baner_" + lang +"_1.jpg",
+    alt="Title photo"
+  )
+  +index_text(lang)
 
-    .col-3
-        .css_index_href
-          a.css_href(href="../" + lang +"/charcoal.html")
-            img.img-fluid(src="../static/img/index-charcoal.jpg", width="250")
-            div.text-success #{texts[lang].charcoal}
-        if (lang === 'en' || lang === 'ua')
-          .css_index_href.mt-2
-            a.css_href(href="../" + lang +"/ethyl-acetate-index.html")
-              img.img-fluid(src="../static/img/index-ethyl.jpg", width="250")
-              div.text-success #{texts[lang].ethyl}
-          .css_index_href.mt-2
-            a.css_href(href="../" + lang +"/glue.html")
-              img.img-fluid(src="../static/img/index-glue.jpg", width="250")
-              div.text-success #{texts[lang].glue}
+  //.row
+  //  .col-9
+  //    img.d-block.w-100.mb-2(
+  //      src="../static/img/Baner_" + lang + "_1.jpg",
+  //      alt="Title photo"
+  //    )
+  //    +index_text(lang)
+  //
+  //  .col-3.pl-0
+  //    .css_index_href
+  //      a.css_href(href="../" + lang + "/charcoal.html")
+  //        img.img-fluid(src="../static/img/index-charcoal.jpg")
+  //        small.text-success #{texts[lang].charcoal}
+  //    if (lang === 'en' || lang === 'ua')
+  //      .css_index_href.mt-2
+  //        a.css_href(href="../" + lang + "/ethyl-acetate-index.html")
+  //          img.img-fluid(src="../static/img/index-ethyl.jpg")
+  //          small.text-success #{texts[lang].ethyl}
+  //      .css_index_href.mt-2
+  //        a.css_href(href="../" + lang + "/glue.html")
+  //          img.img-fluid(src="../static/img/index-glue.jpg")
+  //          small.text-success #{texts[lang].glue}

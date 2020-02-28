@@ -73,10 +73,9 @@ mixin content(lang)
         ]
       }
     };
-    
-  .row.justify-content-center.mb-4
-    img(src='../static/img/1-3_Baner_Energy_efficiency.jpg' alt='')
+
+  img.d-block.w-100.mb-3(src='../static/img/1-3_Baner_Energy_efficiency.jpg' alt='')
   h2 #{texts[lang].energy_efficiency}
   ul.fa-ul
     each bullet in texts[lang].bullets
-      li #{bullet}
+      li.check #{bullet}

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico"/>
     <title>Formaldehyde resins</title>
     <link rel="stylesheet" href="../static/css/styles.css"/>
@@ -13,58 +14,89 @@
     <script src="https://kit.fontawesome.com/a6abaa0ae7.js"></script>
   </head>
   <body class="css_body">
-    <div class="container">
+    <div class="container px-3 mb-5 mb-sm-3">
       <div class="row mt-3 px-3 pt-3">
-        <div class="col-2 align-self-end"><a href="../en/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
-        <div class="col-7 align-self-end">
-          <nav class="navbar navbar-light navbar-expand-lg align-items-end">
-            <div class="css_dropdown mr-5"><a class="navbar-link dropdown-toggle" href="../en/factory.html">Factory</a>
-              <div class="css_dropdown-content"><a href="../en/history.html">History</a><a href="../en/energy-efficiency.html">Energy efficiency</a><a href="../en/our-certificates.html">Our certificates</a><a href="../en/politics.html">Company politics</a><a href="../en/logistics.html">Logistics</a>
-              </div>
+        <div class="col-3 col-md-2 align-self-end"><a href="../en/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
+        <div class="col-3 col-md-6 align-self-end px-0">
+          <nav class="navbar navbar-light navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item css_dropdown mr-4"><a class="navbar-link dropdown-toggle" href="../en/factory.html">Factory</a>
+                  <div class="css_dropdown-content"><a href="../en/history.html">History</a><a href="../en/energy-efficiency.html">Energy efficiency</a><a href="../en/our-certificates.html">Our certificates</a><a href="../en/politics.html">Company politics</a><a href="../en/logistics.html">Logistics</a>
+                  </div>
+                </li>
+                <li class="nav-item css_dropdown mr-4"><a class="navbar-link dropdown-toggle" href="">Products</a>
+                  <div class="css_dropdown-content"><a href="../en/charcoal.html">Charcoal</a><a href="../en/ethyl-acetate-index.html">Ethyl Acetate</a><a href="../en/glue.html">Solutions for gluing</a></div>
+                </li>
+                <li class="nav-item css_dropdown"><a class="navbar-link mr-4" href="../en/contacts.html">Contacts</a></li>
+              </ul>
             </div>
-            <div class="css_dropdown mr-5"><a class="navbar-link dropdown-toggle" href="">Products</a>
-              <div class="css_dropdown-content"><a href="../en/charcoal.html">Charcoal</a><a href="../en/ethyl-acetate-index.html">Ethyl Acetate</a><a href="../en/glue.html">Solutions for gluing</a></div>
-            </div><a class="navbar-link mr-5" href="../en/contacts.html">Contacts</a>
           </nav>
+          <!--nav.navbar.navbar-expand-lg.navbar-light.bg-light-->
+          <!--  a(href="../" + lang + "/index.html")-->
+          <!--    img.w-100(src="../static/img/logo.png", alt="logo")-->
+          <!--  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')-->
+          <!--    span.navbar-toggler-icon-->
+          <!--  #navbarSupportedContent.collapse.navbar-collapse-->
+          <!--    ul.navbar-nav.mr-auto-->
+          <!--      li.nav-item.active-->
+          <!--        a.nav-link(href='#')-->
+          <!--          | Home-->
+          <!--          span.sr-only (current)-->
+          <!--      li.nav-item-->
+          <!--        a.nav-link(href='#') Link-->
+          <!--      li.nav-item.dropdown-->
+          <!--        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')-->
+          <!--          | Dropdown-->
+          <!--        .dropdown-menu(aria-labelledby='navbarDropdown')-->
+          <!--          a.dropdown-item(href='#') Action-->
+          <!--          a.dropdown-item(href='#') Another action-->
+          <!--          .dropdown-divider-->
+          <!--          a.dropdown-item(href='#') Something else here-->
+          <!--      li.nav-item-->
+          <!--        a.nav-link.disabled(href='#') Disabled-->
+          <!--    form.form-inline.my-2.my-lg-0-->
+          <!--      input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')-->
+          <!--      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search-->
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-4">
           <div class="row mb-3">
             <div class="ml-auto"><a class="mr-2 css_flag" href="../en/index.html"><img src="../static/img/united-kingdom.png" alt="english" width="20"/></a><a class="mr-2 css_flag" href="../de/index.html"><img src="../static/img/germany.png" alt="german" width="20"/></a><a class="mr-2 css_flag" href="../fr/index.html"><img src="../static/img/france.png" alt="france" width="20"/></a><a class="mr-2 css_flag" href="../ua/index.html"><img src="../static/img/ukraine.png" alt="ukrainian" width="20"/></a><a class="mr-2 css_flag" href="../ru/index.html"><img src="../static/img/russia.png" alt="russian" width="20"/></a></div>
           </div>
           <div class="row">
-            <div class="ml-auto text-right"><img class="mr-2" src="../static/img/bsci.svg" alt="BSCI" height="40"/><img class="mr-2" src="../static/img/ISO.jpg" alt="ISO" height="60"/><img class="mr-2" src="../static/img/REACH.jpg" alt="Reach" height="60"/></div>
+            <div class="w-25 mr-2 ml-auto text-right align-self-end"><img class="w-100 mb-1" src="../static/img/bsci.svg" alt="BSCI"/><img class="w-100" src="../static/img/ISO.jpg" alt="ISO"/></div><img class="w-25 align-self-end" src="../static/img/REACH.jpg" alt="Reach"/>
           </div>
         </div>
       </div>
       <hr class="border border-success m-1"/>
-      <main class="mt-3">
+      <main class="mt-3 mb-1">
         <h2 class="mb-3">Formaldehyde resins</h2>
         <div class="row">
-          <div class="col-4"><img class="d-block" src="../static/img/formaldehyde.jpg" alt="pvoh" height="200px"/></div>
-          <div class="col-8">
+          <div class="col-sm-4"><img class="w-100" src="../static/img/formaldehyde.jpg" alt="pvoh"/></div>
+          <div class="col-sm-8">
             <div class="h5">UF resins: Urea-formaldehyde resins.</div>
             <div class="mb-3">Urea-formaldehyde resins (UF resins) are widely used in woodworking industry. Main targets of their usage are for chipboards, MDF, plywood, furniture, musical instruments, paper, etc. Resins produced at our plant have minimal level of formaldehyde emission. Plywood, chipboards and other products produced with our resins, correspond to formaldehyde emission class E-1, E-0,5, E-0. Product can be loaded in road tanks, railway cistens, and also in buyer's containers. We offer you the following main types of UF resins:</div>
             <ul class="fa-ul">
-              <li>KFS-P/Mainly used in chipboard and MDF production. (Woodworking)</li>
-              <li>KFS-F/Mainly used in plywood, moulded elements and insulation production. (Woodworking)</li>
-              <li>KF-SP/Mainly used in paper impregnation, which improves it's mechanical and waterproof properties in lamination process. (Woodworking/Cardboard and paper)</li>
+              <li class="check">KFS-P/Mainly used in chipboard and MDF production. (Woodworking)</li>
+              <li class="check">KFS-F/Mainly used in plywood, moulded elements and insulation production. (Woodworking)</li>
+              <li class="check">KF-SP/Mainly used in paper impregnation, which improves it's mechanical and waterproof properties in lamination process. (Woodworking/Cardboard and paper)</li>
             </ul>
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-4"></div>
-          <div class="col-8">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-8">
             <div class="h5">MUF resins: Urea-melamine-formaldehyde resins.</div>
             <div class="mb-1">This is a product of polycondensation of urea, melamine and formaldehyde. It is a water suspension, non-flammable and explosion-proof. Ready product contains 1% - 24% of melanime.</div>
             <div class="mb-3">MUF resins are mainly used in OSB production, plywood and other types of boards which should have higher mechanical and waterproof properties.</div>
             <ul class="fa-ul">
-              <li>MKFS/MUF resin mainly used in OSB production, plywood and other types of boards which should have higher mechanical and waterproof properties. (Woodworking)</li>
+              <li class="check">MKFS/MUF resin mainly used in OSB production, plywood and other types of boards which should have higher mechanical and waterproof properties. (Woodworking)</li>
             </ul>
           </div>
         </div>
       </main>
       <footer>
-        <!-- hr.border.border-success.m-1-->
         <table class="css_footer_table">
           <thead>
             <tr>
@@ -76,7 +108,7 @@
               <td class="text-center"><i class="fas fa-map-marked-alt"></i><span>&#160;25, Uzhans'ka st., Perechin, Zakarpatska region, 89200, Ukraine</span></td>
             </tr>
             <tr>
-              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77</span><i class="fas fa-envelope ml-3"></i><span>&#160;sales@lxk.com.ua</span></td>
+              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77</span><br/><i class="fas fa-envelope ml-3"></i><span>&#160;sales@lxk.com.ua</span></td>
             </tr>
           </tbody>
         </table>

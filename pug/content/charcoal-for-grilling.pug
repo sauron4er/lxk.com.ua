@@ -101,40 +101,37 @@ mixin content(lang)
       }
     };
 
-  .row.justify-content-center.mb-4
-    img(src='../static/img/2-2_Baner_Charcoal_for_grilling.jpg' alt='')
+  img.w-100.mb-3(src='../static/img/2-2_Baner_Charcoal_for_grilling.jpg' alt='')
   h2 #{texts[lang].title}
   p #{texts[lang].text}
   ul
     each bullet in texts[lang].bullets
-      li #{bullet}
-  hr
+      li.check #{bullet}
   .row
-    .col-4.px-5
+    .col-sm-4.px-5
+      hr
       .d-flex.align-content-center
         a(href='../' + lang + '/charcoal-bag.html')
           img.mx-auto.img-fluid(src='../static/img/Coal_1.jpg' alt='')
       h4.text-left #{texts[lang].charcoal_bag_title}
       p #{texts[lang].charcoal_bag}
-    .col-4.px-5
+      a(href='../' + lang + '/charcoal-bag.html')
+        button.btn.btn-warning.float-right #{texts[lang].read_more}
+    .col-sm-4.px-5
+      hr
       .d-flex.align-content-center
         a(href='../' + lang + '/briquettes.html')
           img.mx-auto.img-fluid(src='../static/img/Briquettes_1.jpg' alt='')
       h4.text-left #{texts[lang].briquettes_title}
       p #{texts[lang].briquettes}
-    .col-4.px-5
+      a(href='../' + lang + '/briquettes.html')
+        button.btn.btn-warning.float-right #{texts[lang].read_more}
+    .col-sm-4.px-5
+      hr
       .d-flex.align-content-center
         a(href='../' + lang + '/disposable-grills.html')
           img.mx-auto.img-fluid(src='../static/img/Disposable_Grills_1_new.jpg' alt='')
       h4.text-left #{texts[lang].disposable_title}
       p #{texts[lang].disposable}
-  .row
-    .col-4.mb-3
-      a(href='../' + lang + '/charcoal-bag.html')
-        button.btn.btn-warning.float-right #{texts[lang].read_more}
-    .col-4
-      a(href='../' + lang + '/briquettes.html')
-        button.btn.btn-warning.float-right #{texts[lang].read_more}
-    .col-4
       a(href='../' + lang + '/disposable-grills.html')
         button.btn.btn-warning.float-right #{texts[lang].read_more}

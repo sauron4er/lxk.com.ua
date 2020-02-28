@@ -47,24 +47,23 @@ mixin content(lang)
 
   h2.mb-3 #{texts[lang].title}
   .row
-    .col-4
-      img.d-block(
+    .col-sm-4
+      img.w-100(
         src="../static/img/formaldehyde.jpg",
-        alt="pvoh",
-        height="200px"
+        alt="pvoh"
       )
-    .col-8
+    .col-sm-8
       .h5 #{texts[lang].uf_title}
       .mb-3 #{texts[lang].uf}
       ul.fa-ul
         each ufb in texts[lang].uf_bullets
-          li #{ufb}
+          li.check #{ufb}
   .row.mt-4
-    .col-4
-    .col-8
+    .col-sm-4
+    .col-sm-8
       .h5 #{texts[lang].muf_title}
       .mb-1 #{texts[lang].muf}
       .mb-3 #{texts[lang].muf_2}
       ul.fa-ul
         each mufb in texts[lang].muf_bullets
-          li #{mufb}
+          li.check #{mufb}

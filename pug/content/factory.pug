@@ -66,10 +66,9 @@ mixin content(lang)
         ]
       }
     };
-
-  img.d-block.w-100.mb-3(src='../static/img/FACTORY.jpg' alt='Factory')
+  img.w-100.mb-3(src='../static/img/FACTORY.jpg' alt='Factory')
   h2 #{texts[lang].title}
   h5 #{texts[lang].subtitle}
   ul.fa-ul
     each bullet in texts[lang].bullets
-      li #{bullet}
+      li.check #{bullet}

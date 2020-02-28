@@ -16,18 +16,19 @@ mixin content(lang)
     };
     
   h2 #{texts[lang].title}
-  table.mb-5
-    tbody
-      tr
-        td
-          a.css_hover_zoom(href="../" + lang + "/formaldehyde.html")
-            img.d-block(src='../static/img/formaldehyde.jpg' alt='formaldehyde' height='300px')
-            .text-center #{texts[lang].formaldehyde}
-        td
-          a.css_hover_zoom(href="../" + lang + "/pva.html")
-            img.d-block(src='../static/img/pva.jpg' alt='pva' height='300px')
-            .text-center #{texts[lang].pva}
-        td
-          a.css_hover_zoom(href="../" + lang + "/pvoh.html")
-            img.d-block(src='../static/img/pvoh.jpg' alt='pvoh' height='300px')
-            .text-center #{texts[lang].pvoh}
+  .row
+    .col-12.col-md-4
+      .css_index_href.mt-2
+        a.css_href(href="../" + lang + "/formaldehyde.html")
+          img.w-100(src='../static/img/formaldehyde.jpg' alt='formaldehyde')
+          .text-success #{texts[lang].formaldehyde}
+    .col-12.col-md-3
+      .css_index_href.mt-2
+        a.css_href(href="../" + lang + "/pva.html")
+          img.w-100(src='../static/img/pva.jpg' alt='pva')
+          .text-success #{texts[lang].pva}
+    .col-12.col-md-3
+      .css_index_href.mt-2
+        a.css_href(href="../" + lang + "/pvoh.html")
+          img.w-100(src='../static/img/pvoh.jpg' alt='pvoh')
+          .text-success #{texts[lang].pvoh}

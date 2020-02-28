@@ -597,124 +597,6 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml
   </url>
 
 
-  <!--                                                            Politics -->
-  <url>
-    <loc>http://lxk.com.ua/en/politics.html</loc>
-    <xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="http://lxk.com.ua/en/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="de"
-            href="http://lxk.com.ua/de/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="fr"
-            href="http://lxk.com.ua/fr/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="ru"
-            href="http://lxk.com.ua/ru/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="uk"
-            href="http://lxk.com.ua/ua/politics.html"/>
-  </url>
-  <url>
-    <loc>http://lxk.com.ua/de/politics.html</loc>
-    <xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="http://lxk.com.ua/en/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="de"
-            href="http://lxk.com.ua/de/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="fr"
-            href="http://lxk.com.ua/fr/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="ru"
-            href="http://lxk.com.ua/ru/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="uk"
-            href="http://lxk.com.ua/ua/politics.html"/>
-  </url>
-  <url>
-    <loc>http://lxk.com.ua/fr/politics.html</loc>
-    <xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="http://lxk.com.ua/en/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="de"
-            href="http://lxk.com.ua/de/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="fr"
-            href="http://lxk.com.ua/fr/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="ru"
-            href="http://lxk.com.ua/ru/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="uk"
-            href="http://lxk.com.ua/ua/politics.html"/>
-  </url>
-  <url>
-    <loc>http://lxk.com.ua/ua/politics.html</loc>
-    <xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="http://lxk.com.ua/en/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="de"
-            href="http://lxk.com.ua/de/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="fr"
-            href="http://lxk.com.ua/fr/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="ru"
-            href="http://lxk.com.ua/ru/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="uk"
-            href="http://lxk.com.ua/ua/politics.html"/>
-  </url>
-  <url>
-    <loc>http://lxk.com.ua/ru/politics.html</loc>
-    <xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="http://lxk.com.ua/en/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="de"
-            href="http://lxk.com.ua/de/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="fr"
-            href="http://lxk.com.ua/fr/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="ru"
-            href="http://lxk.com.ua/ru/politics.html"/>
-    <xhtml:link
-            rel="alternate"
-            hreflang="uk"
-            href="http://lxk.com.ua/ua/politics.html"/>
-  </url>
-
-
   <!--                                                            Logistics -->
   <url>
     <loc>http://lxk.com.ua/en/logistics.html</loc>
@@ -2479,6 +2361,31 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml
             rel="alternate"
             hreflang="uk"
             href="http://lxk.com.ua/ua/pvoh.html"/>
+  </url>
+
+
+  <!--                                                            Politics -->
+  <url>
+    <loc>http://lxk.com.ua/en/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
+  </url>
+  <url>
+    <loc>http://lxk.com.ua/ua/politics.html</loc>
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="http://lxk.com.ua/en/politics.html"/>
+    <xhtml:link
+            rel="alternate"
+            hreflang="uk"
+            href="http://lxk.com.ua/ua/politics.html"/>
   </url>
 
 

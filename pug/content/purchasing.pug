@@ -58,14 +58,15 @@ mixin content(lang)
         images_title: ''
       }
     };
-    
-  .row.justify-content-center.mb-4
-    img(src='../static/img/4_Baner_Purchasing_1_new.jpg' alt='Purchasing')
+
+  img.w-100.mb-3(src='../static/img/4_Baner_Purchasing_1_new.jpg' alt='Purchasing')
   h2.mt-5 #{texts[lang].title}
   each p in texts[lang].text
     p #{p}
   hr
   p #{texts[lang].images_title}
-  .d-flex.justify-content-center
-    img.mr-5(src='../static/img/Purchasing_pic_1.jpg' alt='')
-    img(src='../static/img/Purchasing_pic_2.jpg' alt='')
+  .row
+    .col-sm-4
+      img.w-100.mr-2.mb-2(src='../static/img/Purchasing_pic_1.jpg' alt='')
+    .col-sm-4
+      img.w-100(src='../static/img/Purchasing_pic_2.jpg' alt='')

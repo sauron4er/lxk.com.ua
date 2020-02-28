@@ -19,19 +19,18 @@ mixin content(lang)
         pvoh_bullets: ['Клей КП-ПВС в основному використовується як клей загального призначення для ' +
         'картонно навивної тари, картонних опалубок, втулок, конуса, картонного захисного кутника, ' +
         'виробництво палітурного картону, у кашируванні гофрокартону тощо.']
-      },
+      }
     };
 
   h2 #{texts[lang].title}
   .row
-    .col-3
-      img.d-block(
+    .col-sm-3
+      img.w-75.mx-auto.d-block(
         src="../static/img/pvoh.jpg",
-        alt="pvoh",
-        height="300px"
+        alt="pvoh"
       )
-    .col-9
+    .col-sm-9
       .mb-3 #{texts[lang].pvoh}
       ul.fa-ul
         each b in texts[lang].pvoh_bullets
-          li #{b}
+          li.check #{b}

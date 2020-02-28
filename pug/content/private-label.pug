@@ -43,13 +43,11 @@ mixin content(lang)
       }
     };
     
-  .row.justify-content-center.mb-4
-    img(src='../static/img/2-3_Baner_Private_label.jpg' alt='')
+  img.w-100.mb-3(src='../static/img/2-3_Baner_Private_label.jpg' alt='')
   h2 #{texts[lang].title}
   .row
-    .col-6
-      .d-flex.align-content-center.my-5
+    .col-md-4
         img.mx-auto(src='../static/img/Private_label_1.jpg' alt='')
-    .col-6
+    .col-md-8
       p #{texts[lang].text}
       img.float-right(src='../static/img/Icon_Private.jpg' alt='')

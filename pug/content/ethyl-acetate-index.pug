@@ -24,7 +24,7 @@ mixin content(lang)
 
   h2.mt-2 #{texts[lang].title}
   .row
-    .col-4
+    .col-sm-4
       ul
         p.css_p
           a.css_link(href="../" + lang + "/ethyl-acetate.html") #{texts[lang].ethyl}
@@ -34,8 +34,8 @@ mixin content(lang)
           a.css_link(href="../" + lang + "/ethyl-acetate-specification.html") #{texts[lang].ethyl_acetate_specification}
         p.css_p
           a.css_link(href="../" + lang + "/production-and-our-customers-location.html") #{texts[lang].production_and_our_customers_location}
-    .col-8
-      img.d-block.w-100.mb-4(
+    .col-sm-8
+      img.w-100(
         src="../static/img/index-ethyl.jpg",
         alt="First slide"
       )

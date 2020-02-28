@@ -81,7 +81,7 @@ mixin content(lang)
         'Qui provient de la sylviculture bien gérée. Le charbon de bois s`allume vite et facilement.',
         'Assure le brûlage long et la phase de la chaleur forte.',
         'Prêt pour le grillage pendant 20 minutes.',
-        'Provient de l`Europe.',
+        'Provient de l`Europe.'
         ],
         table_title: 'CARACTÉRISTIQUES TECHNIQUES',
         table_rows: [
@@ -183,14 +183,14 @@ mixin content(lang)
   a.text-warning(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].back_to}
   h2 #{texts[lang].title}
   .row.mt-4
-    .col-6
-      .d-flex.align-content-center.mb-5
+    .col-sm-6
+      .d-flex.align-content-center
         img.mx-auto(src="../static/img/Briquettes_2.jpg", alt="")
-    .col-6
+    .col-sm-6
       each p in texts[lang].paragraphs
         div #{p}
       br
-      img(src="../static/img/Briquettes_icons_new.jpg", alt="")
+      img.mb-4.mt-1(src="../static/img/Briquettes_icons_new.jpg", alt="")
   h5.text-left #{texts[lang].table_title}
   table.table.table-striped
     tbody
@@ -198,10 +198,12 @@ mixin content(lang)
         tr
           each td in row
             td #{td}
-  h6 #{texts[lang].images_title}
-  .d-flex.justify-content-center
-    img.img-fluid.mr-5(
-      src="../static/img/Briquettes_pic_1.jpg",
-      alt="briquettes 1"
-    )
-    img.img-fluid(src="../static/img/Briquettes_pic_2.jpg", alt="briquettes 2")
+  //h6 #{texts[lang].images_title}
+  .row
+    .col-sm-4
+      img.w-100.mr-2.mb-2(
+        src="../static/img/Briquettes_pic_1.jpg",
+        alt="briquettes 1"
+      )
+    .col-sm-4
+      img.w-100(src="../static/img/Briquettes_pic_2.jpg", alt="briquettes 2")

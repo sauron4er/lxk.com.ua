@@ -113,19 +113,18 @@ mixin content(lang)
         ]
       }
     };
-    
-  .row.justify-content-center.mb-4
-    img(src='../static/img/3_Baner_Logistics.jpg' alt='')
-  h2.mt-5 #{texts[lang].title}
+
+  img.w-100.mb-3(src='../static/img/3_Baner_Logistics.jpg' alt='')
+  h2 #{texts[lang].title}
   .row
-    .col-3
-      .d-flex.align-content-center.mb-5
+    .col-sm-3
+      .d-flex.align-content-center.mb-1
         img.mx-auto(src='../static/img/Icon_Logistics.png' alt='')
       h5 #{texts[lang].warehouses_title}
       ul.fa-ul
         each warehouse in texts[lang].warehouses
-          li #{warehouse}
-    .col-9
+          li.check #{warehouse}
+    .col-sm-9
       each p in texts[lang].text
         p #{p}
-      img.mb-5(src='../static/img/Map_small.jpg' alt='')
+      img.w-100.mb-3(src='../static/img/Map_small.jpg' alt='')

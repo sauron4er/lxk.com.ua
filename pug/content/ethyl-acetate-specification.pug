@@ -123,16 +123,17 @@ mixin content(lang)
 
   h2 #{texts[lang].title}
   .row.mt-4
-    .col-3
-      img(src="../static/img/ethyl-acetate-specification.jpg", alt="")
-    .col-9
-      table.table.table-striped
-        thead.thead-light
-          tr
-            each th in texts[lang].table_head
-              th #{th}
-        tbody
-          each row in texts[lang].table_rows
+    .col-12.col-md-9
+      .table-responsive
+        table.w-100.table.table-striped
+          thead.thead-light
             tr
-              each td in row
-                td !{td}
+              each th in texts[lang].table_head
+                th #{th}
+          tbody
+            each row in texts[lang].table_rows
+              tr
+                each td in row
+                  td !{td}
+    .col-12.col-md-3
+      img.w-100(src="../static/img/ethyl-acetate-specification.jpg", alt="")

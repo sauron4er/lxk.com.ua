@@ -1,6 +1,8 @@
 html
   head
     meta(charset="UTF-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
     link(rel='shortcut icon' type='image/x-icon' href='../static/img/favicon.ico')
     block title
       title Perechin timber and chemical plant
@@ -36,12 +38,11 @@ html
     block meta
 
   body.css_body
-    .container
+    .container.px-3.mb-5.mb-sm-3
       block header
       hr.border.border-success.m-1
 
-      main.mt-3
+      main.mt-3.mb-1
         block content
 
       block footer
-

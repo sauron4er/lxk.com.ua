@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico"/>
     <title>Древесный уголь для гриля</title>
     <link rel="stylesheet" href="../static/css/styles.css"/>
@@ -13,69 +14,97 @@
     <script src="https://kit.fontawesome.com/a6abaa0ae7.js"></script>
   </head>
   <body class="css_body">
-    <div class="container">
+    <div class="container px-3 mb-5 mb-sm-3">
       <div class="row mt-3 px-3 pt-3">
-        <div class="col-2 align-self-end"><a href="../ru/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
-        <div class="col-7 align-self-end">
-          <nav class="navbar navbar-light navbar-expand-lg align-items-end">
-            <div class="css_dropdown mr-5"><a class="navbar-link dropdown-toggle" href="../ru/factory.html">Предприятие</a>
-              <div class="css_dropdown-content"><a class="navbar-link mr-5" href="../ru/news.html">Новости</a><a href="../ru/history.html">История</a><a href="../ru/energy-efficiency.html">Эффективное использование энергии</a><a href="../ru/our-certificates.html">Наши сертификаты</a><a href="../ru/logistics.html">Логистика</a>
-              </div>
-            </div><a class="navbar-link mr-5" href="../ru/charcoal.html">Древесный уголь</a><a class="navbar-link mr-5" href="../ru/contacts.html">Контакты</a>
+        <div class="col-3 col-md-2 align-self-end"><a href="../ru/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
+        <div class="col-3 col-md-6 align-self-end px-0">
+          <nav class="navbar navbar-light navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item css_dropdown mr-4"><a class="navbar-link dropdown-toggle" href="../ru/factory.html">Предприятие</a>
+                  <div class="css_dropdown-content"><a class="navbar-link mr-5" href="../ru/news.html">Новости</a><a href="../ru/history.html">История</a><a href="../ru/energy-efficiency.html">Эффективное использование энергии</a><a href="../ru/our-certificates.html">Наши сертификаты</a><a href="../ru/logistics.html">Логистика</a>
+                  </div>
+                </li>
+                <li class="nav-item css_dropdown"><a class="navbar-link mr-4" href="../ru/charcoal.html">Древесный уголь</a></li>
+                <li class="nav-item css_dropdown"><a class="navbar-link mr-4" href="../ru/contacts.html">Контакты</a></li>
+              </ul>
+            </div>
           </nav>
+          <!--nav.navbar.navbar-expand-lg.navbar-light.bg-light-->
+          <!--  a(href="../" + lang + "/index.html")-->
+          <!--    img.w-100(src="../static/img/logo.png", alt="logo")-->
+          <!--  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')-->
+          <!--    span.navbar-toggler-icon-->
+          <!--  #navbarSupportedContent.collapse.navbar-collapse-->
+          <!--    ul.navbar-nav.mr-auto-->
+          <!--      li.nav-item.active-->
+          <!--        a.nav-link(href='#')-->
+          <!--          | Home-->
+          <!--          span.sr-only (current)-->
+          <!--      li.nav-item-->
+          <!--        a.nav-link(href='#') Link-->
+          <!--      li.nav-item.dropdown-->
+          <!--        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')-->
+          <!--          | Dropdown-->
+          <!--        .dropdown-menu(aria-labelledby='navbarDropdown')-->
+          <!--          a.dropdown-item(href='#') Action-->
+          <!--          a.dropdown-item(href='#') Another action-->
+          <!--          .dropdown-divider-->
+          <!--          a.dropdown-item(href='#') Something else here-->
+          <!--      li.nav-item-->
+          <!--        a.nav-link.disabled(href='#') Disabled-->
+          <!--    form.form-inline.my-2.my-lg-0-->
+          <!--      input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')-->
+          <!--      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search-->
         </div>
-        <div class="col-3">
+        <div class="col-6 col-md-4">
           <div class="row mb-3">
             <div class="ml-auto"><a class="mr-2 css_flag" href="../en/index.html"><img src="../static/img/united-kingdom.png" alt="english" width="20"/></a><a class="mr-2 css_flag" href="../de/index.html"><img src="../static/img/germany.png" alt="german" width="20"/></a><a class="mr-2 css_flag" href="../fr/index.html"><img src="../static/img/france.png" alt="france" width="20"/></a><a class="mr-2 css_flag" href="../ua/index.html"><img src="../static/img/ukraine.png" alt="ukrainian" width="20"/></a><a class="mr-2 css_flag" href="../ru/index.html"><img src="../static/img/russia.png" alt="russian" width="20"/></a></div>
           </div>
           <div class="row">
-            <div class="ml-auto text-right"><img class="mr-2" src="../static/img/bsci.svg" alt="BSCI" height="40"/><img class="mr-2" src="../static/img/ISO.jpg" alt="ISO" height="60"/><img class="mr-2" src="../static/img/REACH.jpg" alt="Reach" height="60"/></div>
+            <div class="w-25 mr-2 ml-auto text-right align-self-end"><img class="w-100 mb-1" src="../static/img/bsci.svg" alt="BSCI"/><img class="w-100" src="../static/img/ISO.jpg" alt="ISO"/></div><img class="w-25 align-self-end" src="../static/img/REACH.jpg" alt="Reach"/>
           </div>
         </div>
       </div>
       <hr class="border border-success m-1"/>
-      <main class="mt-3">
-        <div class="row justify-content-center mb-4"><img src="../static/img/2-2_Baner_Charcoal_for_grilling.jpg" alt=""/></div>
+      <main class="mt-3 mb-1"><img class="w-100 mb-3" src="../static/img/2-2_Baner_Charcoal_for_grilling.jpg" alt=""/>
         <h2>ПРОДУКЦИЯ ДЛЯ ГРИЛЛИНГА</h2>
         <p>Мы можем предложить Вам:</p>
         <ul>
-          <li>Древесный уголь для гриля</li>
-          <li>Древесноугольные брикеты для гриля</li>
-          <li>Одноразовые грили</li>
+          <li class="check">Древесный уголь для гриля</li>
+          <li class="check">Древесноугольные брикеты для гриля</li>
+          <li class="check">Одноразовые грили</li>
         </ul>
-        <hr/>
         <div class="row">
-          <div class="col-4 px-5">
+          <div class="col-sm-4 px-5">
+            <hr/>
             <div class="d-flex align-content-center"><a href="../ru/charcoal-bag.html"><img class="mx-auto img-fluid" src="../static/img/Coal_1.jpg" alt=""/></a></div>
             <h4 class="text-left">Древесный уголь</h4>
             <p>Изготовлено из 100% твердых пород дерева. От надежного лесного
             хозяйства с высоким уровнем организации хозяйствования. Быстро и
-            легко разгораются…</p>
+            легко разгораются…</p><a href="../ru/charcoal-bag.html">
+              <button class="btn btn-warning float-right">Подробнее</button></a>
           </div>
-          <div class="col-4 px-5">
+          <div class="col-sm-4 px-5">
+            <hr/>
             <div class="d-flex align-content-center"><a href="../ru/briquettes.html"><img class="mx-auto img-fluid" src="../static/img/Briquettes_1.jpg" alt=""/></a></div>
             <h4 class="text-left">Древесноугольные брикеты</h4>
             <p>Изготовлено из 100% твердых пород дерева. От надежного лесного
             хозяйства с высоким уровнем организации хозяйствования. Быстро и
-            легко разгораются…</p>
+            легко разгораются…</p><a href="../ru/briquettes.html">
+              <button class="btn btn-warning float-right">Подробнее</button></a>
           </div>
-          <div class="col-4 px-5">
+          <div class="col-sm-4 px-5">
+            <hr/>
             <div class="d-flex align-content-center"><a href="../ru/disposable-grills.html"><img class="mx-auto img-fluid" src="../static/img/Disposable_Grills_1_new.jpg" alt=""/></a></div>
             <h4 class="text-left">Одноразовые грили</h4>
-            <p>Предназначены для одноразового использования для приготовления мяса, рыбы, птицы и овощей…</p>
+            <p>Предназначены для одноразового использования для приготовления мяса, рыбы, птицы и овощей…</p><a href="../ru/disposable-grills.html">
+              <button class="btn btn-warning float-right">Подробнее</button></a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-4 mb-3"><a href="../ru/charcoal-bag.html">
-              <button class="btn btn-warning float-right">Подробнее</button></a></div>
-          <div class="col-4"><a href="../ru/briquettes.html">
-              <button class="btn btn-warning float-right">Подробнее</button></a></div>
-          <div class="col-4"><a href="../ru/disposable-grills.html">
-              <button class="btn btn-warning float-right">Подробнее</button></a></div>
         </div>
       </main>
       <footer>
-        <!-- hr.border.border-success.m-1-->
         <table class="css_footer_table">
           <thead>
             <tr>
@@ -87,7 +116,7 @@
               <td class="text-center"><i class="fas fa-map-marked-alt"></i><span>&#160;89200, Украина, Закарпатськая обл., г. Перечин, ул. Ужанськая, 25</span></td>
             </tr>
             <tr>
-              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77</span><i class="fas fa-envelope ml-3"></i><span>&#160;sales@lxk.com.ua</span></td>
+              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77</span><br/><i class="fas fa-envelope ml-3"></i><span>&#160;sales@lxk.com.ua</span></td>
             </tr>
           </tbody>
         </table>

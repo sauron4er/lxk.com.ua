@@ -61,7 +61,7 @@ mixin content(lang)
 
   h2.mt-3 #{texts[lang].charcoal}
   .row
-    .col-4
+    .col-sm-4
       ul
         p.css_p
           a.css_link(href="../" + lang + "/charcoal-for-industry.html") #{texts[lang].charcoal_for_industry}
@@ -75,9 +75,9 @@ mixin content(lang)
           a.css_link(href="../" + lang + "/customers.html") #{texts[lang].customers}
         p.css_p
           a.css_link(href="../" + lang + "/purchasing.html") #{texts[lang].purchasing}
-    .col-8
-      img.img-fluid.mx-auto.d-block.w-100.mb-4(src='../static/img/PRODUCTS.jpg' alt='Factory')
-      .d-flex.justify-content-center.mb-5
+    .col-sm-8
+      img.img-fluid.mx-auto.d-block.w-100.mb-2(src='../static/img/PRODUCTS.jpg' alt='Factory')
+      .d-flex.justify-content-center.mb-1
         a
           img.img-fluid(src='../static/img/Logos.jpg' alt='')
         a(href='../' + lang + '/charcoal-for-industry.html')

@@ -17,11 +17,10 @@ mixin content(lang)
         title: 'Клиенты:',
       }
     };
-    
-  .row.justify-content-center.mb-4
-    img(src='../static/img/1-4_Baner_Customers.jpg' alt='Customers')
+
+  img.w-100.mb-3(src='../static/img/1-4_Baner_Customers.jpg' alt='Customers')
   .row
-    .col-2
+    .col-sm-3
       h2 #{texts[lang].title}
       ul.fa-ul.mt-4
         li Intermarche
@@ -35,6 +34,5 @@ mixin content(lang)
         li E.Leclerc
         li Albert Heijn
         li Metro
-    .col-10
-      .d-flex.align-content-center.my-5
-        img.mx-auto(src='../static/img/Logos-1.jpg' alt='Customers logos')
+    .col-sm-9
+        img.w-100(src='../static/img/Logos-1.jpg' alt='Customers logos')

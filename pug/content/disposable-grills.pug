@@ -68,29 +68,30 @@ mixin content(lang)
   a.text-warning(href="../" + lang + "/charcoal-for-grilling.html") #{texts[lang].back_to}
   h2 #{texts[lang].title}
   .row.mt-4
-    .col-6
-      .d-flex.align-content-center.mb-5
+    .col-sm-6
+      .d-flex.align-content-center
         img.mx-auto(
           src="../static/img/Disposable_Grills_2_new.jpg",
           alt=""
         )
-    .col-6
+    .col-sm-6
       each p in texts[lang].paragraphs
         div #{p}
-      br
-      img(src="../static/img/Briquettes_icons_new.jpg", alt="")
+      img.mb-4.mt-1(src="../static/img/Briquettes_icons_new.jpg", alt="")
   if (lang === 'ua' || lang === 'ru')
     br
     .text-center
-      iframe(width='500' height='300' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      iframe(width='350' height='200' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
     br
-  h6 #{texts[lang].images_title}
-  .d-flex.justify-content-center
-    img.img-fluid.mr-5(
-      src="../static/img/Disposable_Grills_pic_1-2.jpg",
-      alt="disposable grills 1"
-    )
-    img.img-fluid(
-      src="../static/img/Disposable_Grills_pic_2.jpg",
-      alt="disposable grills 2"
-    )
+  //h6 #{texts[lang].images_title}
+  .row
+    .col-sm-4
+      img.w-100.mr-2.mb-2(
+        src="../static/img/Disposable_Grills_pic_1-2.jpg",
+        alt="disposable grills 1"
+      )
+    .col-sm-4
+      img.w-100(
+        src="../static/img/Disposable_Grills_pic_2.jpg",
+        alt="disposable grills 2"
+      )
