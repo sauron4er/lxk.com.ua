@@ -5,6 +5,30 @@ mixin content(lang)
     div.row
       div.col-sm-4
         img.w-100(
+          src="../static/img/covid-1.jpg",
+          alt="COVID19"
+        )
+      div.col-sm-8
+        h5 Виконання заходів щодо запобігання поширенню коронавірусу COVID-19
+        div Згідно Постанови Кабінету Міністрів України №211 від 11.03.2020 року "Про запобігання поширенню на території України коронавірусу COVID-19" на нашому підприємстві розроблені та виконуються профілактичні заходи щодо запобігання поширенню коронавірусу COVID-19, які затверджені також і Наказом ТДВ "Перечинський ЛХК" №34 від 12.03.2020 року.
+        div.text-right
+          a.font-italic(href="./news/news_12032020.html") Читати далі...
+    hr
+    div.row
+      div.col-sm-4
+        .fb-video(data-href='https://www.facebook.com/perechintimber/videos/215794232968980/UzpfSTEwMTM1MzE3MTM4NjgyNjoxNDQyMTYxMjM3NjcxOTc/' data-width='375' data-show-text='false')
+      div.col-sm-8
+        h5 Наша продукція дезинфікована
+        div Ніколи не було більш нагального часу, щоб бути відповідальним.
+        div Перечинський лісохімічний комбінат – найбільший виробник етилового ацетату в Україні та один з найбільших в Європі.
+        div Основна сировина для етилового ацетату - етиловий спирт. Сама сировина рекомендується Всесвітньою організацією охорони здоров ' я в концентрації 80 % з водою, як найкраща дезінфекція.
+        div Ми використовуємо розчинник етанолу для дезинфікації наших продуктів перед завантаженням. Наша команда хотіла б бути на 100 % впевнена, що наші клієнти будуть у безпеці.
+        div Бережіть себе. Залишайтеся вдома.
+        div Гриль у вашому саду з нашим вугіллям.
+    hr
+    div.row
+      div.col-sm-4
+        img.w-100(
           src="../static/img/article.png",
           alt="Article"
         )
@@ -14,9 +38,22 @@ mixin content(lang)
         div.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
         div.text-right
           a.font-italic(href="./news/news_20122019.html") Читати далі...
-  hr
-  .text-center
-    iframe(width='375' height='230' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-  hr
-  .text-center
-    .fb-video(data-href='https://www.facebook.com/grillyua/videos/2161185987523122/?story_fbid=2267572930210528&id=1609460466021781' data-width='375' data-show-text='false')
+  if (lang === 'ua' || lang === 'ru')
+    hr
+    .text-center
+      iframe(width='375' height='230' src='https://www.youtube.com/embed/5QW2s_WONlI?vq=hd1080' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    hr
+    .text-center
+      .fb-video(data-href='https://www.facebook.com/grillyua/videos/2161185987523122/?story_fbid=2267572930210528&id=1609460466021781' data-width='375' data-show-text='false')
+  if (lang === 'en')
+    div.row
+      div.col-sm-4
+        .fb-video(data-href='https://www.facebook.com/perechintimber/videos/215794232968980/UzpfSTEwMTM1MzE3MTM4NjgyNjoxNDQyMTYxMjM3NjcxOTc/' data-width='375' data-show-text='false')
+      div.col-sm-8
+        h5 Our Products are Disinfected
+        div Never has there been a more pressing time to be responsible.
+        div Perechin timber and chemical plant is the biggest ethyl acetate producer in Ukraine and one of the biggest in Europe. The main raw material for ethyl acetate is ethyl alcohol.
+        div The same raw material is recommended by World Health Organisation in concetration 80% with water, as the best disinfectant.
+        div We use ethanol solvent to disinfect our final products, before loading. Our team would like to be 100% sure, that our Customers keep safe.
+        div Take care. Stay at home.
+        div Grill in Your Garden with our Charcoal
