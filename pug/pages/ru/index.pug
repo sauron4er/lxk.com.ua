@@ -5,7 +5,7 @@ include ../../components/footer
 include ../../components/title
 
 block links
-  meta(name='description' content='Перечинский лесохимический комбинат - производитель угля, брикетов для гриля, одноразовых мангалов, Украина')
+  meta(name='description' content='Перечинский лесохимический комбинат (ПЛХК) - производитель угля, брикетов для гриля, одноразовых мангалов, Украина')
   // Global site tag (gtag.js) - Google Analytics
   script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-157169906-1')
   script.
@@ -15,7 +15,9 @@ block links
       }
       gtag('js', new Date());
       gtag('config', 'UA-157169906-1');
-
+  script(type="application/ld+json").
+    "url": "http://www.lxk.com.ua/ru/index.html",
+    "logo": "http://www.example.com/static/img/logo.png"
 
 block title
   +title('ru', 'index')

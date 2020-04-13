@@ -176,32 +176,6 @@ mixin header(lang)
                 a.navbar-link.mr-4(href="../" + lang + "/charcoal.html") #{texts[lang].charcoal}
             li.nav-item.css_dropdown
               a.navbar-link.mr-4(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
-      //nav.navbar.navbar-expand-lg.navbar-light.bg-light
-      //  a(href="../" + lang + "/index.html")
-      //    img.w-100(src="../static/img/logo.png", alt="logo")
-      //  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-      //    span.navbar-toggler-icon
-      //  #navbarSupportedContent.collapse.navbar-collapse
-      //    ul.navbar-nav.mr-auto
-      //      li.nav-item.active
-      //        a.nav-link(href='#')
-      //          | Home
-      //          span.sr-only (current)
-      //      li.nav-item
-      //        a.nav-link(href='#') Link
-      //      li.nav-item.dropdown
-      //        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-      //          | Dropdown
-      //        .dropdown-menu(aria-labelledby='navbarDropdown')
-      //          a.dropdown-item(href='#') Action
-      //          a.dropdown-item(href='#') Another action
-      //          .dropdown-divider
-      //          a.dropdown-item(href='#') Something else here
-      //      li.nav-item
-      //        a.nav-link.disabled(href='#') Disabled
-      //    form.form-inline.my-2.my-lg-0
-      //      input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
-      //      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
 
     .col-6.col-md-4
       .row.mb-3
@@ -237,7 +211,12 @@ mixin header(lang)
               width="20"
             )
       .row
-        .w-25.mr-2.ml-auto.text-right.align-self-end
+        a.w-25.ml-auto.align-self-end(href="http://www.grilly.ua/" target="_blank")
+          img.w-100(
+            src="../static/img/grilly-logo.jpg",
+            alt="Grilly"
+          )
+        .w-25.mr-2.text-right.align-self-end
           img.w-100.mb-1(
             src="../static/img/bsci.svg",
             alt="BSCI"
