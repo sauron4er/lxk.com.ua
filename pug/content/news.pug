@@ -1,7 +1,47 @@
 mixin content(lang)
   script(async='' defer='' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2')
   if (lang === 'ua')
+    div.row
+      div.col-sm-4
+        img.w-100(
+          src="../static/img/lxk-photo.jpg",
+          alt="news-photo"
+        )
+      div.col-sm-8
+        h5 Перечинський лісохімічний комбінат з думкою про майбутнє: перехід на альтернативні джерела енергії як необхідність збереження планети
+        div Світ довкола нас змінюється з неймовірною швидкістю: розвиваються технології, з’являються нові наукові відкриття, виробники приходять до висновку, що екологічність виробництва, пошук альтернативних джерел енергії - це не просто “фішка”, модний тренд чи принципова позиція власника, а необхідна умова збереження планети для наступних поколінь.
+        div Світова спільнота переходить на альтернативні джерела енергії: майбутнє вже настало! А що в Україні?
+        div.text-right
+          a.font-italic(href="./news_15_04_2020.html") Читати далі...
     hr
+  if (lang === 'ru')
+    div.row
+      div.col-sm-4
+        img.w-100(
+          src="../static/img/lxk-photo.jpg",
+          alt="news-photo"
+        )
+      div.col-sm-8
+        h5 Перечинский лесохимический комбинат с мыслью о будущем: переход на альтернативные источники энергии как необходимость сохранения планеты
+        div Мир вокруг нас меняется с невероятной скоростью: развиваются технологии, появляются новые научные открытия, производители приходят к выводу, что экологичность производства, поиск альтернативных источников энергии - это не просто "фишка", модный тренд или принципиальная позиция владельца, а необходимое условие сохранения планеты для будущих поколений.
+        div Мировое сообщество переходит на альтернативные источники энергии: будущее уже наступило! А что в Украине?
+        div.text-right
+          a.font-italic(href="./news_15_04_2020.html") Читать дальше...
+  if (lang === 'en')
+    div.row
+      div.col-sm-4
+        img.w-100(
+          src="../static/img/lxk-photo.jpg",
+          alt="news-photo"
+        )
+      div.col-sm-8
+        h5 Perechin Timber and Chemical Plant Looking to the Future: Switching to Alternative Energy Sources as a Way to Save the Planet
+        div The world around us is charging at breakneck speed: technology is developing, new scientific discoveries are emerging, manufacturers are concluding that environmentally friendly production and a search of alternative energy sources are not just some “tricks”, an up-to-date tendency, or a strong stand of the owner, but a precondition for preserving the planet for future generations.
+        div Global Society Already Switching to Alternative Energy Sources: Indeed, the Future Has Come! But What about Ukraine?
+        div.text-right
+          a.font-italic(href="./news_15_04_2020.html") More...
+    hr
+  if (lang === 'ua')
     div.row
       div.col-sm-4
         img.w-100(
@@ -12,7 +52,7 @@ mixin content(lang)
         h5 Виконання заходів щодо запобігання поширенню коронавірусу COVID-19
         div Згідно Постанови Кабінету Міністрів України №211 від 11.03.2020 року "Про запобігання поширенню на території України коронавірусу COVID-19" на нашому підприємстві розроблені та виконуються профілактичні заходи щодо запобігання поширенню коронавірусу COVID-19, які затверджені також і Наказом ТДВ "Перечинський ЛХК" №34 від 12.03.2020 року.
         div.text-right
-          a.font-italic(href="./news/news_12032020.html") Читати далі...
+          a.font-italic(href="./news_12032020.html") Читати далі...
     hr
     div.row
       div.col-sm-4
