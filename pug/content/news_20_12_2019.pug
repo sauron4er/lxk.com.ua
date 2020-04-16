@@ -1,0 +1,43 @@
+mixin content(lang)
+  -
+    let texts = {
+      ua: {
+        text_5: 'Для перевірки якості води існує проект “Чиста вода” (<a href="http://texty.org.ua/water/" target="_blank">http://texty.org.ua/water/</a>), ' +
+                'який реалізується та фінансується за підтримки незалежного агентства федерального уряду США (<a href="https://www.usaid.gov/" target="_blank">https://www.usaid.gov/</a>), ' +
+                'неприбуткової організації “Eurasia Foundation” (<a href="https://www.eurasia.org/" target="_blank">https://www.eurasia.org/</a>).',
+        text_6: 'Для моніторингу та аналізу стану повітря можна використовувати відкрите джерело інформації SaveEcoBot (це безкоштовний сервіс для громадськості, розроблений групою активістів Save Dnipro) ' +
+                '(<a href="https://www.saveecobot.com/" target="_blank">https://www.saveecobot.com/</a>).',
+        proof: 'Джерело: <a href="https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym" target="_blank">' +
+                'https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym</a>'
+      },
+      en: {
+        text_5: 'For checking purposes the quality of water, there is a Clean Water project  (<a href="http://texty.org.ua/water/" target="_blank">http://texty.org.ua/water/</a>), ' +
+                'implemented and funded with the support by independent agency of the US Federal Government (<a href="https://www.usaid.gov/" target="_blank">https://www.usaid.gov/</a>), ' +
+                'non-profit organization "Eurasia Foundation" (<a href="https://www.eurasia.org/" target="_blank">https://www.eurasia.org/</a>).',
+        text_6: 'You can use the open source information SaveEcoBot (a free service to the public developed by the Save Dnipro activist group) to monitor and analyze the air condition ' +
+                '(<a href="https://www.saveecobot.com/" target="_blank">https://www.saveecobot.com/</a>).',
+        proof: 'Source: <a href="https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym" target="_blank">' +
+                'https://pmg.ua/life/85434-ekology-sprostovuyut-zabrudnennya-stichnykh-vod-ta-povitrya-tdv-perechynskym-lisokhimichnym</a>'
+      }
+    }
+
+  if (lang === 'ua')
+    h3.text-center Екологи спростовують забруднення стічних вод та повітря ТДВ “Перечинським лісохімічним комбінатом”
+    img.d-block.mb-1.mx-auto(src="../static/img/article.png", alt="Article")
+    p На численні прохання Перечинської громади, 6 грудня 2019 року в місто була запрошена незалежна лабораторія ПНВП “Екологія”. Нею було проведено відбори проб повітря для визначення концентрації забруднюючих речовин в приземному шарі атмосферного повітря у 5-ти точках м. Перечин по санітарно-захисній зоні лісохімічного комбінату.
+    p Також для більш детального дослідження проби були взяті у школі та на площі Народній. Лабораторією була перевірена наявність в атмосфері наступних речовин: діоксин азоту, оксид вуглецю, кислота оцтова, фенол, формальдегід тощо.
+    p.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
+    p Екологи наголошують, що існує можливість самостійної перевірки стану повітря та закликають усіх свідомих громадян проводити контроль рівня викидів шкідливих речовин у річку з відкритих офіційних незалежних джерел і перевіряти інформацію від Державного агенства водних ресурсів України (http://monitoring.davr.gov.ua/).
+    p !{texts[lang].text_5}
+    p !{texts[lang].text_6}
+    p !{texts[lang].proof}
+  if (lang === 'en')
+    h3.text-center Environmentalists deny wastewater and air pollution by ALC "Perechin Timber & Chemical Plant"
+    img.d-block.mb-1.mx-auto(src="../static/img/article.png", alt="Article")
+    p At the numerous requests of the Perechin community in December 6 th, 2019 an independent laboratory of the Private Research and Development enterprise "Ecology" was invited to the city. It carried out air sampling to determine the concentration of pollutants in the surface layer of atmospheric air at 5 points in Perechin along the sanitary protection zone of the timber and chemical plant.
+    p Also, for more detailed investigation, samples were taken at school and on Narodna Square. The laboratory verified the presence of the following substances in the atmosphere: nitrogen dioxide, carbon monoxide, acetic acid, phenol, formaldehyde etc.
+    p.font-weight-bold The conclusions are firm - no exceedance of the limit values at any point has been detected.
+    p Ecologists put emphasis on opportunity to check through one's individual effort the air condition and urge all conscious citizens to monitor the level of emissions of harmful substances into the river from open official independent sources and to check information from the State Agency of Water Resources of Ukraine (http://monitoring.davr.gov.ua/).
+    p !{texts[lang].text_5}
+    p !{texts[lang].text_6}
+    p !{texts[lang].proof}
