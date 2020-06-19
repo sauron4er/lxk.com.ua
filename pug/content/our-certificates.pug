@@ -19,7 +19,15 @@ mixin content(lang)
     };
 
   h2 #{texts[lang].title}
-  img.d-block.w-100(src="../static/img/ISO-certificate.jpg", alt="")
+  if (lang === 'ua')
+    .text-center
+      embed( src="../static/img/CT-ISO_9001-2015_UKR_ALC_Perechin_Timber__Chemical_Plant.pdf" width="1000px" height="1200px")
+  if (lang === 'ru')
+    .text-center
+      embed( src="../static/img/CT-ISO_9001-2015_RUS_ALC_Perechin_Timber__Chemical_Plant.pdf" width="1000px" height="1200px")
+  if (lang === 'en' || lang === 'de' ||lang === 'fr')
+    .text-center
+      embed( src="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf" width="1000px" height="1200px")
   //.row.mt-4
     //.col-6.text-center
       //img.mx-auto(src="../static/img/our-certificates-1.jpg", alt="")
