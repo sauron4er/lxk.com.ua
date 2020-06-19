@@ -147,8 +147,9 @@ mixin header(lang)
     .col-7.align-self-end
       nav.navbar.navbar-light.navbar-expand-lg.align-items-end
         .css_dropdown.mr-5
-          a.navbar-link.dropdown-toggle(href="../../" + lang + "/factory.html") #{texts[lang].factory}
+          a.navbar-link.dropdown-toggle #{texts[lang].factory}
           .css_dropdown-content
+            a(href="../../" + lang + "/factory.html") #{texts[lang].factory}
             if (lang === 'ua')
               a.navbar-link.mr-5(href="../../" + lang + "/news.html") #{texts[lang].news}
             a(href="../../" + lang + "/history.html") #{texts[lang].history}
@@ -159,7 +160,7 @@ mixin header(lang)
             a(href="../../" + lang + "/logistics.html") #{texts[lang].logistics}
         if (lang === 'en' || lang === 'ua')
           .css_dropdown.mr-5
-            a.navbar-link.dropdown-toggle(href="") #{texts[lang].products}
+            a.navbar-link.dropdown-toggle #{texts[lang].products}
             .css_dropdown-content
               a(href="../../" + lang + "/charcoal.html") #{texts[lang].charcoal}
               a(href="../../" + lang + "/ethyl-acetate-index.html") #{texts[lang].ethyl}
