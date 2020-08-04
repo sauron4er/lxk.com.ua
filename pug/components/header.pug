@@ -28,7 +28,9 @@ mixin header(lang)
         glue_products: 'Products',
         logistics: 'Logistics',
         purchasing: 'Purchasing',
-        contacts: 'Contacts'
+        contacts: 'Contacts',
+        sales_mail: '(For questions about product sales)',
+        office_mail: '(For inquiries, messages and other questions)'
       },
       de: {
         home: 'Hauptseite',
@@ -55,7 +57,9 @@ mixin header(lang)
         glue_products: '',
         logistics: 'Logistik',
         purchasing: 'Einkauf/Umwelt',
-        contacts: 'Kontakt'
+        contacts: 'Kontakt',
+        sales_mail: '(Bei Fragen zum Produktverkauf)',
+        office_mail: '(Fűr die Anfragen, Nachrichten und andere Fragen)'
       },
       fr: {
         home: 'La première',
@@ -82,7 +86,9 @@ mixin header(lang)
         glue_products: '',
         logistics: 'Logistique',
         purchasing: 'Environnement',
-        contacts: 'Coordonnees'
+        contacts: 'Coordonnees',
+        sales_mail: '(Pour des questions sur les ventes de produits)',
+        office_mail: '(Pour des demandes de renseignements, des messages et d\'autres questions)'
       },
       ua: {
         home: 'Головна',
@@ -111,7 +117,9 @@ mixin header(lang)
         logistics: 'Логістика',
         purchasing: 'Сировина',
         contacts: 'Контакти',
-        news: 'Новини'
+        news: 'Новини',
+        sales_mail: '(Для питань щодо продажу продукції)',
+        office_mail: '(Для запитів, повідомлень та інших питань)'
       },
       ru: {
         home: 'Главная',
@@ -139,7 +147,9 @@ mixin header(lang)
         glue_products: '',
         logistics: 'Логистика',
         purchasing: 'Сырье',
-        contacts: 'Контакты'
+        contacts: 'Контакты',
+        sales_mail: '(Для вопросов о продаже продукции)',
+        office_mail: '(Для запросов, сообщений и других вопросов)'
       }
     }
 
@@ -212,8 +222,33 @@ mixin header(lang)
               alt="russian",
               width="20"
             )
-      .row
-        .w-25.ml-auto.mr-2.text-right.align-self-end
+      .d-flex.justify-content-end
+        //if (lang === 'en')
+        //  img.w-25.mr-3(
+        //    src="../static/img/pefc-logo-en.svg",
+        //    alt="PEFC™"
+        //  )
+        //if (lang === 'de')
+        //  img.w-25.mr-3(
+        //    src="../static/img/pefc-logo-de.svg",
+        //    alt="PEFC™"
+        //  )
+        //if (lang === 'fr')
+        //  img.w-25.mr-3(
+        //    src="../static/img/pefc-logo-fr.svg",
+        //    alt="PEFC™"
+        //  )
+        //if (lang === 'ru')
+        //  img.w-25.mr-3(
+        //    src="../static/img/pefc-logo-ru.svg",
+        //    alt="PEFC™"
+        //  )
+        //if (lang === 'ua')
+        //  img.w-25.mr-3(
+        //    src="../static/img/pefc-logo-ua.svg",
+        //    alt="PEFC™"
+        //  )
+        .w-25.mr-2
           img.w-100.mb-1(
             src="../static/img/bsci.svg",
             alt="BSCI"
@@ -222,7 +257,7 @@ mixin header(lang)
             src="../static/img/ISO.jpg",
             alt="ISO"
           )
-        img.w-25.align-self-end(
+        img.w-25(
           src="../static/img/REACH.jpg",
           alt="Reach"
         )
@@ -234,14 +269,11 @@ mixin header(lang)
       //    )
   hr.mb-1
   if (lang === 'en' || lang === 'de' || lang === 'fr')
-    .d-flex.flex-row.justify-content-between
-      div +38 (03145) 2-31-68, +38 (03145) 2-32-77
-      a(href='mailto:sales@lxk.com.ua') sales@lxk.com.ua
+    .d-flex.flex-row
+      div.ml-auto +38 (03145) 2-31-68, +38 (03145) 2-32-77
   if (lang === 'ua')
     .row
       .col-lg-5.text-right.text-lg-center +38 (03145) 2-31-68, +38 (03145) 2-32-77
-      .col-lg-2.text-right.text-lg-center
-        a(href='mailto:sales@lxk.com.ua') sales@lxk.com.ua
       .col-lg-3.text-right.text-lg-center
         a.float-lg-left(target='_blank' href='https://grilly.ua/') Інтернет-магазин #{' '}
           img.w-25.align-self-center(
@@ -252,8 +284,6 @@ mixin header(lang)
   if (lang === 'ru')
     .row
       .col-lg-5.text-right.text-lg-center +38 (03145) 2-31-68, +38 (03145) 2-32-77
-      .col-lg-2.text-right.text-lg-center
-        a(href='mailto:sales@lxk.com.ua') sales@lxk.com.ua
       .col-lg-3.align-self-center
         a.text-right.text-lg-center.float-left(target='_blank' href='https://grilly.ua/ru/') Интернет-магазин #{' '}
           img.w-25.align-self-center(
@@ -261,4 +291,12 @@ mixin header(lang)
             alt="Grilly"
           )
       a.col.lg-2.text-right.text-lg-center(target='_blank' href='https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82') Википедия
+  .d-flex.flex-row
+    div.ml-auto
+      a(href='mailto:sales@lxk.com.ua') sales@lxk.com.ua #{' '}
+      span.small #{texts[lang].sales_mail}
+  .d-flex.flex-row
+    div.ml-auto
+      a(href='mailto:office@lxk.com.ua') office@lxk.com.ua #{' '}
+      span.small #{texts[lang].office_mail}
   hr.mt-1.border

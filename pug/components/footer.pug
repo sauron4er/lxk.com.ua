@@ -11,6 +11,8 @@ mixin footer(lang)
         purchasing: 'Purchasing',
         contacts: 'Contacts',
         address: "25, Uzhans'ka st., Perechin, Zakarpatska region, 89200, Ukraine",
+        sales_mail: '(For questions about product sales)',
+        office_mail: '(For inquiries, messages and other questions)'
       },
       de: {
         home: 'Hauptseite',
@@ -22,6 +24,8 @@ mixin footer(lang)
         purchasing: 'Einkauf/Umwelt',
         contacts: 'Kontaktinformation',
         address: "89200, Ukraine, Gebiet Transkarpatien, Stadt Peretschyn, Ushanska Str. 25",
+        sales_mail: '(Bei Fragen zum Produktverkauf)',
+        office_mail: '(Fűr die Anfragen, Nachrichten und andere Fragen)'
       },
       fr: {
         home: 'La première',
@@ -33,6 +37,8 @@ mixin footer(lang)
         purchasing: 'Environnement',
         contacts: 'Coordonnees',
         address: "25, rue Uzhanska, Peretchyn, région de Transcarpatie, Ukraine, 89200",
+        sales_mail: '(Pour des questions sur les ventes de produits)',
+        office_mail: '(Pour des demandes de renseignements, des messages et d\'autres questions)'
       },
       ua: {
         home: 'Головна',
@@ -45,6 +51,8 @@ mixin footer(lang)
         purchasing: 'Сировина',
         contacts: 'Контакти',
         address: "89200, Україна, Закарпатська обл., м. Перечин, вул. Ужанська, 25",
+        sales_mail: '(Для питань щодо продажу продукції)',
+        office_mail: '(Для запитів, повідомлень та інших питань)'
       },
       ru: {
         home: 'Главная',
@@ -56,6 +64,8 @@ mixin footer(lang)
         purchasing: 'Сырье',
         contacts: 'Контакты',
         address: "89200, Украина, Закарпатськая обл., г. Перечин, ул. Ужанськая, 25",
+        sales_mail: '(Для вопросов о продаже продукции)',
+        office_mail: '(Для запросов, сообщений и других вопросов)'
       }
     }
 
@@ -76,4 +86,9 @@ mixin footer(lang)
             span &#160;+38 (03145) 2-31-68, +38 (03145) 2-32-77
             br
             i.fas.fa-envelope.ml-3
-            span &#160;sales@lxk.com.ua
+            span &#160;sales@lxk.com.ua#{' '}
+            span.small #{texts[lang].sales_mail}
+            br
+            i.fas.fa-envelope.ml-3
+            span &#160;office@lxk.com.ua#{' '}
+            span.small #{texts[lang].office_mail}

@@ -8,10 +8,13 @@ mixin content(lang)
           'Zakarpatska region,',
           'Ukraine, 89200',
           '',
-          'Tel./fax: +38 (03145) 2-31-68,',
+          'Tel./fax:',
+          '+38 (03145) 2-31-68',
           '+38 (03145) 2-32-77',
           '',
-          'e-mail: sales@lxk.com.ua',
+          'e-mail:',
+          'sales@lxk.com.ua',
+          'office@lxk.com.ua',
         ],
         title: 'FEEDBACK',
         name: 'Your Name (required)',
@@ -26,10 +29,13 @@ mixin content(lang)
         'Gebiet Transkarpatien,',
         'Stadt Peretschyn, Ushanska Str. 25',
         '',
-        'Tel./fax: +38 (03145) 2-31-68,',
+        'Tel./fax:',
+        '+38 (03145) 2-31-68',
         '+38 (03145) 2-32-77',
         '',
-        'e-mail: sales@lxk.com.ua',
+        'e-mail:',
+        'sales@lxk.com.ua',
+        'office@lxk.com.ua',
         ],
         title: 'RÜCKMELDUNG',
         name: 'Name (erforderlich)',
@@ -44,10 +50,13 @@ mixin content(lang)
         'région de Transcarpatie,',
         'Ukraine, 89200',
         '',
-        'Tel./fax: +38 (03145) 2-31-68,',
+        'Tel./fax:',
+        '+38 (03145) 2-31-68',
         '+38 (03145) 2-32-77',
         '',
-        'e-mail: sales@lxk.com.ua',
+        'e-mail:',
+        'sales@lxk.com.ua',
+        'office@lxk.com.ua',
         ],
         title: 'COMMENTAIRES',
         name: 'Votre Nom (obligatoire)',
@@ -62,7 +71,7 @@ mixin content(lang)
         'Перечин, вул.Ужанська, 25',
         '',
         'Тел./факс:',
-        '+38 (03145) 2-31-68,',
+        '+38 (03145) 2-31-68',
         '+38 (03145) 2-32-77',
         '',
         'Відділ кадрів: +38 (03145) 2-32-68',
@@ -73,7 +82,9 @@ mixin content(lang)
         '',
         'Постачання: +38 (03145) 2-32-76',
         '',
-        'e-mail: sales@lxk.com.ua',
+        'e-mail:',
+        'sales@lxk.com.ua',
+        'office@lxk.com.ua',
         ],
         title: 'ЗВОРОТНІЙ ЗВ’ЯЗОК',
         name: 'Ваше ім’я (обов\'язково)',
@@ -88,7 +99,8 @@ mixin content(lang)
         'Перечин, ул.Ужанская, 25',
         '',
         'Тел./факс:',
-        '+38 (03145) 2-31-68, +38 (03145) 2-32-77',
+        '+38 (03145) 2-31-68',
+        '+38 (03145) 2-32-77',
         '',
         'Отдел кадров: +38 (03145) 2-32-68',
         '',
@@ -98,13 +110,15 @@ mixin content(lang)
         '',
         'Снабжение: +38 (03145) 2-32-76',
         '',
-        'e-mail: sales@lxk.com.ua',
+        'e-mail:',
+        'sales@lxk.com.ua',
+        'office@lxk.com.ua',
         ],
         title: 'ФОРМА ОБРАТНОЙ СВЯЗИ',
         name: 'Ваше имя (обязательно)',
         email: 'Ваш Email (обязательно)',
         message: 'Ваше сообщение',
-        send: 'Отправить',
+        send: 'Отправить'
       }
     };
 
@@ -165,14 +179,14 @@ mixin content(lang)
   img.w-100.mb-3(src='../static/img/5_Baner_Contacts.jpg' alt='')
   .row
     .col-sm-1
-    .col-sm-3
+    .col-sm-4
       h2.text-left #{texts[lang].contacts_title}
       each c in texts[lang].contacts
         if c.length > 0
           div #{c}
         else
           br
-    .col-sm-7
+    .col-sm-6
       h2.mt-4.mt-sm-0.text-left #{texts[lang].title}
       .css_form.mb-3
         .form-container
