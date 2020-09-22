@@ -119,7 +119,8 @@ mixin header(lang)
         contacts: 'Контакти',
         news: 'Новини',
         sales_mail: '(Для питань щодо продажу продукції)',
-        office_mail: '(Для запитів, повідомлень та інших питань)'
+        office_mail: '(Для запитів, повідомлень та інших питань)',
+        financial_statements: 'Фінансова звітність'
       },
       ru: {
         home: 'Главная',
@@ -176,6 +177,8 @@ mixin header(lang)
                 if (lang === 'ua' || lang === 'en')
                   a(href="../" + lang + "/politics.html") #{texts[lang].politics}
                 a(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
+                if (lang === 'ua')
+                  a(href="../" + lang + "/financial-statements.html") #{texts[lang].financial_statements}
             if (lang === 'en' || lang === 'ua')
               li.nav-item.css_dropdown.mr-4
                 a.navbar-link.dropdown-toggle #{texts[lang].products}
