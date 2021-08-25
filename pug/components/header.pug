@@ -8,7 +8,7 @@ mixin header(lang)
         news: 'News',
         charcoal: 'Charcoal',
         history: 'History',
-        politics: 'Company politics',
+        policies: 'Company policies',
         production_process: 'Production process',
         energy_efficiency: 'Energy efficiency',
         charcoal_for_industry: 'Charcoal for industry',
@@ -96,7 +96,7 @@ mixin header(lang)
         factory: 'Підприємство',
         charcoal: 'Деревне вугілля',
         history: 'Історія',
-        politics: 'Політики компанії',
+        policies: 'Політика компанії',
         production_process: 'Виробничий процес',
         energy_efficiency: 'Ефективне використання енергії',
         charcoal_for_industry: 'Вугілля для промисловості',
@@ -170,12 +170,12 @@ mixin header(lang)
             li.nav-item.css_dropdown.mr-4
               a.navbar-link.dropdown-toggle #{texts[lang].factory}
               .css_dropdown-content
-                a(href="../" + lang + "/factory.html") #{texts[lang].factory}
+                //a(href="../" + lang + "/factory.html") #{texts[lang].factory}
                 a(href="../" + lang + "/history.html") #{texts[lang].history}
                 a(href="../" + lang + "/energy-efficiency.html") #{texts[lang].energy_efficiency}
                 a(href="../" + lang + "/our-certificates.html") #{texts[lang].our_certificates}
                 if (lang === 'ua' || lang === 'en')
-                  a(href="../" + lang + "/politics.html") #{texts[lang].politics}
+                  a(href="../" + lang + "/policies.html") #{texts[lang].policies}
                 a(href="../" + lang + "/logistics.html") #{texts[lang].logistics}
                 if (lang === 'ua')
                   a(href="../" + lang + "/financial-statements.html") #{texts[lang].financial_statements}
@@ -226,31 +226,6 @@ mixin header(lang)
               width="20"
             )
       .d-flex.justify-content-end
-        //if (lang === 'en')
-        //  img.w-25.mr-3(
-        //    src="../static/img/pefc-logo-en.svg",
-        //    alt="PEFC™"
-        //  )
-        //if (lang === 'de')
-        //  img.w-25.mr-3(
-        //    src="../static/img/pefc-logo-de.svg",
-        //    alt="PEFC™"
-        //  )
-        //if (lang === 'fr')
-        //  img.w-25.mr-3(
-        //    src="../static/img/pefc-logo-fr.svg",
-        //    alt="PEFC™"
-        //  )
-        //if (lang === 'ru')
-        //  img.w-25.mr-3(
-        //    src="../static/img/pefc-logo-ru.svg",
-        //    alt="PEFC™"
-        //  )
-        //if (lang === 'ua')
-        //  img.w-25.mr-3(
-        //    src="../static/img/pefc-logo-ua.svg",
-        //    alt="PEFC™"
-        //  )
         .w-25.mr-2
           img.w-100.mb-1(
             src="../static/img/bsci.svg",
@@ -264,16 +239,15 @@ mixin header(lang)
           src="../static/img/REACH.jpg",
           alt="Reach"
         )
-      //.row
-      //  a.w-50.ml-auto.align-self-end.mt-2(href="http://www.grilly.ua/" target="_blank")
-      //    img.w-100(
-      //      src="../static/img/grilly-logo.jpg",
-      //      alt="Grilly"
-      //    )
   hr.mb-1
-  if (lang === 'en' || lang === 'de' || lang === 'fr')
+  if (lang === 'de' || lang === 'fr')
     .d-flex.flex-row
       div.ml-auto +38 (03145) 2-31-68, +38 (03145) 2-32-77
+  if (lang === 'en')
+    .d-flex.flex-row
+      div.ml-auto +38 (03145) 2-31-68, +38 (03145) 2-32-77
+        a.ml-5(target='_blank' href='https://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BB%D1%96%D1%81%D0%BE%D1%85%D1%96%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B1%D1%96%D0%BD%D0%B0%D1%82') Wikipedia
+
   if (lang === 'ua')
     .row
       .col-lg-5.text-right.text-lg-center +38 (03145) 2-31-68, +38 (03145) 2-32-77

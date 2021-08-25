@@ -24,7 +24,8 @@
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item css_dropdown"><a class="navbar-link mr-4" href="../ua/news.html">Новини</a></li>
                 <li class="nav-item css_dropdown mr-4"><a class="navbar-link dropdown-toggle">Підприємство</a>
-                  <div class="css_dropdown-content"><a href="../ua/factory.html">Підприємство</a><a href="../ua/history.html">Історія</a><a href="../ua/energy-efficiency.html">Ефективне використання енергії</a><a href="../ua/our-certificates.html">Наші сертифікати</a><a href="../ua/politics.html">Політики компанії</a><a href="../ua/logistics.html">Логістика</a><a href="../ua/financial-statements.html">Фінансова звітність</a>
+                  <div class="css_dropdown-content">
+                    <!--a(href="../" + lang + "/factory.html") #{texts[lang].factory}--><a href="../ua/history.html">Історія</a><a href="../ua/energy-efficiency.html">Ефективне використання енергії</a><a href="../ua/our-certificates.html">Наші сертифікати</a><a href="../ua/policies.html">Політика компанії</a><a href="../ua/logistics.html">Логістика</a><a href="../ua/financial-statements.html">Фінансова звітність</a>
                   </div>
                 </li>
                 <li class="nav-item css_dropdown mr-4"><a class="navbar-link dropdown-toggle">Продукція</a>
@@ -40,39 +41,8 @@
             <div class="ml-auto"><a class="mr-2 css_flag" href="../en/index.html"><img src="../static/img/united-kingdom.png" alt="english" width="20"/></a><a class="mr-2 css_flag" href="../de/index.html"><img src="../static/img/germany.png" alt="german" width="20"/></a><a class="mr-2 css_flag" href="../fr/index.html"><img src="../static/img/france.png" alt="france" width="20"/></a><a class="mr-2 css_flag" href="../ua/index.html"><img src="../static/img/ukraine.png" alt="ukrainian" width="20"/></a><a class="mr-2 css_flag" href="../ru/index.html"><img src="../static/img/russia.png" alt="russian" width="20"/></a></div>
           </div>
           <div class="d-flex justify-content-end">
-            <!--if (lang === 'en')-->
-            <!--  img.w-25.mr-3(-->
-            <!--    src="../static/img/pefc-logo-en.svg",-->
-            <!--    alt="PEFC™"-->
-            <!--  )-->
-            <!--if (lang === 'de')-->
-            <!--  img.w-25.mr-3(-->
-            <!--    src="../static/img/pefc-logo-de.svg",-->
-            <!--    alt="PEFC™"-->
-            <!--  )-->
-            <!--if (lang === 'fr')-->
-            <!--  img.w-25.mr-3(-->
-            <!--    src="../static/img/pefc-logo-fr.svg",-->
-            <!--    alt="PEFC™"-->
-            <!--  )-->
-            <!--if (lang === 'ru')-->
-            <!--  img.w-25.mr-3(-->
-            <!--    src="../static/img/pefc-logo-ru.svg",-->
-            <!--    alt="PEFC™"-->
-            <!--  )-->
-            <!--if (lang === 'ua')-->
-            <!--  img.w-25.mr-3(-->
-            <!--    src="../static/img/pefc-logo-ua.svg",-->
-            <!--    alt="PEFC™"-->
-            <!--  )-->
             <div class="w-25 mr-2"><img class="w-100 mb-1" src="../static/img/bsci.svg" alt="BSCI"/><img class="w-100" src="../static/img/ISO.jpg" alt="ISO"/></div><img class="w-25" src="../static/img/REACH.jpg" alt="Reach"/>
           </div>
-          <!--.row-->
-          <!--  a.w-50.ml-auto.align-self-end.mt-2(href="http://www.grilly.ua/" target="_blank")-->
-          <!--    img.w-100(-->
-          <!--      src="../static/img/grilly-logo.jpg",-->
-          <!--      alt="Grilly"-->
-          <!--    )-->
         </div>
       </div>
       <hr class="mb-1"/>
@@ -89,20 +59,67 @@
       <hr class="mt-1 border"/>
       <main class="mt-3">
         <h2>Фінансова звітність</h2>
-        <h5>Звіт про фінансовий стан</h5>
-        <div class="mt-1">
-          <object data="../static/img/Звіт про фінансовий стан.pdf" type="application/pdf" width="100%" height="800">
-            <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:</p>
-            <div class="mb-3"><a href="../static/img/Звіт про фінансовий стан.pdf">Завантажити Звіт про фінансовий стан</a></div>
-          </object>
-        </div>
-        <hr/>
-        <h5 class="mt-3">Звіт щодо аудиту фінансової звітності</h5>
-        <div class="my-3">
-          <object data="../static/img/Звіт щодо аудиту фінансової звітності.pdf" type="application/pdf" width="100%" height="800">
-            <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:</p>
-            <div class="mb-3"><a href="../static/img/Звіт про фінансовий стан.pdf">Завантажити Звіт щодо аудиту фінансової звітності</a></div>
-          </object>
+        <div class="accordion mb-2" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">2020 р. </button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="ml-auto">10.06.2021 р.</div>
+                </div>
+                <h5>Звіт про фінансовий стан за 2020 р.
+                  <div class="mt-1">
+                    <object data="../static/img/Звіт про фінансовий стан 2020.pdf" type="application/pdf" width="100%" height="800">
+                      <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:</p>
+                      <div class="mb-3"><a href="../static/img/Звіт про фінансовий стан 2020.pdf">Завантажити Звіт про фінансовий стан</a></div>
+                    </object>
+                  </div>
+                  <hr/>
+                  <h5 class="mt-3">Звіт щодо аудиту фінансової звітності за 2020 р.</h5>
+                  <div class="my-3">
+                    <object data="../static/img/Звіт щодо аудиту фінансової звітності 2020.pdf" type="application/pdf" width="100%" height="800">
+                      <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:</p>
+                      <div class="mb-3"><a href="../static/img/Звіт щодо аудиту фінансової звітності 2020.pdf">Завантажити Звіт щодо аудиту фінансової звітності</a></div>
+                    </object>
+                  </div>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2019 р.</button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="ml-auto">01.06.2020 р.</div>
+                </div>
+                <h5>Звіт про фінансовий стан за 2019 р.
+                  <div class="mt-1">
+                    <object data="../static/img/Звіт про фінансовий стан 2019.pdf" type="application/pdf" width="100%" height="800">
+                      <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:</p>
+                      <div class="mb-3"><a href="../static/img/Звіт про фінансовий стан 2019.pdf">Завантажити Звіт про фінансовий стан</a></div>
+                    </object>
+                  </div>
+                  <hr/>
+                  <h5 class="mt-3">Звіт щодо аудиту фінансової звітності за 2019 р.</h5>
+                  <div class="my-3">
+                    <object data="../static/img/Звіт щодо аудиту фінансової звітності 2019.pdf" type="application/pdf" width="100%" height="800">
+                      <p>Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:</p>
+                      <div class="mb-3"><a href="../static/img/Звіт щодо аудиту фінансової звітності 2019.pdf">Завантажити Звіт щодо аудиту фінансової звітності</a></div>
+                    </object>
+                  </div>
+                </h5>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer>

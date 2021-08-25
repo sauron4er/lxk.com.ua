@@ -1,15 +1,47 @@
 mixin content(lang)
   h2 Фінансова звітність
-  h5 Звіт про фінансовий стан
-  .mt-1
-    object(data="../static/img/Звіт про фінансовий стан.pdf" type="application/pdf" width="100%" height="800")
-      p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:
-      div.mb-3
-        a(href="../static/img/Звіт про фінансовий стан.pdf") Завантажити Звіт про фінансовий стан
-  hr
-  h5.mt-3 Звіт щодо аудиту фінансової звітності
-  .my-3
-    object(data="../static/img/Звіт щодо аудиту фінансової звітності.pdf" type="application/pdf" width="100%" height="800")
-      p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:
-      div.mb-3
-        a(href="../static/img/Звіт про фінансовий стан.pdf") Завантажити Звіт щодо аудиту фінансової звітності
+  #accordion.accordion.mb-2
+    .card
+      #headingOne.card-header
+        h2.mb-0
+          button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+            | 2020 р. 
+      #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion')
+        .card-body
+          .d-flex
+            .ml-auto 10.06.2021 р.
+          h5 Звіт про фінансовий стан за 2020 р.
+            .mt-1
+              object(data="../static/img/Звіт про фінансовий стан 2020.pdf" type="application/pdf" width="100%" height="800")
+                p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:
+                div.mb-3
+                  a(href="../static/img/Звіт про фінансовий стан 2020.pdf") Завантажити Звіт про фінансовий стан
+            hr
+            h5.mt-3 Звіт щодо аудиту фінансової звітності за 2020 р.
+            .my-3
+              object(data="../static/img/Звіт щодо аудиту фінансової звітності 2020.pdf" type="application/pdf" width="100%" height="800")
+                p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:
+                div.mb-3
+                  a(href="../static/img/Звіт щодо аудиту фінансової звітності 2020.pdf") Завантажити Звіт щодо аудиту фінансової звітності
+    .card
+      #headingTwo.card-header
+        h2.mb-0
+          button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+            | 2019 р.
+      #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
+        .card-body
+          .d-flex
+            .ml-auto 01.06.2020 р.
+          h5 Звіт про фінансовий стан за 2019 р.
+            .mt-1
+              object(data="../static/img/Звіт про фінансовий стан 2019.pdf" type="application/pdf" width="100%" height="800")
+                p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:
+                div.mb-3
+                  a(href="../static/img/Звіт про фінансовий стан 2019.pdf") Завантажити Звіт про фінансовий стан
+            hr
+            h5.mt-3 Звіт щодо аудиту фінансової звітності за 2019 р.
+            .my-3
+              object(data="../static/img/Звіт щодо аудиту фінансової звітності 2019.pdf" type="application/pdf" width="100%" height="800")
+                p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:
+                div.mb-3
+                  a(href="../static/img/Звіт щодо аудиту фінансової звітності 2019.pdf") Завантажити Звіт щодо аудиту фінансової звітності
