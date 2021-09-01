@@ -6,21 +6,6 @@ mixin content(lang)
     div.row
       div.col-sm-4
         img.w-100(
-          src="../static/img/image.png",
-          alt="news-photo"
-        )
-      div.col-sm-8
-        small.float-right 31.07.2020
-        h5 Перечинський ЛХК підтверджує свою прихильність принципам і критеріям FSC
-        div ТДВ «Перечинський лісохімічний комбінат» повідомляє всі зацікавлені сторони, в тому числі своїх партнерів про свою нетерпимість до корупції, незаконних вирубок лісу, і всіх видів незаконних дій, пов'язаних з рубками.
-        div FSC запропонувало Перечинському ЛХК для відновлення сертифікації впровадити додаткові заходи контролю, та переглянути свою співпрацю з іншими суб’єктами ринку деревно-вугільної продукції.
-        div.text-right
-          a.font-italic(href="./news_31_07_2020.html") Читати далі...
-
-    hr
-    div.row
-      div.col-sm-4
-        img.w-100(
           src="../static/img/lxk-photo.jpg",
           alt="news-photo"
         )
@@ -44,10 +29,6 @@ mixin content(lang)
         div.font-weight-bold Висновки однозначні – перевищення норм гранично допустимих концентрацій у жодній точці не виявлено.
         div.text-right
           a.font-italic(href="./news_20_12_2019.html") Читати далі...
-
-    hr
-
-  if (lang === 'en')
     hr
     div.row
       div.col-sm-4
@@ -56,14 +37,15 @@ mixin content(lang)
           alt="news-photo"
         )
       div.col-sm-8
-        div.mb-2
-          small.float-right 31.07.2020
-        h5 ALC “Perechin Timber and Chemical Plant” confirms its commitment to FSC principles and criteria
-        div ALC “Perechin Timber and Chemical Plant” informs all stakeholders, including its partners about its intolerance to corruption, illegal deforestation, and all types of illegal actions related to logging.
-        div FSC suggested that Perechin TCP should introduce additional control measures to restore certification, and to review its cooperation with other entities in the charcoal market.
-        div Despite the long negotiation process, our Plant informed FSC that it is ready to sign a Memorandum of Understanding.
+        h5 Перечинський ЛХК підтверджує свою прихильність принципам і критеріям FSC
+        div ТДВ «Перечинський лісохімічний комбінат» повідомляє всі зацікавлені сторони, в тому числі своїх партнерів про свою нетерпимість до корупції, незаконних вирубок лісу, і всіх видів незаконних дій, пов'язаних з рубками.
+        div FSC запропонувало Перечинському ЛХК для відновлення сертифікації впровадити додаткові заходи контролю, та переглянути свою співпрацю з іншими суб’єктами ринку деревно-вугільної продукції.
         div.text-right
-          a.font-italic(href="./news_31_07_2020.html") More...
+          a.font-italic(href="./news_31_07_2020.html") Читати далі...
+
+    hr
+
+  if (lang === 'en')
     hr
     div.row
       div.col-sm-4
@@ -91,6 +73,21 @@ mixin content(lang)
         div.font-weight-bold The conclusions are firm - no exceedance of the limit values at any point has been detected.
         div.text-right
           a.font-italic(href="./news_20_12_2019.html") More...
+
+    hr
+    div.row
+      div.col-sm-4
+        img.w-100(
+          src="../static/img/image.png",
+          alt="news-photo"
+        )
+      div.col-sm-8
+        h5 ALC “Perechin Timber and Chemical Plant” confirms its commitment to FSC principles and criteria
+        div ALC “Perechin Timber and Chemical Plant” informs all stakeholders, including its partners about its intolerance to corruption, illegal deforestation, and all types of illegal actions related to logging.
+        div FSC suggested that Perechin TCP should introduce additional control measures to restore certification, and to review its cooperation with other entities in the charcoal market.
+        div Despite the long negotiation process, our Plant informed FSC that it is ready to sign a Memorandum of Understanding.
+        div.text-right
+          a.font-italic(href="./news_31_07_2020.html") More...
 
     hr
 
