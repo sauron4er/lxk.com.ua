@@ -77,13 +77,13 @@ mixin content(lang)
         'Відділ кадрів: +38 (03145) 2-32-68',
         '',
         'Відділ реалізації:',
-        'Етилацетата: +38 (03145) 2-30-67',
-        'КФС: +38 (067) 312-70-13, +38 (03145) 2-32-38',
+        'Етилацетата: +38 (03145) 2-32-38',
+        'КФС: +38 067 312 60 70',
         '',
-        'Постачання: +38 (03145) 2-31-58',
+        'Постачання: +38 (03145) 2-31-51',
         '',
         'e-mail:',
-        'sales@lxk.com.ua',
+        'sales@lxk.com.ua (для комерційних пропозицій)',
         'office@lxk.com.ua',
         ],
         title: 'ЗВОРОТНІЙ ЗВ’ЯЗОК',
@@ -105,13 +105,13 @@ mixin content(lang)
         'Отдел кадров: +38 (03145) 2-32-68',
         '',
         'Отдел реализации:',
-        'Этилацетата: +38 (03145) 2-30-67',
-        'КФС: +38 (067) 312-70-13, +38 (03145) 2-32-38',
+        'Этилацетата: +38 (03145) 2-32-38',
+        'КФС: +38 067 312 60 70',
         '',
-        'Снабжение: +38 (03145) 2-31-58',
+        'Снабжение: +38 (03145) 2-31-51',
         '',
         'e-mail:',
-        'sales@lxk.com.ua',
+        'sales@lxk.com.ua (для коммерческих предложений)',
         'office@lxk.com.ua',
         ],
         title: 'ФОРМА ОБРАТНОЙ СВЯЗИ',
@@ -179,7 +179,7 @@ mixin content(lang)
   img.w-100.mb-3(src='../static/img/5_Baner_Contacts.jpg' alt='')
   .row
     .col-sm-1
-    .col-sm-4
+    .col-sm-5
       h2.text-left #{texts[lang].contacts_title}
       each c in texts[lang].contacts
         if c.length > 0
@@ -212,7 +212,6 @@ mixin content(lang)
               span#sendInfo.ml-auto
               #statusMessage
                 p.echo(class='<?php $type; ?>Message')
-    .col-sm-1
   img.w-100(src='../static/img/Map_Ukraine_small.jpg' alt='')
 
   | <script type="text/javascript">
