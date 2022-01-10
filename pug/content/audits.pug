@@ -1,0 +1,38 @@
+mixin content(lang)
+  -
+    let texts = {
+      en: {
+        title: 'Audits',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
+      },
+      ua: {
+        title: 'Аудити',
+        download: 'Ваш браузер не підтримує відображення PDF файлів. Для перегляду сертифікату ISO завантажте його, будь ласка:'
+      },
+      de: {
+        title: 'Prüfung',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
+      },
+      fr: {
+        title: 'Audit',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
+      },
+      ru: {
+        title: 'Аудиты',
+        download: 'Ваш браузер не поддерживает отображение PDF файлов. Для просмотра сертифіката PEFC загрузите его, пожалуйста:'
+      }
+    };
+
+  h2 #{texts[lang].title}
+  .row.my-3
+    .col-lg-4
+      object(data="../static/img/AuditSummaryDraft-RUS_CMPY-130215_ACTY-2021-508231.pdf" type="application/pdf" width="100%" height="550")
+        p #{texts[lang].download}
+        div.mb-3
+          a(href="../static/img/AuditSummaryDraft-RUS_CMPY-130215_ACTY-2021-508231.pdf") Завантажити
+    .col-lg-4
+      .text-center
+        object(data="../static/img/BSCI Monitoring result.pdf" type="application/pdf" width="100%" height="100%")
+          p #{texts[lang].download}
+          div.mb-3
+            a(href="../static/img/BSCI Monitoring result.pdf") Download

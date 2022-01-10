@@ -3,18 +3,23 @@ mixin content(lang)
     let texts = {
       en: {
         title: 'Our certificates',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
       },
       ua: {
         title: 'Наші сертифікати',
+        download: 'Ваш браузер не підтримує відображення PDF файлів. Для перегляду сертифікату ISO завантажте його, будь ласка:'
       },
       de: {
         title: 'Unsere Zertifikate',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
       },
       fr: {
         title: 'Nos certificats',
+        download: 'This browser does not support PDFs Please download the PDF to view it:'
       },
       ru: {
         title: 'Наши сертификаты',
+        download: 'Ваш браузер не поддерживает отображение PDF файлов. Для просмотра сертифіката PEFC загрузите его, пожалуйста:'
       }
     };
 
@@ -24,28 +29,34 @@ mixin content(lang)
       //a.text-center(href='../static/img/PEFC-sertificate.jpg' target='_blank')
       //  img.w-100.border.border-dark(src='../static/img/PEFC-sertificate.jpg' alt='PEFC')
       object(data="../static/img/FC-PEFC-COC-0062.pdf" type="application/pdf" width="100%" height="550")
-        p Ваш браузер не підтримує відображення PDF файлів. Для перегляду сертифікату PEFC завантажте його, будь ласка:
+        p #{texts[lang].download}
         div.mb-3
           a(href="../static/img/FC-PEFC-COC-0062.pdf") Завантажити сертифікат PEFC
     .col-lg-4
       if (lang === 'ua')
         .text-center
           object(data="../static/img/CT-ISO_9001-2015_UKR_ALC_Perechin_Timber__Chemical_Plant.pdf" type="application/pdf" width="100%" height="100%")
-            p Ваш браузер не підтримує відображення PDF файлів. Для перегляду сертифікату ISO завантажте його, будь ласка:
+            p #{texts[lang].download}
             div.mb-3
               a(href="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf") Завантажити сертифікат ISO
       if (lang === 'ru')
         .text-center
           object(data="../static/img/CT-ISO_9001-2015_RUS_ALC_Perechin_Timber__Chemical_Plant.pdf" type="application/pdf" width="100%" height="100%")
-            p Ваш браузер не поддерживает отображение PDF файлов. Для просмотра сертифіката PEFC загрузите его, пожалуйста:
+            p #{texts[lang].download}
             div.mb-3
               a(href="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf") Загрузить сертификат ISO
       if (lang === 'en' || lang === 'de' || lang === 'fr')
         .text-center
           object(data="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf" type="application/pdf" width="100%" height="100%")
-            p This browser does not support PDFs Please download the PDF to view it:
+            p #{texts[lang].download}
             div.mb-3
               a(href="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf") Download ISO Sertificate
+    .col-lg-4
+      .text-center
+        object(data="../static/img/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf" type="application/pdf" width="100%" height="100%")
+          p #{texts[lang].download}
+          div.mb-3
+            a(href="../static/img/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf") Download ISO Sertificate
     //.col-4
     //  a.text-center(href='../static/img/KOSHER-CERTIFICATE.jpg' target='_blank')
     //    img.w-100.border.border-dark(src='../static/img/KOSHER-CERTIFICATE.jpg' alt='KOSHER')
