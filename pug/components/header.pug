@@ -61,7 +61,8 @@ mixin header(lang)
         purchasing: 'Einkauf/Umwelt',
         contacts: 'Kontakt',
         sales_mail: '(Bei Fragen zum Produktverkauf)',
-        office_mail: '(Fűr die Anfragen, Nachrichten und andere Fragen)'
+        office_mail: '(Fűr die Anfragen, Nachrichten und andere Fragen)',
+        news: 'Nachrichten'
       },
       fr: {
         home: 'La première',
@@ -169,7 +170,7 @@ mixin header(lang)
           span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
           ul.navbar-nav.mr-auto
-            if (lang === 'ua' || lang === 'ru' || lang === 'en')
+            if (lang === 'ua' || lang === 'ru' || lang === 'en' || lang === 'de')
               li.nav-item.css_dropdown
                 a.navbar-link.mr-4(href="../" + lang + "/news.html") #{texts[lang].news}
             li.nav-item.css_dropdown.mr-4
