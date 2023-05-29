@@ -232,7 +232,16 @@ mixin header(lang)
               alt="russian",
               width="20"
             )
-      .d-flex.justify-content-end
+      .d-flex.justify-content-end.align-items-end
+        .w-25.mr-2
+          img.w-100.mb-2(
+            src="../static/img/pefc-logo.jpg",
+            alt="PEFC"
+          )
+        img.w-25(
+          src="../static/img/REACH.jpg",
+          alt="Reach"
+        )
         .w-25.mr-2
           img.w-100.mb-1(
             src="../static/img/bsci.svg",
@@ -242,10 +251,6 @@ mixin header(lang)
             src="../static/img/ISO.jpg",
             alt="ISO"
           )
-        img.w-25(
-          src="../static/img/REACH.jpg",
-          alt="Reach"
-        )
   hr.mb-1
   if (lang === 'de' || lang === 'fr')
     .d-flex.flex-row.flex-wrap.justify-content-between
