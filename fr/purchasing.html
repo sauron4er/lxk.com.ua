@@ -13,7 +13,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6abaa0ae7.js"></script>
   </head>
-  <body class="css_body">
+  <!-- Чомусь у файлі styles.css фонове зображення не працює-->
+  <body style="background:url(&quot;../static/img/background.jpg&quot;) no-repeat bottom center fixed;width:100%;height:100%;padding:0;margin:0;background-size:cover;"></body>
+  <div class="css_body">
     <div class="container px-3 mb-5 mb-sm-3">
       <div class="row mt-3 px-3 pt-3">
         <div class="col-3 col-md-2 align-self-end"><a href="../fr/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
@@ -55,7 +57,7 @@
         <div>+38 067 313 68 23</div><a class="ml-5" href="mailto:commercial@lxk.com.ua">commercial@lxk.com.ua  </a><a class="align-self-end" href="https://www.facebook.com/perechintimber" target="_blank"><img src="../static/img/fb.svg" alt="Facebook" width="25"/></a>
       </div><img class="w-100 mt-1" src="../static/img/ua.jpg" alt="UA"/>
       <!--hr.mt-1.border-->
-      <main class="mt-3"><img class="w-100 mb-3" src="../static/img/4_Baner_Purchasing_1_new.jpg" alt="Purchasing"/>
+      <main><img class="w-100 mb-3" src="../static/img/4_Baner_Purchasing_1_new.jpg" alt="Purchasing"/>
         <h2 class="mt-5">ACHAT/ENVIRONNEMENT</h2>
         <p>Notre combinat est situé au cœur de la plus grande forêt de hêtre en
         Europe. Nous fournissons le bois uniquement de la sylviculture locale.
@@ -71,17 +73,15 @@
       </main>
       <footer>
         <table class="css_footer_table">
-          <thead>
-            <tr>
-              <td class="css_footer_contacts text-uppercase">Coordonnees:</td>
-            </tr>
-          </thead>
+          <!--thead-->
+          <!--  tr-->
+          <!--    td.css_footer_contacts.text-uppercase #{texts[lang].contacts}:-->
           <tbody>
             <tr>
               <td class="text-center"><i class="fas fa-map-marked-alt"></i><span>&#160;25, rue Uzhanska, Peretchyn, région de Transcarpatie, Ukraine, 89200</span></td>
             </tr>
             <tr>
-              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 067 313 68 23</span><br/><i class="fas fa-envelope ml-3"></i><span>&#160;commercial@lxk.com.ua, 00274105@lxk.com.ua</span>
+              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 067 313 68 23</span><i class="fas fa-envelope ml-3"></i><span>&#160;commercial@lxk.com.ua, 00274105@lxk.com.ua</span>
                 <!--span &#160;commercial@lxk.com.ua#{' '}-->
                 <!--span.small #{texts[lang].sales_mail}-->
                 <!--br-->
@@ -94,5 +94,5 @@
         </table>
       </footer>
     </div>
-  </body>
+  </div>
 </html>

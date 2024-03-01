@@ -37,11 +37,20 @@ html
     block scripts
     block meta
 
-  body.css_body
+  // Чомусь у файлі styles.css фонове зображення не працює
+  body(style='' +
+  'background:url("../static/img/background.jpg") no-repeat bottom center fixed;' +
+  'width:100%;' +
+  'height:100%;' +
+  'padding:0;' +
+  'margin:0;' +
+  'background-size:cover;' +
+  '')
+  .css_body
     .container.px-3.mb-5.mb-sm-3
       block header
 
-      main.mt-3
+      main
         block content
 
       block footer

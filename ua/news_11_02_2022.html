@@ -13,7 +13,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6abaa0ae7.js"></script>
   </head>
-  <body class="css_body">
+  <!-- Чомусь у файлі styles.css фонове зображення не працює-->
+  <body style="background:url(&quot;../static/img/background.jpg&quot;) no-repeat bottom center fixed;width:100%;height:100%;padding:0;margin:0;background-size:cover;"></body>
+  <div class="css_body">
     <div class="container px-3 mb-5 mb-sm-3">
       <div class="row mt-3 px-3 pt-3">
         <div class="col-3 col-md-2 align-self-end"><a href="../ua/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
@@ -60,7 +62,7 @@
         <div class="col-lg-1 text-right"><a class="align-self-end" href="https://www.facebook.com/profile.php?id=100063754194934" target="_blank"><img src="../static/img/fb.svg" alt="Facebook" width="25"/></a></div>
       </div><img class="w-100 mt-1" src="../static/img/ua.jpg" alt="UA"/>
       <!--hr.mt-1.border-->
-      <main class="mt-3"><img class="d-block mb-1 mx-auto w-75" src="../static/img/ISO+_news_land.jpg" alt="ISO news"/>
+      <main><img class="d-block mb-1 mx-auto w-75" src="../static/img/ISO+_news_land.jpg" alt="ISO news"/>
         <p>У черговий раз наше підприємство підтвердило відповідність вимогам міжнародного стандарту ISO 9001:2015 під час успішного проходження 2-го наглядового аудиту. Це є доказом того, що якість виробництва та продукції на підприємстві для нас на першому місці.</p>
         <p>Також «Перечинський Лісохімічний Комбінат» пройшов соціальний аудит на відповідність Кодексу поведінки BSCI (Ініціатива соціальної відповідальності бізнесу) з найвищою оцінкою «А». Відповідність положенням кодексу BSCI дозволяє всім клієнтам нашого підприємства ще раз переконатися у належних умовах праці на нашому виробництві, забезпеченні соціальних інтересів співробітників, дотриманні етичних норм та дбайливому ставленню до навколишнього середовища. Ми впроваджуємо та підтримуємо ці цінності, беручи на себе зобов'язання перед командою та спільнотою регіону.</p>
         <p>Ще одним досягненням нашого підприємства стало отримання ліцензії Nordic Swan Ecolabel (скандинавський екологічний знак «Лебедя») – однієї з найпрестижніших ліцензій у країнах Скандинавії та Північної Європи. Nordic Swan Ecolabel встановлює високі стандарти в галузі захисту довкілля, охорони здоров'я та підтримання якості та функціональності продукту. Отримання ліцензії підтверджує, що продукція «Перечинського Лісохімічного Комбінату» є високоякісною та екологічно безпечною.</p>
@@ -69,17 +71,15 @@
       </main>
       <footer>
         <table class="css_footer_table">
-          <thead>
-            <tr>
-              <td class="css_footer_contacts text-uppercase">Контакти:</td>
-            </tr>
-          </thead>
+          <!--thead-->
+          <!--  tr-->
+          <!--    td.css_footer_contacts.text-uppercase #{texts[lang].contacts}:-->
           <tbody>
             <tr>
               <td class="text-center"><i class="fas fa-map-marked-alt"></i><span>&#160;89200, Україна, Закарпатська обл., м. Перечин, вул. Ужанська, 25</span></td>
             </tr>
             <tr>
-              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 067 313 68 23</span><br/><i class="fas fa-envelope ml-3"></i><span>&#160;commercial@lxk.com.ua, 00274105@lxk.com.ua</span>
+              <td class="text-center"><i class="fas fa-phone"></i><span>&#160;+38 067 313 68 23</span><i class="fas fa-envelope ml-3"></i><span>&#160;commercial@lxk.com.ua, 00274105@lxk.com.ua</span>
                 <!--span &#160;commercial@lxk.com.ua#{' '}-->
                 <!--span.small #{texts[lang].sales_mail}-->
                 <!--br-->
@@ -92,5 +92,5 @@
         </table>
       </footer>
     </div>
-  </body>
+  </div>
 </html>

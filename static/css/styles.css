@@ -1,11 +1,28 @@
 /*Page*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html {
   height: 99.6%;
   box-sizing: border-box;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+body {
+  /*position: relative;*/
+  /*margin: 0;*/
+  /*background: #0b2e13;*/
+  /*padding-bottom: 130px;*/
+  /*min-height: 100%;*/
 }
 
 .css_body {
-  background: #edebe6;
+  /*background: #edebe6;*/
 }
 
 .container {
@@ -14,20 +31,6 @@ html {
   -webkit-box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
   -moz-box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
   box-shadow: 9px 9px 17px -6px rgba(0,0,0,0.54);
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  background: #0b2e13;
-  padding-bottom: 130px;
-  /*min-height: 100%;*/
 }
 
 main {
@@ -116,15 +119,14 @@ li a:hover {
 
 /*Footer*/
 footer {
-  /*height: auto;*/
-  position: absolute;
-  right: 0;
+  position: sticky;
+  background: white;
+  text-align: center;
   bottom: 0;
-  left: 0;
-  /*padding: 1rem;*/
-  /*background-image: url("../img/charcoal-disposal-header.jpg");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: center;*/
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  /*box-shadow: 0 4px 2px -2px gray;*/
+  box-shadow: 0 3px 0 0 grey inset;
 }
 
 .css_footer_contacts {
