@@ -160,10 +160,10 @@ mixin header(lang)
       }
     }
   .row.mt-3.px-3.pt-3
-    .col-3.col-md-2.align-self-end
+    .col-1.col-md-1.align-self-end
       a(href="../" + lang + "/index.html")
         img.w-100(src="../static/img/logo.png", alt="logo")
-    .col-3.col-md-6.align-self-end.px-0
+    .col-5.col-md-5.align-self-end.px-0
       nav.navbar.navbar-light.navbar-expand-md
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
@@ -198,7 +198,7 @@ mixin header(lang)
             li.nav-item.css_dropdown
               a.navbar-link.mr-4(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
 
-    .col-6.col-md-4
+    .col-6.col-md-6
       .row.mb-3
         .ml-auto
           a.mr-2.css_flag(href="../en/index.html")
@@ -231,25 +231,25 @@ mixin header(lang)
           //    alt="russian",
           //    width="20"
           //  )
-      .d-flex.justify-content-end.align-items-end
-        .w-75.mr-2
-          img.w-100.mb-2(
-            src="../static/img/PEFC_new.png",
-            alt="PEFC"
-          )
-        img.w-25(
-          src="../static/img/REACH.jpg",
-          alt="Reach"
-        )
-        .w-25.mr-2
-          img.w-100.mb-1(
-            src="../static/img/bsci.svg",
-            alt="BSCI"
-          )
-          img.w-100(
-            src="../static/img/ISO.jpg",
-            alt="ISO"
-          )
+      //.d-flex.justify-content-end.align-items-end
+      //  .w-75.mr-2
+      //    img.w-100.mb-2(
+      //      src="../static/img/PEFC_new.png",
+      //      alt="PEFC"
+      //    )
+      //  img.w-25(
+      //    src="../static/img/REACH.jpg",
+      //    alt="Reach"
+      //  )
+      //  .w-25.mr-2
+      //    img.w-100.mb-1(
+      //      src="../static/img/bsci.svg",
+      //      alt="BSCI"
+      //    )
+      //    img.w-100(
+      //      src="../static/img/ISO.jpg",
+      //      alt="ISO"
+      //    )
   hr.mb-1
   if (lang === 'de' || lang === 'fr')
     .d-flex.flex-row.flex-wrap.justify-content-between
@@ -310,7 +310,7 @@ mixin header(lang)
           )
 
   img.w-100.mt-1(
-    src="../static/img/ua.jpg",
+    src="../static/img/ua1.jpg",
     alt="UA"
   )
   //hr.mt-1.border
