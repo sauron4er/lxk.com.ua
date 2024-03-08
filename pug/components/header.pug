@@ -254,24 +254,38 @@ mixin header(lang)
   if (lang === 'de' || lang === 'fr')
     .d-flex.flex-row.flex-wrap.justify-content-between
       div +38 067 313 68 23
-      a.ml-5(href='mailto:commercial@lxk.com.ua') commercial@lxk.com.ua #{' '}
-      a.align-self-end(href='https://www.facebook.com/perechintimber' target="_blank")
-        img(
-          src="../static/img/fb.svg",
-          alt="Facebook",
-          width="25"
-        )
+      .align-self-end
+        a.mr-1(href='mailto:commercial@lxk.com.ua') commercial@lxk.com.ua #{' '}
+        a.mr-1(href='https://www.facebook.com/perechintimber' target="_blank")
+          img(
+            src="../static/img/fb.svg",
+            alt="Facebook",
+            width="25"
+          )
+        a(href='https://www.instagram.com/grillybarbecue?igsh=MTYzM2s5NGp1NWxp' target="_blank")
+          img(
+            src="../static/img/instagram.svg",
+            alt="Instagram",
+            width="25"
+          )
   if (lang === 'en')
     .d-flex.flex-row.flex-wrap.justify-content-between
       div +38 067 313 68 23
       a(target='_blank' href='https://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BB%D1%96%D1%81%D0%BE%D1%85%D1%96%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B1%D1%96%D0%BD%D0%B0%D1%82') Wikipedia
       a.ml-lg-5.text-left.text-lg-center(href='mailto:commercial@lxk.com.ua') commercial@lxk.com.ua #{' '}
-      a.align-self-end(href='https://www.facebook.com/perechintimber' target="_blank")
-        img(
-          src="../static/img/fb.svg",
-          alt="Facebook",
-          width="25"
-        )
+      .align-self-end
+        a(href='https://www.facebook.com/perechintimber' target="_blank")
+          img(
+            src="../static/img/fb.svg",
+            alt="Facebook",
+            width="25"
+          )
+        a.ml-1(href='https://www.instagram.com/grillybarbecue?igsh=MTYzM2s5NGp1NWxp' target="_blank")
+          img(
+            src="../static/img/instagram.svg",
+            alt="Instagram",
+            width="25"
+          )
   if (lang === 'ua')
     .row
       .col-lg-3.text-right.text-lg-left +38 067 313 68 23
@@ -290,6 +304,12 @@ mixin header(lang)
             alt="Facebook",
             width="25"
           )
+        a.align-self-end.ml-1(href='https://www.instagram.com/grillybarbecue?igsh=MTYzM2s5NGp1NWxp' target="_blank")
+          img(
+            src="../static/img/instagram.svg",
+            alt="Instagram",
+            width="25"
+          )
   if (lang === 'ru')
     .row
       .col-lg-3.text-right.text-lg-left +38 067 313 68 23
@@ -306,6 +326,12 @@ mixin header(lang)
           img(
             src="../static/img/fb.svg",
             alt="Facebook",
+            width="25"
+          )
+        a.align-self-end.ml-1(href='https://www.instagram.com/grillybarbecue?igsh=MTYzM2s5NGp1NWxp' target="_blank")
+          img(
+            src="../static/img/instagram.svg",
+            alt="Instagram",
             width="25"
           )
 
