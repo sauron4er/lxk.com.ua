@@ -5,7 +5,8 @@ mixin content(lang)
         ecology: 'Environmental policy',
         pefc: 'Wood control policy',
         quality: 'Quality policy',
-        waste: 'Policy in the field of waste management'
+        waste: 'Policy in the field of waste management',
+        ETI: 'ETI Base Code',
       },
       de: {
 
@@ -17,7 +18,9 @@ mixin content(lang)
         ecology: 'Екологічна політика',
         pefc: 'Політика щодо контролю деревини',
         quality: 'Політика у сфері якості',
-        waste: 'Політика у сфері поводження з відходами'
+        waste: 'Політика у сфері поводження з відходами',
+        occupational: 'Політика у галузі охорони праці та техніки безпеки',
+        ETI: 'Базовий кодекс ІЕТ',
       },
       ru: {
 
@@ -32,8 +35,9 @@ mixin content(lang)
           button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
             | #{texts[lang].ecology}
       #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion')
-        .card-body
-          img.d-block.w-100.mb-4(
+        .card-body.d-flex.justify-content-center
+          img.d-block.mb-4(
+            style={width: '85%'}
             src="../static/img/ecology-" + lang + ".png",
             alt="Ecology"
           )
@@ -43,8 +47,9 @@ mixin content(lang)
           button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
             | #{texts[lang].pefc}
       #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
-        .card-body
-          img.d-block.w-100.mb-4(
+        .card-body.d-flex.justify-content-center
+          img.d-block.mb-4(
+            style={width: '85%'}
             src="../static/img/pefc-" + lang + ".png",
             alt="PEFC"
           )
@@ -54,8 +59,9 @@ mixin content(lang)
           button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
             | #{texts[lang].quality}
       #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion')
-        .card-body
-          img.d-block.w-100.mb-4(
+        .card-body.d-flex.justify-content-center
+          img.d-block.mb-4(
+            style={width: '85%'}
             src="../static/img/quality-" + lang + ".png",
             alt="Quality"
           )
@@ -65,9 +71,40 @@ mixin content(lang)
           button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
             | #{texts[lang].waste}
       #collapseFour.collapse(aria-labelledby='headingFour' data-parent='#accordion')
-        .card-body
-          img.d-block.w-100.mb-4(
+        .card-body.d-flex.justify-content-center
+          img.d-block.mb-4(
+            style={width: '85%'}
             src="../static/img/waste_policy_" + lang + ".png",
             alt="Quality"
           )
+    .card
+      #headingFive.card-header
+        h2.mb-0
+          button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+            | #{texts[lang].ETI}
+      #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#accordion')
+        .card-body.d-flex.justify-content-center
+          img.mb-4(
+            style={width: '48%'},
+            src="../static/policies/SMETA-ETI-Base-Code_" + lang + ".png",
+            alt="ETI"
+          )
+          img.mb-4(
+            style={width: '48%'},
+            src="../static/policies/ETI_Base_Code_Poster_2_" + lang + ".png",
+            alt="ETI"
+          )
+    if (lang === 'ua')
+      .card
+        #headingSix.card-header
+          h2.mb-0
+            button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+              | #{texts[lang].occupational}
+        #collapseSix.collapse(aria-labelledby='headingSix' data-parent='#accordion')
+          .card-body.d-flex.justify-content-center
+            img.d-block.mb-4(
+              style={width: '85%'}
+              src="../static/policies/Occupational_Health_Policy_UA.jpg",
+              alt="ETI"
+            )
   
