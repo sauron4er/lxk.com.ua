@@ -17,7 +17,7 @@
   <body style="background:url(&quot;../static/img/background.jpg&quot;) no-repeat bottom center fixed;width:100%;height:100%;padding:0;margin:0;background-size:cover;"></body>
   <div class="css_body">
     <div class="container px-3 mb-5 mb-sm-3">
-      <div class="row mt-3 px-3 pt-3">
+      <div class="row mt-3 pl-3 pt-3">
         <div class="col-1 col-md-1 align-self-end"><a href="../de/index.html"><img class="w-100" src="../static/img/logo.png" alt="logo"/></a></div>
         <div class="col-5 col-md-5 align-self-end px-0">
           <nav class="navbar navbar-light navbar-expand-md">
@@ -36,7 +36,7 @@
             </div>
           </nav>
         </div>
-        <div class="col-6 col-md-6">
+        <div class="col-4 col-md-4">
           <div class="row mb-3">
             <div class="ml-auto"><a class="mr-2 css_flag" href="../en/index.html"><img src="../static/img/united-kingdom.png" alt="english" width="20"/></a><a class="mr-2 css_flag" href="../de/index.html"><img src="../static/img/germany.png" alt="german" width="20"/></a><a class="mr-2 css_flag" href="../fr/index.html"><img src="../static/img/france.png" alt="france" width="20"/></a><a class="mr-2 css_flag" href="../ua/index.html"><img src="../static/img/ukraine.png" alt="ukrainian" width="20"/></a>
               <!--a.mr-2.css_flag(href="../ru/index.html")-->
@@ -67,6 +67,7 @@
           <!--      alt="ISO"-->
           <!--    )-->
         </div>
+        <div class="col-2"><img class="w-100" src="../static/img/PEFC.svg" alt="PEFC"/></div>
       </div>
       <hr class="mb-1"/>
       <div class="d-flex flex-row flex-wrap justify-content-between">
@@ -76,30 +77,71 @@
       <!--hr.mt-1.border-->
       <main>
         <h2>Unsere Zertifikate</h2>
+        <div class="accordion mb-2" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingPEFC">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapsePEFC" aria-expanded="false" aria-controls="collapsePEFC">PEFC Zertifikate</button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapsePEFC" aria-labelledby="headingPEFC" data-parent="#accordion">
+              <div class="card-body d-flex justify-content-center">
+                <object data="../static/certificates/PEFC_Perechin_timber_chemical_plant_18072024_2022-01.pdf#view=Fit" type="application/pdf" width="75%" height="1000">
+                  <p>This browser does not support PDFs Please download the PDF to view it:</p>
+                  <div class="mb-3"><a href="../static/certificates/PEFC_Perechin_timber_chemical_plant_18072024_2022-01.pdf">Download PEFC cerificate</a></div>
+                </object>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingISO9001">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseISO9001" aria-expanded="false" aria-controls="collapseISO9001">ISO 9001 Zertifikate</button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseISO9001" aria-labelledby="headingISO9001" data-parent="#accordion">
+              <div class="card-body d-flex justify-content-center">
+                <object data="../static/certificates/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf" type="application/pdf" width="75%" height="1000">
+                  <p>This browser does not support PDFs Please download the PDF to view it:</p>
+                  <div class="mb-3"><a href="../static/certificates/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf">Download ISO Certificate 9001</a></div>
+                </object>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingISO14001">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseISO14001" aria-expanded="false" aria-controls="collapseISO14001">ISO 14001 Zertifikate</button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseISO14001" aria-labelledby="headingISO14001" data-parent="#accordion">
+              <div class="card-body d-flex justify-content-center">
+                <object data="../static/certificates/ISO_14001_eng.pdf" type="application/pdf" width="75%" height="1000">
+                  <p>This browser does not support PDFs Please download the PDF to view it:</p>
+                  <div class="mb-3"><a href="../static/certificates/ISO_14001_eng.pdf">Download ISO Certificate 14001</a></div>
+                </object>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingNorway">
+              <h2 class="mb-0">
+                <button class="btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseNorway" aria-expanded="false" aria-controls="collapseNorway">Norway Zertifikate</button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseNorway" aria-labelledby="headingNorway" data-parent="#accordion">
+              <div class="card-body d-flex justify-content-center">
+                <object data="../static/certificates/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf" type="application/pdf" width="75%" height="1000">
+                  <p>This browser does not support PDFs Please download the PDF to view it:</p>
+                  <div class="mb-3"><a href="../static/certificates/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf">Download Norway Certificate</a></div>
+                </object>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row my-3">
-          <div class="col-lg-4">
-            <!--a.text-center(href='../static/img/PEFC-sertificate.jpg' target='_blank')-->
-            <!--  img.w-100.border.border-dark(src='../static/img/PEFC-sertificate.jpg' alt='PEFC')-->
-            <object data="../static/img/PEFC_Perechin_timber_chemical_plant_18072024_2022-01.pdf" type="application/pdf" width="100%" height="550">
-              <p>This browser does not support PDFs Please download the PDF to view it:</p>
-              <div class="mb-3"><a href="../static/img/PEFC_Perechin_timber_chemical_plant_18072024_2022-01.pdf">Завантажити сертифікат PEFC</a></div>
-            </object>
-          </div>
-          <div class="col-lg-4">
-            <div class="text-center">
-              <object data="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf" type="application/pdf" width="100%" height="100%">
-                <p>This browser does not support PDFs Please download the PDF to view it:</p>
-                <div class="mb-3"><a href="../static/img/CT-ISO_9001-2015_ENG_ALC_Perechin_Timber__Chemical_Plant.pdf">Download ISO Sertificate</a></div>
-              </object>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="text-center">
-              <object data="../static/img/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf" type="application/pdf" width="100%" height="100%">
-                <p>This browser does not support PDFs Please download the PDF to view it:</p>
-                <div class="mb-3"><a href="../static/img/2087 0011 3.0 ALC Perechin Timber and Chemical Plant Norway_Certifikat.pdf">Download ISO Sertificate</a></div>
-              </object>
-            </div>
+          <div class="col-lg-3">
+            <div class="text-center"></div>
           </div>
           <!--.col-4-->
           <!--  a.text-center(href='../static/img/KOSHER-CERTIFICATE.jpg' target='_blank')-->

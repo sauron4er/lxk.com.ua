@@ -159,7 +159,7 @@ mixin header(lang)
         office_mail: '(Для запросов, сообщений и других вопросов)'
       }
     }
-  .row.mt-3.px-3.pt-3
+  .row.mt-3.pl-3.pt-3
     .col-1.col-md-1.align-self-end
       a(href="../" + lang + "/index.html")
         img.w-100(src="../static/img/logo.png", alt="logo")
@@ -198,7 +198,7 @@ mixin header(lang)
             li.nav-item.css_dropdown
               a.navbar-link.mr-4(href="../" + lang + "/contacts.html") #{texts[lang].contacts}
 
-    .col-6.col-md-6
+    .col-4.col-md-4
       .row.mb-3
         .ml-auto
           a.mr-2.css_flag(href="../en/index.html")
@@ -250,6 +250,11 @@ mixin header(lang)
       //      src="../static/img/ISO.jpg",
       //      alt="ISO"
       //    )
+    .col-2
+      img.w-100(
+        src="../static/img/PEFC.svg",
+        alt="PEFC"
+      )
   hr.mb-1
   if (lang === 'de' || lang === 'fr')
     .d-flex.flex-row.flex-wrap.justify-content-between
