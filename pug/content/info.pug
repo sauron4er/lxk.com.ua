@@ -1,171 +1,308 @@
 mixin content(lang)
   script(type = 'text/javascript').
-    function changeLanguage(lang) {
+    function changeLanguage(language) {
       document.getElementById("info_en").style.display = 'none';
       document.getElementById("info_ua").style.display = 'none';
-      document.getElementById(`info_${lang}`).style.display = 'block';
+      document.getElementById(`info_${language}`).style.display = 'block';
 
       document.getElementById("flag_en").style.filter = 'opacity(50%)';
       document.getElementById("flag_ua").style.filter = 'opacity(50%)';
-      document.getElementById(`flag_${lang}`).style.filter = 'none';
+      document.getElementById(`flag_${language}`).style.filter = 'none';
     }
 
-  hr
-  .text-center
-    a#flag_en.mr-2(href="#", style="filter: none")
-      img(
-        src="../static/img/united-kingdom.png",
-        alt="english",
-        width="30",
-        onclick="changeLanguage('en')"
-      )
-    a#flag_ua.mr-2(href="#", style="filter: opacity(50%)")
-      img(
-        src="../static/img/ukraine.png",
-        alt="ukrainian",
-        width="30",
-        onclick="changeLanguage('ua')"
-      )
-  hr
+  if (lang === 'en')
+    hr
+    .text-center
+      a#flag_en.mr-2(href="#", style="filter: none")
+        img(
+          src="../static/img/united-kingdom.png",
+          alt="english",
+          width="30",
+          onclick="changeLanguage('en')"
+        )
+      a#flag_ua.mr-2(href="#", style="filter: opacity(50%)")
+        img(
+          src="../static/img/ukraine.png",
+          alt="ukrainian",
+          width="30",
+          onclick="changeLanguage('ua')"
+        )
+    hr
 
-  div#info_en
-    h2 PRODUCT SAFETY INFORMATION
-    h3.text-center According to EU Regulation 2023/988
+    div#info_en
+      h2 PRODUCT SAFETY INFORMATION
+      h3.text-center According to EU Regulation 2023/988
 
-    h5 1. Product Information
-    h6 Manufacturer:
-    div ALC Perechin Timber-Chemical Plant
-    div - Address: Uzhanska str.25, 89200 Perechyn, Ukraine
-    div - Tel.: +38(03145) 23-168
-    div - Fax: +38(03145) 23-277
-    div - Email: commercial@lxk.com.ua, 00274105@lxk.com.ua
-    br
-    h6 Product Details:
-    div - Registration REACH No.: 01-2119560590-41-0003
-    div - CAS: 16291-96-6
-    div - EC: 240-383-3
-    div - Product type: Barbecue charcoal
-    div - Application: For grilling and BBQ use
-    div - Raw material: 100% natural hardwood
-    div - Packaging: Paper bags 1.5-10.0 kg
-    br
-    h5 2. Technical Specifications
-    h6 Quality Parameters:
-    div Physical and Chemical Properties:
-    ol
-      li Fixed carbon content: ≥80%
-      li Ash content: ≤4%
-      li Moisture content: ≤8%
-      li Volatile matter: ≤18%
-    div Granulation Requirements:
-    ol
-      li Maximum size: 150 mm
-      li Size distribution:
-        div - >20 mm: minimum 80%
-        div - <20 mm: maximum 20%
-        div - <10 mm: maximum 7%
-    div Quality Standards Compliance:
-    ul
-      li - EN 1860-2:2023
-    br
-    h6 Product Characteristics:
-    ul
-      li - Color: Black
-      li - Odor: Characteristic
-      li - Physical state: Solid
-      li - Bulk density: 0,180 – 0,280 (20°C)
-      li - Solubility in water: Insoluble
-      li - Reactivity: Stable under normal conditions
-    br
-    h5 3. Safety Information
-    h6 ⚠️ MANDATORY SAFETY WARNINGS:
-    ol
-      li Usage Restrictions:
-        ul
-          li - Outdoor use only
-          li - Professional and consumer use
-          li - Not for indoor heating
-      li Safety Precautions:
-        ul
-          li - Keep children at safe distance
-          li - Ensure proper ventilation
-          li - Do not use additional firelighters
-          li - Do not use in enclosed spaces
-      li Fire Safety:
-        ul
-          li - Keep away from ignition sources
-          li - Do not spray water on burning charcoal
-          li - Have fire extinguishing means nearby
-    h6 Storage and Handling:
-    div Storage Requirements:
-    ol
-      li Environment:
-        ul
-          li - Store in dry place
-          li - Keep away from rain and ground water
-          li - Protect from direct sunlight
-          li - Store in ventilated area
-      li Handling:
-        ul
-          li - Use original packaging
-          li - Avoid dust formation
-          li - Keep away from oxidizing agents
-          li - Prevent moisture absorption
-      li Temperature:
-        ul
-          li - Normal storage temperature
-          li - Avoid extreme temperatures
-    h6 Emergency Response:
-    div First Aid Measures:
-    ol
-      li Inhalation:
-        ul
-          li - Move to fresh air
-          li - Seek medical attention if needed
-      li Eye Contact:
-        ul
-          li - Rinse with clean water
-          li - Consult ophthalmologist if irritation persists
-      li Skin Contact:
-        ul
-          li - Wash with soap and water
-          li - Remove contaminated clothing
-      li Emergency Contacts:
-        ul
-          li - Factory: +38(03145) 23-168
-          li - Email: commercial@lxk.com.ua
-    br
-    h5 4. Transport Information
-    h6 Transport Classification:
-    ul
-      li - Not classified as dangerous goods
-      li - Keep dry during transportation
-      li - Avoid mechanical damage to packaging
-      li - Protect from moisture during loading/unloading
-    br
-    h5 5. Environmental Information
-    h6 Environmental Impact:
-    ul
-      li - 100% natural product
-      li - Biodegradable
-      li - No toxic compounds formation
-      li - From sustainable forestry
-    br
-    h6 Disposal:
-    ul
-      li - According to local regulations
-      li - Can be disposed as normal waste
-      li - No special disposal requirements
-    br
-    h5 6. Certifications
-    h6 Product Certifications:
-    ul
-      li - EN 1860-2:2023 Compliance
-      li - ISO 9001:2015
-      li - FSC Certif
+      h5 1. Product Information
+      h6 Manufacturer:
+      div ALC Perechin Timber-Chemical Plant
+      div - Address: Uzhanska str.25, 89200 Perechyn, Ukraine
+      div - Tel.: +38(03145) 23-168
+      div - Fax: +38(03145) 23-277
+      div - Email: commercial@lxk.com.ua, 00274105@lxk.com.ua
+      br
+      h6 Product Details:
+      div - Registration REACH No.: 01-2119560590-41-0003
+      div - CAS: 16291-96-6
+      div - EC: 240-383-3
+      div - Product type: Barbecue charcoal
+      div - Application: For grilling and BBQ use
+      div - Raw material: 100% natural hardwood
+      div - Packaging: Paper bags 1.5-10.0 kg
+      br
+      h5 2. Technical Specifications
+      h6 Quality Parameters:
+      div Physical and Chemical Properties:
+      ol
+        li Fixed carbon content: ≥80%
+        li Ash content: ≤4%
+        li Moisture content: ≤8%
+        li Volatile matter: ≤18%
+      div Granulation Requirements:
+      ol
+        li Maximum size: 150 mm
+        li Size distribution:
+          div - >20 mm: minimum 80%
+          div - <20 mm: maximum 20%
+          div - <10 mm: maximum 7%
+      div Quality Standards Compliance:
+      ul
+        li - EN 1860-2:2023
+      br
+      h6 Product Characteristics:
+      ul
+        li - Color: Black
+        li - Odor: Characteristic
+        li - Physical state: Solid
+        li - Bulk density: 0,180 – 0,280 (20°C)
+        li - Solubility in water: Insoluble
+        li - Reactivity: Stable under normal conditions
+      br
+      h5 3. Safety Information
+      h6 ⚠️ MANDATORY SAFETY WARNINGS:
+      ol
+        li Usage Restrictions:
+          ul
+            li - Outdoor use only
+            li - Professional and consumer use
+            li - Not for indoor heating
+        li Safety Precautions:
+          ul
+            li - Keep children at safe distance
+            li - Ensure proper ventilation
+            li - Do not use additional firelighters
+            li - Do not use in enclosed spaces
+        li Fire Safety:
+          ul
+            li - Keep away from ignition sources
+            li - Do not spray water on burning charcoal
+            li - Have fire extinguishing means nearby
+      h6 Storage and Handling:
+      div Storage Requirements:
+      ol
+        li Environment:
+          ul
+            li - Store in dry place
+            li - Keep away from rain and ground water
+            li - Protect from direct sunlight
+            li - Store in ventilated area
+        li Handling:
+          ul
+            li - Use original packaging
+            li - Avoid dust formation
+            li - Keep away from oxidizing agents
+            li - Prevent moisture absorption
+        li Temperature:
+          ul
+            li - Normal storage temperature
+            li - Avoid extreme temperatures
+      h6 Emergency Response:
+      div First Aid Measures:
+      ol
+        li Inhalation:
+          ul
+            li - Move to fresh air
+            li - Seek medical attention if needed
+        li Eye Contact:
+          ul
+            li - Rinse with clean water
+            li - Consult ophthalmologist if irritation persists
+        li Skin Contact:
+          ul
+            li - Wash with soap and water
+            li - Remove contaminated clothing
+        li Emergency Contacts:
+          ul
+            li - Factory: +38(03145) 23-168
+            li - Email: commercial@lxk.com.ua
+      br
+      h5 4. Transport Information
+      h6 Transport Classification:
+      ul
+        li - Not classified as dangerous goods
+        li - Keep dry during transportation
+        li - Avoid mechanical damage to packaging
+        li - Protect from moisture during loading/unloading
+      br
+      h5 5. Environmental Information
+      h6 Environmental Impact:
+      ul
+        li - 100% natural product
+        li - Biodegradable
+        li - No toxic compounds formation
+        li - From sustainable forestry
+      br
+      h6 Disposal:
+      ul
+        li - According to local regulations
+        li - Can be disposed as normal waste
+        li - No special disposal requirements
+      br
+      h5 6. Certifications
+      h6 Product Certifications:
+      ul
+        li - EN 1860-2:2023 Compliance
+        li - ISO 9001:2015
+        li - FSC Certif
 
-  div#info_ua(style="display: none")
-    h2 ІНФОРМАЦІЯ ПРО БЕЗПЕКУ ПРОДУКЦІЇ
+    div#info_ua(style="display: none")
+      h2 ІНФОРМАЦІЯ ПРО БЕЗПЕКУ ПРОДУКЦІЇ
+      h3.text-center Згідно з Регламентом ЄС 2023/988
+
+      h5 1. Інформація про продукт
+      h6 Виробник:
+      div ТДВ "Перечинський лісохімічний комбінат"
+      div - Адреса: вул. Ужанська, 25, 89200, м. Перечин, Україна
+      div - Тел.: +38(03145) 23-168
+      div - Факс: +38(03145) 23-277
+      div - Email: commercial@lxk.com.ua, 00274105@lxk.com.ua
+      br
+      h6 Характеристики продукту:
+      div - Реєстраційний номер REACH: 01 - 2119560590 - 41 - 0003
+      div - CAS: 16291-96-6
+      div - EC: 240-383-3
+      div - Тип продукту: Деревне вугілля для грилю
+      div - Застосування: Для грилювання та барбекю
+      div - Сировина: 100% натуральна деревина твердих порід
+      div - Упаковка: Паперові мішки від 1, 5 кг до 10 кг
+      br
+      h5 2. Технічні характеристики
+      h6 Параметри якості:
+      div Фізико-хімічні властивості:
+      ol
+        li Вміст фіксованого вуглецю: ≥80%
+        li Зольність: ≤4%
+        li Вологість: ≤8%
+        li Леткі речовини: ≤18%
+      div Вимоги до гранулометрії:
+      ol
+        li Максимальний розмір: 150 мм
+        li Розподіл за розміром:
+          div - >20 мм: мінімум 80 %
+          div - <20 мм: максимум 20 %
+          div - <10 мм: максимум 7 %
+      div Відповідність стандартам якості:
+      ul
+        li - EN 1860 - 2:2023
+      br
+      h6 Характеристики продукту:
+      ul
+        li - Колір: Чорний
+        li - Запах: Характерний
+        li - Фізичний стан: Твердий
+        li - Насипна щільність: 0, 180 – 0, 280(20°C)
+        li - Розчинність у воді: Нерозчинний
+        li - Реакційна здатність: Стабільний за нормальних умов
+      br
+      h5 3. Інформація з безпеки
+      h6 ⚠️ ОБОВ'ЯЗКОВІ ПОПЕРЕДЖЕННЯ:
+      ol
+        li Обмеження використання:
+          ul
+            li - Тільки для використання на відкритому повітрі
+            li - Для професійного та побутового використання
+            li - Не для опалення приміщень
+        li Заходи безпеки:
+          ul
+            li - Тримати дітей на безпечній відстані
+            li - Забезпечити належну вентиляцію
+            li - Не використовувати додаткові засоби для розпалювання
+            li - Не використовувати в закритих приміщеннях
+        li Пожежна безпека:
+          ul
+            li - Тримати подалі від джерел займання
+            li - Не розпилювати воду на палаюче вугілля
+            li - Мати поруч засоби пожежогасіння
+      h6 Зберігання та поводження:
+      div Вимоги до зберігання:
+      ol
+        li Умови середовища:
+          ul
+            li - Зберігати в сухому місці
+            li - Берегти від дощу та ґрунтових вод
+            li - Захищати від прямих сонячних променів
+            li - Зберігати у вентильованому приміщенні
+        li Поводження:
+          ul
+            li - Використовувати оригінальну упаковку
+            li - Уникати утворення пилу
+            li - Тримати подалі від окислювачів
+            li - Запобігати поглинанню вологи
+        li Температура:
+          ul
+            li - Нормальна температура зберігання
+            li - Уникати екстремальних температур
+      h6 Дії в надзвичайних ситуаціях:
+      div Перша допомога:
+      ol
+        li При вдиханні:
+          ul
+            li - Вивести на свіже повітря
+            li - За потреби звернутися до лікаря
+        li При потраплянні в очі:
+          ul
+            li - Промити чистою водою
+            li - При подразненні звернутися до офтальмолога
+        li При контакті зі шкірою:
+          ul
+            li - Вимити водою з милом
+            li - Зняти забруднений одяг
+        li Екстрені контакти:
+          ul
+            li - Завод: +38(03145) 23 - 168
+            li - Email: commercial@lxk.com.ua
+      br
+      h5 4. Транспортна інформація
+      h6 Транспортна класифікація:
+      ul
+        li - Не класифікується як небезпечний вантаж
+        li - Зберігати сухим під час транспортування
+        li - Уникати механічних пошкоджень упаковки
+        li - Захищати від вологи при завантаженні / розвантаженні
+      br
+      h5 5. Екологічна інформація
+      h6 Вплив на довкілля:
+      ul
+        li - 100% натуральний продукт
+        li - Біорозкладний
+        li - Не утворює токсичних сполук
+        li - З деревини сталого лісового господарства
+      br
+      h6 Утилізація:
+      ul
+        li - Згідно з місцевими правилами
+        li - Може утилізуватися як звичайні відходи
+        li - Не потребує спеціальних умов утилізації
+      br
+      h5 6. Сертифікація
+      h6 Сертифікати продукту:
+      ul
+        li - Відповідність EN 1860 - 2:2023
+        li - ISO 9001:2015
+        li - FSС сертифікований
+
+  else if (lang == 'ua')
+    h2.mt-3 ІНФОРМАЦІЯ ПРО БЕЗПЕКУ ПРОДУКЦІЇ
     h3.text-center Згідно з Регламентом ЄС 2023/988
 
     h5 1. Інформація про продукт
