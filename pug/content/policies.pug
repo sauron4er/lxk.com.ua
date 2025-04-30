@@ -7,6 +7,7 @@ mixin content(lang)
         quality: 'Quality policy',
         waste: 'Policy in the field of waste management',
         ETI: 'ETI Base Code',
+        FSC_work: ''
       },
       de: {
 
@@ -21,6 +22,7 @@ mixin content(lang)
         waste: 'Політика у сфері поводження з відходами',
         occupational: 'Політика у галузі охорони праці та техніки безпеки',
         ETI: 'Базовий кодекс ІЕТ',
+        FSC_work: 'Потітика у відношенні до основних вимог FSC щодо праці ТДВ'
       },
       ru: {
 
@@ -106,5 +108,17 @@ mixin content(lang)
               style={width: '85%'}
               src="../static/policies/Occupational_Health_Policy_UA.jpg",
               alt="ETI"
+            )
+      .card
+        #headingSix.card-header
+          h2.mb-0
+            button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven')
+              | #{texts[lang].FSC_work}
+        #collapseSeven.collapse(aria-labelledby='headingSeven' data-parent='#accordion')
+          .card-body.d-flex.justify-content-center
+            img.d-block.mb-4(
+              style={width: '85%'}
+              src="../static/policies/Потітика_у_відношенні_до_основних_вимог_FSC_щодо_праці_ТДВ.png",
+              alt="FSC work policy"
             )
   
