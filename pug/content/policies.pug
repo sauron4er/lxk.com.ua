@@ -44,15 +44,15 @@ mixin content(lang)
             alt="Ecology"
           )
     .card
-      #headingTwo.card-header
+      #headingPEFC.card-header
         h2.mb-0
-          button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+          button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapsePEFC' aria-expanded='false' aria-controls='collapsePEFC')
             | #{texts[lang].pefc}
-      #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
+      #collapsePEFC.collapse(aria-labelledby='headingPEFC' data-parent='#accordion')
         .card-body.d-flex.justify-content-center
           img.d-block.mb-4(
             style={width: '85%'}
-            src="../static/img/pefc-" + lang + ".png",
+            src="../static/policies/Wood_control_policy_" + lang + "_20-05-2025.png",
             alt="PEFC"
           )
     .card
@@ -110,7 +110,7 @@ mixin content(lang)
               alt="ETI"
             )
       .card
-        #headingSix.card-header
+        #headingSeven.card-header
           h2.mb-0
             button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven')
               | #{texts[lang].FSC_work}
@@ -121,4 +121,3 @@ mixin content(lang)
               src="../static/policies/Потітика_у_відношенні_до_основних_вимог_FSC_щодо_праці_ТДВ.png",
               alt="FSC work policy"
             )
-  
