@@ -1,6 +1,36 @@
 mixin content(lang)
   h2 Фінансова звітність
   #accordion.accordion.mb-2
+  .card
+    #headingSix.card-header
+      h2.mb-0
+        button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+          | 2024 р.
+    #collapseSix.collapse(aria-labelledby='headingSix' data-parent='#accordion')
+      .card-body
+        .d-flex
+          .ml-auto 02.06.2025 р.
+        h5.mt-3 Звіт щодо аудиту фінансової звітності за 2024 р.
+        .my-3
+          object(data="../static/img/Звіт щодо аудиту фінансової звітності 2024.pdf" type="application/pdf" width="100%" height="800")
+            p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:
+            div.mb-3
+              a(href="../static/img/Звіт щодо аудиту фінансової звітності 2024.pdf") Завантажити Звіт щодо аудиту фінансової звітності
+  .card
+    #headingFive.card-header
+      h2.mb-0
+        button.btn.btn-link.w-100(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+          | 2023 р.
+    #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#accordion')
+      .card-body
+        .d-flex
+          .ml-auto 01.06.2024 р.
+        h5.mt-3 Звіт щодо аудиту фінансової звітності за 2023 р.
+        .my-3
+          object(data="../static/img/Звіт щодо аудиту фінансової звітності 2023.pdf" type="application/pdf" width="100%" height="800")
+            p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту щодо аудиту фінансової звітності завантажте його, будь ласка:
+            div.mb-3
+              a(href="../static/img/Звіт щодо аудиту фінансової звітності 2023.pdf") Завантажити Звіт щодо аудиту фінансової звітності
     .card
       #headingFour.card-header
         h2.mb-0
@@ -10,13 +40,6 @@ mixin content(lang)
         .card-body
           .d-flex
             .ml-auto 01.06.2023 р.
-          //h5 Звіт про фінансовий стан за 2022 р.
-          //  .mt-1
-          //    object(data="../static/img/Звіт про фінансовий стан за 2022 р..pdf" type="application/pdf" width="100%" height="800")
-          //      p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:
-          //      div.mb-3
-          //        a(href="../static/img/Звіт про фінансовий стан за 2022 р..pdf") Завантажити Звіт про фінансовий стан
-          //hr
           h5.mt-3 Звіт щодо аудиту фінансової звітності за 2022 р.
           .my-3
             object(data="../static/img/Звіт щодо аудиту фінансової звітності 2022.pdf" type="application/pdf" width="100%" height="800")
@@ -32,13 +55,6 @@ mixin content(lang)
         .card-body
           .d-flex
             .ml-auto 09.06.2022 р.
-          //h5 Звіт про фінансовий стан за 2021 р.
-          //  .mt-1
-          //    object(data="../static/img/Звіт про фінансовий стан за 2021 р..pdf" type="application/pdf" width="100%" height="800")
-          //      p Ваш браузер не підтримує відображення PDF файлів. Для перегляду Звіту про фінансовий стан завантажте його, будь ласка:
-          //      div.mb-3
-          //        a(href="../static/img/Звіт про фінансовий стан за 2021 р..pdf") Завантажити Звіт про фінансовий стан
-          //hr
           h5.mt-3 Звіт щодо аудиту фінансової звітності за 2021 р.
           .my-3
             object(data="../static/img/Звіт щодо аудиту фінансової звітності 2021.pdf" type="application/pdf" width="100%" height="800")
